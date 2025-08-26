@@ -1,4 +1,3 @@
-// Language translations for RamlPoints website
 const translations = {
     en: {
         // Navigation
@@ -98,531 +97,25 @@ const translations = {
         ramlBoxDesc: "A digital products platform offering more than 200 products and the number is still growing. Comprehensive digital solutions for businesses",
         activeService: "Active Service",
         ramlPointsTitle: "RamlPoints",
-        ramlPointsDesc: "Convert unused loyalty points into real cash transfers. Our flagship service helping thousands recover value from dormant rewards.",
-        RamlmarketingTitle: "Raml Marketing",
-        RamlmarketingDesc: "Simple and innovative marketing solutions that seamlessly connect you with social media platforms and advertising professionals.",
-        ramlJobTitle: "RamlJob",
-        ramlJobDesc: "A SaaS platform that enables you to upload your CV, after which our system will recognize you and we will be able to link your LinkedIn and apply for jobs automatically instead of you.",
-        ramltecTitle:"RamlTech",
-        ramltecDesc:"Comprehensive technology solutions for both individuals and businesses. We support organizations in enhancing their products and services through tailored or ready-made solutions.",
-        inDevelopment:"In Development",
-        ctaTitle:"Ready to Transform Your Points?",
-        ctaSubtitle:"Join thousands of satisfied customers who trust RamlGroup to maximize their financial potential",
-        contactTeam:"Contact Our Team",
-
-        //index.html
-        Simple_3step:"Simple 3-Step Process",
-        Converting_your_loyalty:"Converting your loyalty points has never been easier. Follow our transparent process for guaranteed results.",
-        SelectProg: "Select Program",
-        Choose_your_loy:"Choose your loyalty program and enter your points balance. Our calculator shows instant cash estimates",
-        Submit_deatils:"Submit Details",
-        Provide_your_Acc:"Provide your account information and banking details through our secure, encrypted submission form.",
-        Receive_cash_or:"Receive Cash or Discount from our services",
-        Get_your_cash:"Get a cash amount that we will transfer to your account within two days or a discount code for one of our services directly",
-        Learn_more_about: "Learn More About Our Process",
-        Powered_by_RamlGroup:"Powered by RamlGroup",
-        Trusted_Financial_Services:"Trusted Financial Services Since 2022",
-        RamlPoints_is_prt:"RamlPoints is part of the RamlGroup ecosystem, bringing you the same reliability and security that thousands of Saudi customers trust for their technology needs.",
-        High_encryption_algo:"High encryption algorithms",
-        Information_grade_Sec:"Information-grade security and encryption",
-        customer_support_via:"24/7 customer support via WhatsApp",
-        Learn_About_RamlGroup:"Learn About RamlGroup",
-        Need_help_we_are:"Need Help? We're Here for You",
-        Get_instant_suppo:"Get instant support through WhatsApp or explore our comprehensive help resources",
-        WhatsApp_support_1: "WhatsApp Support",
-        Get_instant1: "Get instant help and track your conversion status",
-        Chat_Now1:"Chat Now",
-        Processing_today:"Processing Today",
-        Conversions_inp: "Conversions in progress",
-        Average_Days_Comple:"Average: 3.2 days completion",
-        Quick_Contact:"Quick Contact",
-        Send_Messages:"Send Message",
-
-        //contact.html
-        Get_instant_supp:"Get instant support for your loyalty point conversions. Our team is ready to assist you through WhatsApp, phone, or email.",
-        Multiple_Ways_tor:"Multiple Ways to Reach Us",
-        Choose_your_preferredc:"Choose your preferred communication method. We're available through various channels to assist you.",
-        WhatsApp_support_1: "WhatsApp Support",
-        Instant_messagingsupport:"Instant messaging support with quick responses",
-        Available_twentyfour:"Available 24/7",
-        Email_supportl:"Email Support",
-        Detaild_support_viaemail: "Detailed support via email with 24-hour response",
-        Response_within_twentyfourhours:"Response within 24 hours",
-        Genreal_support:"General Support",
-        Send_Us_amessage:"Send Us a Message",
-        fill_out_the_form:"Fill out the form below and we'll get back to you within 24 hours. All fields marked with * are required.",
-        Full_namel:"Full Name *",
-        Input_name:"Enter your full name",
-        Email_Address:"*Email Address",
-        Input_email:"your.email@example.com",
-        Phone_Numberl:"Phone Number",
-        Prefeeed_response_method: "* Prefeeed response method",
-        phone_option: "Phone Call",
-        whatsapp_option:"ًWhatsApp",
-        email_option:"Email",
-        Inquiry_Category:"*Inquiry Category",
-        Select_catagory:"Select category",
-        Point_Conversion_Support:"Point Conversion Support",
-        Technical_Issue: "Technical Issue",
-        Billing_Payment:"Billing & Payment",
-        Program_Information:"Program Information",
-        Partnership_Inquiry:"Partnership Inquiry",
-        Other_rrc:"Other",
-        Related_loyalty_program:"Related Loyalty Program",
-        Alrajhi_issue:"Al Rajhi Mokafaa",
-        Qitaf_issue:"Qitaf",
-        Akther_issue:"Akther Alinma",
-        ANB_issue:"ANB Rewards",
-        IZ_issue:"IZ Wallet",
-        BSF_issue:"BSF Jana",
-        Other_issue:"Other Program",
-        Select_issue:"Select program (if applicable)",
-        message_input:"* Message",
-        Input_message_ss:"Please describe your inquiry in detail...",
-        Priority_level:"Priority Level",
-        Low_level:"Low - General inquiry",
-        Medium_level:"Medium - Standard support",
-        High_level_support:"High - Urgent assistance needed",
-        Terms_Agreement: `I agree to the <a href="terms_privacy.html" class="text-accent hover:underline">Terms of Service & Privacy Policy</a>. I consent to RamlPoints contacting me via my preferred method regarding my inquiry. *`,
-        Terms_Privacy_Link: "Terms of Service & Privacy Policy",
-        Send_Message_ll:"Send Message",
-        We_will_respond:"We'll respond within 24 hours",
-        We_r_here:"We're Here to Help",
-        Contact_Us_on_X: "Contact Us on X App",
-        WhatsApp_support:"WhatsApp Support",
-        Financial_tips_ll:"Financial tips & quick tutorials",
-        Follow_us_stay:"Follow Us & Stay Connected",
-        Stay_updated_with_ll:"Stay updated with the latest news, tips, and announcements through our social media channels.",
-        TikTok_App:"TikTok",
-        Instagram_App:"Instagram",
-        Behind_the_scenes_su:"Behind the scenes & success stories",
-        X_Twitter:"X (Twitter)",
-        News_Industry:"News & industry updates",
-        WhatsApp_App:"WhatsApp",
-        Instant_messaging:"Instant messaging & support",
-        Contact_ss:"Contact",
-        RamlPoints_ss:"RamlPoints"
-
-
-
-
-
-
-
-
-
-
+        ramlPointsDesc: "Convert your unused loyalty points into real cash transfers. Trusted by thousands of Saudi customers",
         
-},
-    ar: {
-        // Navigation  
-        home: "الرئيسية",
-        programs: "البرامج",
-        howItWorks: "كيف يعمل",
-        about: "حول",
-        contact: "اتصل بنا", 
-        languageBtn: "English",
-        
-        // Homepage Hero Section
-        trustedBy: "موثوق من قبل مجموعة الرمل",
-        heroTitle: "حول نقاط الولاء<br />غير المستخدمة<br />إلى نقد حقيقي", 
-        heroSubtitle: "حول مكافآت البنوك والمحافظ الإلكترونية إلى تحويلات نقدية فورية أو خصم هائل من مواقعنا الإلكترونية. بسيط وآمن وشفاف - مدعوم من الخدمات المالية الموثوقة لمجموعة الرمل.",
-        startConverting: "ابدأ التحويل الآن",
-        learnHow: "تعلم كيف يعمل", 
-        secureEncrypted: "آمن ومشفر",
-        regulatedService: "خدمة منظمة",
-        
-        // Calculator Section
-        calculatorTitle: "حاسبة التحويل السريع",
-        calculatorSubtitle: "احسب أرباحك المحتملة بالريال السعودي",
-        selectProgram: "اختر برنامج الولاء الخاص بك",
-        numberOfPoints: "عدد النقاط",
-        pointsPlaceholder: "أدخل رصيد النقاط الخاص بك",
-        convertNow: "حول نقاطي الآن",
-        estimatedValue: "القيمة النقدية المقدرة", 
-        processingNote: "*رسوم المعالجة: 5% | الإطار الزمني: 3-5 أيام عمل",
-        
-        // Supported Programs Section
-        supportedTitle: "برامج الولاء المدعومة",
-        supportedSubtitle: "نتشارك مع البنوك السعودية الرائدة ومقدمي خدمات الاتصالات لتحويل نقاطك غير المستخدمة إلى نقد حقيقي",
-        viewAllPrograms: "عرض جميع البرامج",
-        
-        // Process Section
-        processTitle: "عملية بسيطة من 3 خطوات",
-        processSubtitle: "لم يكن تحويل نقاط الولاء أسهل من أي وقت مضى. اتبع عمليتنا الشفافة للحصول على نتائج مضمونة.",
-        step1Title: "اختر البرنامج",
-        step1Desc: "اختر برنامج الولاء الخاص بك وأدخل رصيد النقاط. تُظهر حاسبتنا تقديرات نقدية فورية.",
-        step2Title: "أرسل التفاصيل",
-        step2Desc: "قدم معلومات حسابك والتفاصيل المصرفية من خلال نموذج الإرسال الآمن والمشفر.",
-        step3Title: "استلم النقد أو خصم من خدماتنا",
-        step3Desc: "احصل على تحويلك النقدي أو كود الخصم لخدماتنا خلال يومي عمل كحد أقصى.",
-        learnMoreProcess: "تعلم المزيد حول عمليتنا",
-        
-        // RamlGroup Section
-        poweredBy: "مدعوم من مجموعة رامل",
-        trustTitle: "خدمات مالية موثوقة منذ 2022",
-        trustDesc: "رامل بوينتس جزء من نظام مجموعة رامل، يجلب لك نفس الموثوقية والأمان الذي يثق به آلاف العملاء السعوديين لاحتياجاتهم التقنية.",
-        highEncryption: "خوارزميات تشفير عالية",
-        bankGradeSecurity: "أمان وتشفير بدرجة المعلومات",
-        support247: "دعم العملاء على مدار الساعة عبر واتساب", 
-        learnAboutRaml: "تعلم حول مجموعة رامل",
-        pointsConverted: "النقاط المحولة",
-        cashTransferred: "النقد المحول",
-        successRate: "معدل النجاح",
-        
-        // Help Section
-        helpTitle: "تحتاج مساعدة؟ نحن هنا من أجلك",
-        helpSubtitle: "احصل على دعم فوري من خلال واتساب أو استكشف موارد المساعدة الشاملة لدينا",
-        whatsappSupport: "دعم واتساب",
-        whatsappDesc: "احصل على مساعدة فورية وتتبع حالة التحويل",
-        chatNow: "تحدث الآن",
-        processingToday: "المعالجة اليوم",
-        conversionsProgress: "التحويلات قيد التقدم", 
-        averageCompletion: "المتوسط: 3.2 أيام للإكمال",
-        quickContact: "اتصال سريع",
-        yourName: "اسمك",
-        emailAddress: "عنوان البريد الإلكتروني",
-        yourMessage: "رسالتك",
-        sendMessage: "إرسال الرسالة",
-        
-        // Footer
-        footer_description: "حول نقاط الولاء غير المستخدمة إلى نقد حقيقي مع منصة تحويل النقاط الأكثر موثوقية في المملكة العربية السعودية.",
-        quick_links: "روابط سريعة",
-        nav_home: "الرئيسية",
-        nav_programs: "البرامج",
-        nav_how_it_works: "كيف يعمل",
-        nav_faq: "الأسئلة الشائعة", 
-        nav_submit_request: "إرسال طلب",
-        nav_about: "حول مجموعة رامل",
-        nav_contact: "اتصل بنا",
-        legal: "قانوني",
-        terms_privacy: "الشروط والخصوصية",
-        copyright: "© 2025 مجموعة رامل. جميع الحقوق محفوظة. | مدعوم بحلول التكنولوجيا المبتكرة.",
-        
-        //about_raml_group.html
-        servicesTitle: "خدمات رمل قروب ",
-        servicesSubtitle: "حلول تقنية شاملة مصممة لتمكين الشركات والأفراد في جميع أنحاء المملكة العربية السعودية",
-        aboutBadge: "الريادة في التكنولوجيا",
-        aboutTitle: 'عن <span class="text-accent">رمل قروب</span><br />ريادة في التكنولوجيا',
-        aboutSubtitle: "منذ عام 2020، كانت مجموعة رامل في طليعة الابتكار التكنولوجي في المملكة العربية السعودية، مما مكّن السوق من اكتشاف خدمات جديدة من خلال حلول آمنة وشفافة ومبتكرة.",
-        ramlPayTitle: "رمل باي",
-        ramlPayDesc: "حلول متقدمة لمعالجة المدفوعات للشركات. خدمات بوابة دفع آمنة وسريعة وموثوقة",
-        comingSoon: "قريبًا 2027",
-        ramlBoxTitle: "رمل بوكس",
-        ramlBoxDesc: "منصة منتجات رقمية تقدم أكثر من 200 منتج، والعدد في ازدياد مستمر. حلول رقمية شاملة للشركات.",
-        activeService: "خدمة نشطة",
-        ramlPointsTitle: "رمل بوينتس",
-        ramlPointsDesc: "حوّل نقاط الولاء غير المستخدمة إلى تحويلات نقدية حقيقية. خدمتنا الرائدة تُساعد الآلاف على استعادة قيمة مكافآتهم الراكدة.",
-        RamlmarketingTitle: "رمل للتسويق",
-        RamlmarketingDesc: "حلول تسويقية بسيطة ومبتكرة تربطك بسلاسة بمنصات التواصل الاجتماعي ومحترفي الإعلان.",
-        ramlJobTitle: "وظيفة الرمل",
-        ramlJobDesc: "منصة SaaS تمكنك من رفع سيرتك الذاتية، وبعدها سيتعرف عليك نظامنا وسنكون قادرين على ربط حسابك على LinkedIn والتقدم للوظائف تلقائيًا بدلاً منك.",
-        ramltecTitle:"رمل تكنولوجي",
-        ramltecDesc:"حلول تقنية شاملة للأفراد والشركات. ندعم المؤسسات في تحسين منتجاتها وخدماتها من خلال حلول مصممة خصيصًا أو جاهزة.",
-        inDevelopment:"قيد التطوير",
-        ctaTitle:" هل أنت مستعد لتحويل نقاطك؟",
-        ctaSubtitle:"انضم إلى آلاف العملاء الراضين الذين يثقون في RamlGroup لتحقيق أقصى قدر من إمكاناتهم المالية",
-        contactTeam:" التواصل مع فريقنا",
-
-        //index.html
-        Simple_3step:"ثلاث خطوات بسيطه",
-        Converting_your_loyalty:"لم يكن تحويل نقاط الولاء أسهل من أي وقت مضى. اتبع إجراءاتنا الشفافة لضمان نتائج مضمونة.",
-        SelectProg: "اختر البرنامج",
-        Choose_your_loy:"اختر برنامج الولاء الخاص بك وأدخل رصيد نقاطك. حاسبتنا تُظهر تقديرات نقدية فورية.",
-        Submit_deatils:"إرسال الطلب",
-        Provide_your_Acc:"قم بتقديم معلومات حسابك وتفاصيلك المصرفية من خلال نموذج الإرسال الآمن والمشفر الخاص بنا.",
-        Receive_cash_or:"احصل على الكاش او خصم قوي لوحدة من خدماتنا",
-        Get_your_cash:"احصل على مبلغ نقدي نقوم بتحويله لحسابك خلاال يومين أو كود خصم لوحدة من خدماتنا بشكل مباشر",
-        Learn_more_about: "تعرف على المزيد حول انشاء العملية",
-        Powered_by_RamlGroup: "مدعوم من RamlGroup",
-        Trusted_Financial_Services:"خدمات مالية موثوقة منذ عام 2022",
-        RamlPoints_is_prt:"رمل بوينتس هو جزء من منظومة رمل قروب مما يوفر لك نفس الموثوقية والأمان الذي يثق به آلاف العملاء السعوديين لتلبية احتياجاتهم التكنولوجية",
-        High_encryption_algo:"خوارزميات التشفير العالية",
-        Information_grade_Sec:"الأمن والتشفير على مستوى المعلومات الشخصية",
-        customer_support_via:"دعم العملاء على مدار الساعة طوال أيام الأسبوع عبر WhatsApp",
-        Learn_About_RamlGroup:"تعرف على رمل قروب",
-        Need_help_we_are:"هل تحتاج مساعدة؟ نحن هنا لمساعدتك",
-        Get_instant_suppo:"احصل على الدعم الفوري عبر WhatsApp أو استكشف خدمات المساعدة الشاملة لدينا",
-        WhatsApp_support_1: "دعم واتساب",
-        Get_instant1: "احصل على مساعدة فورية وتتبع حالة التحويل الخاصة بك",
-        Chat_Now1:"تواصل الان",
-        Processing_today:"معالجة اليوم",
-        Conversions_inp: "التحويلات قيد التقدم",
-        Average_Days_Comple:"متوسط: 3.2 أيام الإنجاز",
-        Quick_Contact:"تواصل سريع",
-        Send_Messages:"ارسل لنا",
-
-        //contact.html
-        Get_instant_supp:"احصل على دعم فوري لتحويل نقاط الولاء الخاصة بك. فريقنا جاهز لمساعدتك عبر واتساب أو الهاتف أو البريد الإلكتروني.",
-        Multiple_Ways_tor:"طرق متعددة للوصول إلينا",
-        Choose_your_preferredc:"اختر طريقة التواصل المفضلة لديك. نحن متاحون لمساعدتك عبر قنوات متعددة.",
-        WhatsApp_support_1: "دعم واتساب",
-        Instant_messagingsupport:"دعم مباشر وسريع",
-        Available_twentyfour:"متوفر 24/7",
-        Email_supportl:"دعم ايميل",
-        Detaild_support_viaemail: "دعم مفصل عبر البريد الإلكتروني مع استجابة على مدار 24 ساعة",
-        Response_within_twentyfourhours:"الرد في خلال 24 ساعة",
-        Genreal_support:"دعم عام",
-        Send_Us_amessage:"ارسل لنا رسالة",
-        fill_out_the_form:"املأ النموذج أدناه وسنتواصل معك خلال ٢٤ ساعة. جميع الحقول التي تحمل علامة * مطلوبة.",
-        Full_namel:"الاسم الكامل *",
-        Input_name:"أدخل اسمك الكامل",
-        Email_Address:"البريد الشخصي *",
-        Input_email:"ضع ايميلك مثل : your.email@example.com",
-        Phone_Numberl:"رقم الهاتف",
-        Prefeeed_response_method: "*الطريقة المفضلة للتواصل",
-        phone_option: "التواصل عبر الاتصال المباشر",
-         whatsapp_option:"الرد من خلال الواتساب",
-        email_option:"الرد من خلال الايميل",
-        Inquiry_Category:"فئة الاستفسار",
-        Select_catagory:"اختر الفئة",
-        Point_Conversion_Support:"تحويل النقاط",
-        Technical_Issue: "مشكلة فنية",
-        Billing_Payment:"الفواتير والدفع",
-        Program_Information:"معلومات البرنامج",
-        Partnership_Inquiry:"استفسار الشراكة",
-        Other_rrc:"اخرى",
-        Related_loyalty_program:"برنامج الولاء ذو ​​الصلة",
-        Alrajhi_issue:"مكافأة الراجحي",
-        Qitaf_issue:"قطاف",
-        Akther_issue:"اكثر الانماء",
-        ANB_issue:"جوائز العربي",
-        IZ_issue:"محفة عز",
-        BSF_issue:"جنى من البنك الفرنسي السعودي",
-        Other_issue:"محافظ اخرى",
-        Select_issue:"حدد البرنامج (إذا كان ذلك ممكنا)",
-        message_input:"* الرسالة",
-        Input_message_ss:"يرجى وصف استفسارك بالتفصيل...",
-        Priority_level:"مستوى الأولوية",
-        Low_level:"منخفض - استفسار عام",
-        Medium_level:"متوسط ​​- دعم قياسي",
-        High_level_support:"عالية - هناك حاجة إلى مساعدة عاجلة",
-        Terms_Agreement: `أوافق على <a href="terms_privacy.html" class="text-accent hover:underline">الشروط والأحكام وسياسة الخصوصية</a>. أوافق على أن تتواصل معي RamlPoints عبر طريقتي المفضلة بخصوص استفساري. *`,
-        Terms_Privacy_Link: "شروط الخدمة وسياسة الخصوصية",
-        Send_Message_ll:"ارسل الرسالة",
-        We_will_respond:"سوف نقوم بالرد خلال 24 ساعة",
-        We_r_here:"نحن هنا للمساعدة",
-        Contact_Us_on_X: "تواصل معنا على اكس",
-        WhatsApp_support:"دعم ممتلكات عبر واتساب",
-        Financial_tips_ll:"نصائح مالية ودروس تعليمية سريعة",
-        Follow_us_stay:"تابعنا وابق على تواصل",
-        Stay_updated_with_ll:"احصل على آخر الأخبار والنصائح والإعلانات من خلال قنوات التواصل الاجتماعي الخاصة بنا.",
-        TikTok_App:"برنامج تيك توك",
-        Instagram_App:"برنامج انستاغرام",
-        Behind_the_scenes_su:"خلف الكواليس وقصص النجاح",
-        X_Twitter:"برنامج أكس ( تويتر سابقا )",
-        News_Industry:"الأخبار وتحديثات الصناعة",
-        WhatsApp_App:"تطبيق واتساب",
-        Instant_messaging:"الرسائل الفورية والدعم",
-        Contact_ss:"تواصل",
-        RamlPoints_ss:"رمل بوينتس"
-        
-
-
-    },
-};
-
-
-// Current language state
-let currentLanguage = 'en';
-
-// Function to translate the page
-function translatePage(language) {
-    currentLanguage = language;
-    
-    // Update HTML direction and language attributes
-    const html = document.documentElement;
-    if (language === 'ar') {
-        html.setAttribute('dir', 'rtl');
-        html.setAttribute('lang', 'ar');
-        document.body.classList.add('rtl');
-    } else {
-        html.setAttribute('dir', 'ltr');
-        html.setAttribute('lang', 'en');
-        document.body.classList.remove('rtl');
-    }
-    
-    // Translate all elements with data-translate attribute
-    const elements = document.querySelectorAll('[data-translate]');
-    elements.forEach(element => {
-        const key = element.getAttribute('data-translate');
-        if (translations[language] && translations[language][key]) {
-            if (element.tagName === 'INPUT' && element.type === 'text') {
-                element.placeholder = translations[language][key];
-            } else if (element.tagName === 'TEXTAREA') {
-                element.placeholder = translations[language][key];
-            } else {
-                element.innerHTML = translations[language][key];
-            }
-        }
-    });
-    
-    // Update language button text
-    const langBtn = document.querySelector('.language-btn');
-    if (langBtn) {
-        langBtn.textContent = translations[language].languageBtn;
-    }
-    
-    // Save language preference
-    localStorage.setItem('preferredLanguage', language);
-}
-
-// Function to initialize language
-function initializeLanguage() {
-    // Check for saved language preference
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
-    translatePage(savedLanguage);
-}
-
-// Function to toggle language
-function toggleLanguage() {
-    const newLanguage = currentLanguage === 'en' ? 'ar' : 'en';
-    translatePage(newLanguage);
-}
-
-// Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    initializeLanguage();
-    
-    // Add event listeners to language buttons
-    const languageButtons = document.querySelectorAll('.language-btn, [data-translate="languageBtn"]');
-    languageButtons.forEach(button => {
-        button.addEventListener('click', toggleLanguage);
-    });
-});
-        
-        // How It Works page
-        howItWorksBadge: "Step-by-Step Process Guide",
-        howItWorksTitle: "How RamlPoints<br /><span class=\"text-accent\">Conversion Works</span>",
-        howItWorksSubtitle: "Our transparent, secure process transforms your unused loyalty points into real cash transfers. Follow our detailed guide for each supported program with guaranteed results.",
-        startConversion: "Start Your Conversion",
-        viewProcessOverview: "View Process Overview",
-        
-        // Program Landing Pages
-        programsBadge: "6 Supported Programs",
-        programsTitle: "Choose Your<br />Loyalty Program",
-        programsSubtitle: "Select your loyalty program below to see specific conversion rates, processing times, and start converting your unused points into real cash transfers.",
-        
-        // Terms & Privacy
-        termsPrivacyTitle: "Terms of Service & Privacy Policy",
-        termsPrivacySubtitle: "Your privacy and trust are important to us. Please review our terms and privacy policy."
-    },
-    ar: {
-        // Navigation
-        home: "الرئيسية",
-        programs: "البرامج",
-        howItWorks: "كيف يعمل",
-        about: "حول",
-        contact: "اتصل بنا",
-        languageBtn: "English",
-        
-        // Homepage Hero Section
-        trustedBy: "موثوق من قبل مجموعة رامل",
-        heroTitle: "حول نقاط الولاء<br />غير المستخدمة<br />إلى نقد حقيقي",
-        heroSubtitle: "حول مكافآت البنوك والمحافظ إلى تحويلات نقدية فورية أو خصم كبير من مواقعنا. بسيط وآمن وشفاف - مدعوم بخدمات مجموعة رامل المالية الموثوقة.",
-        startConverting: "ابدأ التحويل الآن",
-        learnHow: "تعلم كيف يعمل",
-        secureEncrypted: "آمن ومشفر",
-        regulatedService: "خدمة منظمة",
-        
-        // Calculator Section
-        calculatorTitle: "حاسبة التحويل السريع",
-        calculatorSubtitle: "احسب أرباحك المحتملة بالريال السعودي",
-        selectProgram: "اختر برنامج الولاء الخاص بك",
-        numberOfPoints: "عدد النقاط",
-        pointsPlaceholder: "أدخل رصيد نقاطك",
-        convertNow: "حول نقاطي الآن",
-        estimatedValue: "القيمة النقدية المقدرة",
-        processingNote: "*رسوم المعالجة: 5% | الوقت: 3-5 أيام عمل",
-        
-        // Supported Programs Section
-        supportedTitle: "برامج الولاء المدعومة",
-        supportedSubtitle: "نتشارك مع البنوك السعودية الرائدة ومقدمي خدمات الاتصالات لتحويل نقاطك غير المستخدمة إلى نقد حقيقي",
-        viewAllPrograms: "عرض جميع البرامج",
-        
-        // Process Section
-        processTitle: "عملية بسيطة من 3 خطوات",
-        processSubtitle: "لم يكن تحويل نقاط الولاء أسهل من أي وقت مضى. اتبع عمليتنا الشفافة للحصول على نتائج مضمونة.",
-        step1Title: "اختر البرنامج",
-        step1Desc: "اختر برنامج الولاء الخاص بك وأدخل رصيد نقاطك. تُظهر حاسبتنا تقديرات نقدية فورية.",
-        step2Title: "أرسل التفاصيل",
-        step2Desc: "قدم معلومات حسابك والتفاصيل المصرفية من خلال نموذج الإرسال الآمن والمشفر.",
-        step3Title: "احصل على النقد أو خصم من خدماتنا",
-        step3Desc: "احصل على تحويلك النقدي أو رمز الخصم لخدماتنا خلال يومي عمل كحد أقصى.",
-        learnMoreProcess: "تعلم المزيد حول عمليتنا",
-        
-        // RamlGroup Section
-        poweredBy: "مدعوم من مجموعة رامل",
-        trustTitle: "خدمات مالية موثوقة منذ 2022",
-        trustDesc: "رامل بوينتس جزء من نظام مجموعة رامل البيئي، يجلب لك نفس الموثوقية والأمان الذي يثق به آلاف العملاء السعوديين لاحتياجاتهم التقنية.",
-        highEncryption: "خوارزميات تشفير عالية",
-        bankGradeSecurity: "أمان وتشفير بدرجة المعلومات",
-        support247: "دعم العملاء 24/7 عبر واتساب",
-        learnAboutRaml: "تعلم حول مجموعة رامل",
-        pointsConverted: "النقاط المحولة",
-        cashTransferred: "النقد المحول",
-        successRate: "معدل النجاح",
-        
-        // Help Section
-        helpTitle: "تحتاج مساعدة؟ نحن هنا من أجلك",
-        helpSubtitle: "احصل على دعم فوري عبر واتساب أو استكشف موارد المساعدة الشاملة لدينا",
-        whatsappSupport: "دعم واتساب",
-        whatsappDesc: "احصل على مساعدة فورية وتتبع حالة التحويل الخاص بك",
-        chatNow: "دردش الآن",
-        processingToday: "المعالجة اليوم",
-        conversionsProgress: "التحويلات قيد التقدم",
-        averageCompletion: "المتوسط: 3.2 أيام للإكمال",
-        quickContact: "اتصال سريع",
-        yourName: "اسمك",
-        emailAddress: "عنوان البريد الإلكتروني",
-        yourMessage: "رسالتك",
-        sendMessage: "إرسال الرسالة",
-        
-        // Footer
-        footer_description: "حول نقاط الولاء غير المستخدمة إلى نقد حقيقي مع منصة تحويل النقاط الأكثر موثوقية في المملكة العربية السعودية.",
-        quick_links: "روابط سريعة",
-        nav_home: "الرئيسية",
-        nav_programs: "البرامج",
-        nav_how_it_works: "كيف يعمل",
-        nav_faq: "الأسئلة الشائعة",
-        nav_submit_request: "إرسال طلب",
-        nav_about: "حول مجموعة رامل",
-        nav_contact: "اتصل بنا",
-        legal: "قانوني",
-        terms_privacy: "الشروط والخصوصية",
-        copyright: "© 2025 مجموعة رامل. جميع الحقوق محفوظة. | مدعوم بحلول تقنية مبتكرة.",
-
-        //about_raml_group.html
-        servicesTitle: "نظام خدمات مجموعة رامل البيئي",
-        servicesSubtitle: "حلول تقنية شاملة مصممة لتمكين الشركات والأفراد في جميع أنحاء المملكة العربية السعودية",
-        aboutBadge: "الريادة في التكنولوجيا",
-        aboutTitle: 'حول <span class="text-accent">مجموعة رامل</span><br />الريادة في التكنولوجيا',
-        aboutSubtitle: "منذ عام 2020، كانت مجموعة رامل في المقدمة من الابتكار التكنولوجي في المملكة العربية السعودية، مما يمكن السوق من اكتشاف خدمات جديدة من خلال حلول آمنة وشفافة ومبتكرة.",
-        ramlPayTitle: "رامل باي",
-        ramlPayDesc: "حلول معالجة دفع متقدمة للشركات. خدمات بوابة دفع آمنة وسريعة وموثوقة",
-        comingSoon: "قريباً 2027",
-        ramlBoxTitle: "رامل بوكس",
-        ramlBoxDesc: "منصة منتجات رقمية تقدم أكثر من 200 منتج والعدد لا يزال في نمو. حلول رقمية شاملة للشركات",
-        activeService: "خدمة نشطة",
-        ramlPointsTitle: "رامل بوينتس",
-        
-        // How It Works page
-        howItWorksBadge: "دليل العملية خطوة بخطوة",
-        howItWorksTitle: "كيف يعمل تحويل<br /><span class=\"text-accent\">رامل بوينتس</span>",
-        howItWorksSubtitle: "عمليتنا الشفافة والآمنة تحول نقاط الولاء غير المستخدمة إلى تحويلات نقدية حقيقية. اتبع دليلنا المفصل لكل برنامج مدعوم مع نتائج مضمونة.",
-        startConversion: "ابدأ التحويل الخاص بك",
-        viewProcessOverview: "عرض نظرة عامة على العملية",
-        
-        // Program Landing Pages
-        programsBadge: "6 برامج مدعومة",
-        programsTitle: "اختر<br />برنامج الولاء الخاص بك",
-        programsSubtitle: "اختر برنامج الولاء الخاص بك أدناه لرؤية معدلات التحويل المحددة وأوقات المعالجة وابدأ في تحويل نقاطك غير المستخدمة إلى تحويلات نقدية حقيقية.",
-        
-        // Terms & Privacy
-        termsPrivacyTitle: "شروط الخدمة وسياسة الخصوصية",
-        termsPrivacySubtitle: "خصوصيتك وثقتك مهمة بالنسبة لنا. يرجى مراجعة شروطنا وسياسة الخصوصية."
-
-
+        // Contact page
+        contactHeroTitle: "Get in Touch with RamlPoints",
+        contactHeroSubtitle: "Need help with your loyalty point conversion? Our support team is here to assist you every step of the way.",
+        contactFormTitle: "Send us a Message",
+        contactFormSubtitle: "Fill out the form below and we'll get back to you within 24 hours",
+        fullName: "Full Name",
+        phoneNumber: "Phone Number",
+        subject: "Subject",
+        message: "Message",
+        submitMessage: "Send Message",
+        contactInfoTitle: "Contact Information",
+        whatsappSupportTitle: "WhatsApp Support",
+        whatsappSupportDesc: "Get instant help and real-time updates on your conversion status",
+        emailSupportTitle: "Email Support",
+        emailSupportDesc: "Send us detailed inquiries and receive comprehensive responses",
+        officialWebsiteTitle: "Official Website",
+        officialWebsiteDesc: "Visit our main website for more information about RamlGroup services",
         
         // How It Works page
         howItWorksBadge: "Step-by-Step Process Guide",
@@ -744,6 +237,25 @@ document.addEventListener('DOMContentLoaded', function() {
         ramlBoxDesc: "منصة منتجات رقمية تقدم أكثر من 200 منتج والعدد لا يزال في نمو. حلول رقمية شاملة للشركات",
         activeService: "خدمة نشطة",
         ramlPointsTitle: "رامل بوينتس",
+        ramlPointsDesc: "حول نقاط الولاء غير المستخدمة إلى تحويلات نقدية حقيقية. موثوق من قبل آلاف العملاء السعوديين",
+        
+        // Contact page
+        contactHeroTitle: "تواصل مع رامل بوينتس",
+        contactHeroSubtitle: "تحتاج مساعدة في تحويل نقاط الولاء؟ فريق الدعم لدينا هنا لمساعدتك في كل خطوة.",
+        contactFormTitle: "أرسل لنا رسالة",
+        contactFormSubtitle: "املأ النموذج أدناه وسنعاود الاتصال بك خلال 24 ساعة",
+        fullName: "الاسم الكامل",
+        phoneNumber: "رقم الهاتف",
+        subject: "الموضوع",
+        message: "الرسالة",
+        submitMessage: "إرسال الرسالة",
+        contactInfoTitle: "معلومات الاتصال",
+        whatsappSupportTitle: "دعم واتساب",
+        whatsappSupportDesc: "احصل على مساعدة فورية وتحديثات في الوقت الفعلي حول حالة التحويل",
+        emailSupportTitle: "دعم البريد الإلكتروني",
+        emailSupportDesc: "أرسل لنا استفسارات مفصلة واحصل على ردود شاملة",
+        officialWebsiteTitle: "الموقع الرسمي",
+        officialWebsiteDesc: "زر موقعنا الرئيسي لمزيد من المعلومات حول خدمات مجموعة رامل",
         
         // How It Works page
         howItWorksBadge: "دليل العملية خطوة بخطوة",
@@ -769,3 +281,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 };
 
+// Language switching functionality
+let currentLanguage = 'en';
+
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+    
+    // Update HTML attributes
+    document.documentElement.lang = currentLanguage;
+    document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+    
+    // Update all elements with data-translate attribute
+    const elements = document.querySelectorAll('[data-translate]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[currentLanguage] && translations[currentLanguage][key]) {
+            element.innerHTML = translations[currentLanguage][key];
+        }
+    });
+    
+    // Store preference
+    localStorage.setItem('preferred-language', currentLanguage);
+}
+
+// Initialize language on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Check for saved language preference
+    const savedLang = localStorage.getItem('preferred-language');
+    if (savedLang && savedLang !== currentLanguage) {
+        currentLanguage = savedLang;
+        toggleLanguage();
+    }
+    
+    // Add event listeners to language buttons
+    const languageButtons = document.querySelectorAll('.language-btn');
+    languageButtons.forEach(button => {
+        button.addEventListener('click', toggleLanguage);
+    });
+});
