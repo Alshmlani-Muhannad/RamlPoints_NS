@@ -1943,38 +1943,5 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3.75rem;
     line-height: 1;
   }
-  /* POWERFUL LTR override for specific sections */
-.ltr-section,
-.ltr-section * {
-    direction: ltr !important;
-    text-align: left !important;
-    font-family: inherit !important;
-}
-
-/* Specifically target and reset flex behaviors in LTR sections */
-.ltr-section .flex {
-    flex-direction: row !important;
-}
-
-/* Reset all margin/padding swaps that RTL might cause */
-.ltr-section .ml-2,
-.ltr-section .ml-4,
-.ltr-section .ml-8,
-.ltr-section .mr-2,
-.ltr-section .mr-4,
-.ltr-section .mr-8 {
-    margin-left: inherit !important;
-    margin-right: inherit !important;
-}
-
-/* Ensure text alignment remains left */
-.ltr-section .text-right,
-.ltr-section .text-center {
-    text-align: left !important;
-}
-
-/* Reverse any flex reverse */
-.ltr-section .flex-row-reverse {
-    flex-direction: row !important;
-}
+  
 }
