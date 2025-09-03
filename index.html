@@ -513,6 +513,8 @@
         </div>
     </footer>
 
+    <!-- JavaScript Files -->
+    <script src="js/translations.js"></script>
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
@@ -527,95 +529,7 @@
                 mobileMenu.classList.add('hidden');
             });
         });
-
-        // Calculator functionality
-        const programBtns = document.querySelectorAll('.program-btn');
-        const pointsInput = document.getElementById('points');
-        const calculationResult = document.getElementById('calculation-result');
-        const cashValue = document.getElementById('cash-value');
-        
-        let selectedRate = 0;
-
-        programBtns.forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Remove active state from all buttons
-                programBtns.forEach(b => {
-                    b.classList.remove('border-accent', 'bg-accent/5');
-                    b.classList.add('border-border');
-                });
-                
-                // Add active state to clicked button
-                this.classList.remove('border-border');
-                this.classList.add('border-accent', 'bg-accent/5');
-                
-                selectedRate = parseFloat(this.dataset.rate);
-                calculateValue();
-            });
-        });
-
-        pointsInput.addEventListener('input', calculateValue);
-
-        function calculateValue() {
-            const points = parseInt(pointsInput.value) || 0;
-            
-            if (points > 0 && selectedRate > 0) {
-                const grossValue = points * selectedRate;
-                const processingFee = grossValue * 0.05; // 5% processing fee
-                const netValue = grossValue - processingFee;
-                
-                cashValue.textContent = `${netValue.toFixed(2)} SAR`;
-                calculationResult.classList.remove('hidden');
-            } else {
-                calculationResult.classList.add('hidden');
-            }
-        }
-
-        // Quick contact form handling
-        document.getElementById('quick-contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Basic validation
-            if (!data.name || !data.email || !data.message) {
-                alert('Please fill in all fields.');
-                return;
-            }
-            
-            // Prepare email content
-            const subject = 'RamlPoints Quick Contact Form';
-            const body = `
-Name: ${data.name}
-Email: ${data.email}
-
-Message:
-${data.message}
-
----
-This message was sent from the RamlPoints homepage quick contact form.
-            `.trim();
-            
-            // Create mailto link
-            const mailtoLink = `mailto:contact@ramlgroup.sa?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            
-            // Open email client
-            window.location.href = mailtoLink;
-            
-            // Show success message
-            alert('Your email client will open with the pre-filled message. Please send the email to complete your inquiry.');
-            
-            // Reset form
-            this.reset();
-        });
-    </script>
-<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
-</body>
-</html>
-    <!-- JavaScript Files -->
-    <script src="js/translations.js"></script>
-    <script src="js/calculator.js"></script>
+</script>
 </body>
 </html>
 

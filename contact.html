@@ -460,6 +460,84 @@
                 mobileMenu.classList.add('hidden');
             });
         });
-</script>
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Basic validation
+            if (!data.name || !data.email || !data.message || !data['inquiry-category'] || !data['response-method']) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            if (!data.terms) {
+                alert('Please agree to the terms and conditions.');
+                return;
+            }
+            
+            // Prepare email content
+            const subject = `RamlPoints Contact Form: ${data['inquiry-category']}`;
+            const body = `
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Preferred Response Method: ${data['response-method']}
+Inquiry Category: ${data['inquiry-category']}
+Related Loyalty Program: ${data['loyalty-program'] || 'Not specified'}
+Priority Level: ${data.priority || 'medium'}
+
+Message:
+${data.message}
+
+---
+This message was sent from the RamlPoints contact form.
+            `.trim();
+            
+            // Create mailto link
+            const mailtoLink = `mailto:contact@ramlgroup.sa?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Your email client will open with the pre-filled message. Please send the email to complete your inquiry.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Dynamic form behavior
+        document.getElementById('inquiry-category').addEventListener('change', function() {
+            const loyaltyProgramField = document.getElementById('loyalty-program');
+            const loyaltyProgramContainer = loyaltyProgramField.closest('div');
+            
+            if (this.value === 'conversion-support' || this.value === 'program-inquiry') {
+                loyaltyProgramContainer.style.display = 'block';
+                loyaltyProgramField.required = true;
+            } else {
+                loyaltyProgramContainer.style.display = 'block'; // Keep visible but not required
+                loyaltyProgramField.required = false;
+            }
+        });
+
+        // Phone number formatting
+        document.getElementById('phone').addEventListener('input', function() {
+            let value = this.value.replace(/\D/g, '');
+            if (value.startsWith('966')) {
+                value = '+' + value;
+            } else if (value.startsWith('0')) {
+                value = '+966' + value.substring(1);
+            } else if (value.length > 0 && !value.startsWith('+')) {
+                value = '+966' + value;
+            }
+            this.value = value;
+        });
+    </script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
 </body>
 </html>
