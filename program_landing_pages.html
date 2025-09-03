@@ -1425,29 +1425,22 @@
 
         // Initialize monthly volumes on page load
         updateMonthlyVolumes();
-    </script>
+    <!-- JavaScript Files -->
     <script src="js/translations.js"></script>
     <script>
-        // Mobile menu functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             const mobileMenu = document.getElementById('mobile-menu');
-            
-            if (mobileMenuBtn && mobileMenu) {
-                mobileMenuBtn.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                });
-                
-                // Close mobile menu when clicking on menu items
-                const menuItems = mobileMenu.querySelectorAll('a');
-                menuItems.forEach(item => {
-                    item.addEventListener('click', function() {
-                        mobileMenu.classList.add('hidden');
-                    });
-                });
-            }
+            mobileMenu.classList.toggle('hidden');
         });
-    </script>
-<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+
+        // Close mobile menu when clicking on menu items
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                const mobileMenu = document.getElementById('mobile-menu');
+                mobileMenu.classList.add('hidden');
+            });
+        });
+</script>
 </body>
 </html>
