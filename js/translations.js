@@ -372,10 +372,24 @@ function translatePage(language) {
         html.setAttribute('dir', 'rtl');
         html.setAttribute('lang', 'ar');
         document.body.classList.add('rtl');
+        
+        // Force LTR layout on sections that should never be RTL
+        const ltrSections = document.querySelectorAll('.ltr-section');
+        ltrSections.forEach(section => {
+            section.classList.remove('rtl'); // Ensure no RTL class
+            section.setAttribute('dir', 'ltr'); // Force LTR direction
+        });
+        
     } else {
         html.setAttribute('dir', 'ltr');
         html.setAttribute('lang', 'en');
         document.body.classList.remove('rtl');
+        
+        // Ensure LTR sections are normal in LTR mode
+        const ltrSections = document.querySelectorAll('.ltr-section');
+        ltrSections.forEach(section => {
+            section.removeAttribute('dir'); // Remove forced dir attribute
+        });
     }
     
     // Translate all elements with data-translate attribute
