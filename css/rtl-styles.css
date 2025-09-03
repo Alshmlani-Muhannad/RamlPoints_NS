@@ -70,7 +70,7 @@ body.rtl {
 
 /* RTL Icons and Arrows */
 .rtl svg {
-    transform: scaleX(-1);
+    transform: scaleX(1);
 }
 
 .rtl .w-5.h-5.ml-2 {
