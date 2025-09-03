@@ -339,40 +339,69 @@ const translations = {
     }
 };
 
-// Language switching functionality
+// Current language state
 let currentLanguage = 'en';
 
-function toggleLanguage() {
-    currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+// Function to translate the page
+function translatePage(language) {
+    currentLanguage = language;
     
-    // Update HTML attributes
-    document.documentElement.lang = currentLanguage;
-    document.documentElement.dir = currentLanguage === 'ar' ? 'rtl' : 'ltr';
+    // Update HTML direction and language attributes
+    const html = document.documentElement;
+    if (language === 'ar') {
+        html.setAttribute('dir', 'rtl');
+        html.setAttribute('lang', 'ar');
+        document.body.classList.add('rtl');
+    } else {
+        html.setAttribute('dir', 'ltr');
+        html.setAttribute('lang', 'en');
+        document.body.classList.remove('rtl');
+    }
     
-    // Update all elements with data-translate attribute
+    // Translate all elements with data-translate attribute
     const elements = document.querySelectorAll('[data-translate]');
     elements.forEach(element => {
         const key = element.getAttribute('data-translate');
-        if (translations[currentLanguage] && translations[currentLanguage][key]) {
-            element.innerHTML = translations[currentLanguage][key];
+        if (translations[language] && translations[language][key]) {
+            if (element.tagName === 'INPUT' && element.type === 'text') {
+                element.placeholder = translations[language][key];
+            } else if (element.tagName === 'TEXTAREA') {
+                element.placeholder = translations[language][key];
+            } else {
+                element.innerHTML = translations[language][key];
+            }
         }
     });
     
-    // Store preference
-    localStorage.setItem('preferred-language', currentLanguage);
-}
-
-// Initialize language on page load
-document.addEventListener('DOMContentLoaded', function() {
-    // Check for saved language preference
-    const savedLang = localStorage.getItem('preferred-language');
-    if (savedLang && savedLang !== currentLanguage) {
-        currentLanguage = savedLang;
-        toggleLanguage();
+    // Update language button text
+    const langBtn = document.querySelector('.language-btn');
+    if (langBtn) {
+        langBtn.textContent = translations[language].languageBtn;
     }
     
+    // Save language preference
+    localStorage.setItem('preferredLanguage', language);
+}
+
+// Function to initialize language
+function initializeLanguage() {
+    // Check for saved language preference
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    translatePage(savedLanguage);
+}
+
+// Function to toggle language
+function toggleLanguage() {
+    const newLanguage = currentLanguage === 'en' ? 'ar' : 'en';
+    translatePage(newLanguage);
+}
+
+// Initialize when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    initializeLanguage();
+    
     // Add event listeners to language buttons
-    const languageButtons = document.querySelectorAll('.language-btn');
+    const languageButtons = document.querySelectorAll('.language-btn, [data-translate="languageBtn"]');
     languageButtons.forEach(button => {
         button.addEventListener('click', toggleLanguage);
     });
