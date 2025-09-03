@@ -8,6 +8,15 @@ const translations = {
         contact: "Contact",
         languageBtn: "العربية",
         
+        // Homepage Hero Section
+        trustedBy: "Trusted by RamlGroup",
+        heroTitle: "Transform Your<br />Unused Loyalty Points<br />Into Real Cash",
+        heroSubtitle: "Convert your banking and wallet rewards into instant cash transfers or Huge Discount from our websites. Simple, secure, and transparent - backed by RamlGroup's trusted financial services.",
+        startConverting: "Start Converting Now",
+        learnHow: "Learn How It Works",
+        secureEncrypted: "Secure & Encrypted",
+        regulatedService: "Regulated Service",
+
         //index.html
         Simple_3step:"Simple 3-Step Process",
         Converting_your_loyalty:"Converting your loyalty points has never been easier. Follow our transparent process for guaranteed results.",
@@ -168,6 +177,15 @@ const translations = {
         contact: "اتصل بنا",
         languageBtn: "English",
         
+        // Homepage Hero Section
+        trustedBy: "موثوق من قبل مجموعة رامل",
+        heroTitle: "حول نقاط الولاء<br />غير المستخدمة<br />إلى نقد حقيقي",
+        heroSubtitle: "حول مكافآت البنوك والمحافظ إلى تحويلات نقدية فورية أو خصم كبير من مواقعنا. بسيط وآمن وشفاف - مدعوم بخدمات مجموعة رامل المالية الموثوقة.",
+        startConverting: "ابدأ التحويل الآن",
+        learnHow: "تعلم كيف يعمل",
+        secureEncrypted: "آمن ومشفر",
+        regulatedService: "خدمة منظمة",
+
         //index.html
         Simple_3step:"ثلاث خطوات بسيطه",
         Converting_your_loyalty:"لم يكن تحويل نقاط الولاء أسهل من أي وقت مضى. اتبع إجراءاتنا الشفافة لضمان نتائج مضمونة.",
