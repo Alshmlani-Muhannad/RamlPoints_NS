@@ -376,9 +376,8 @@ function translatePage(language) {
         // Force LTR layout on sections that should never be RTL
         const ltrSections = document.querySelectorAll('.ltr-section');
         ltrSections.forEach(section => {
-            section.classList.remove('rtl');
-            section.setAttribute('dir', 'ltr');
-            section.setAttribute('data-force-ltr', 'true'); // Add marker attribute
+            section.classList.remove('rtl'); // Ensure no RTL class
+            section.setAttribute('dir', 'ltr'); // Force LTR direction
         });
         
     } else {
@@ -389,19 +388,13 @@ function translatePage(language) {
         // Ensure LTR sections are normal in LTR mode
         const ltrSections = document.querySelectorAll('.ltr-section');
         ltrSections.forEach(section => {
-            section.removeAttribute('dir');
-            section.removeAttribute('data-force-ltr');
+            section.removeAttribute('dir'); // Remove forced dir attribute
         });
     }
     
     // Translate all elements with data-translate attribute
     const elements = document.querySelectorAll('[data-translate]');
     elements.forEach(element => {
-        // Skip translation if element is in a forced LTR section and we're in RTL mode
-        if (language === 'ar' && element.closest('[data-force-ltr="true"]')) {
-            return; // Skip translation for this element
-        }
-        
         const key = element.getAttribute('data-translate');
         if (translations[language] && translations[language][key]) {
             if (element.tagName === 'INPUT' && element.type === 'text') {
@@ -424,19 +417,24 @@ function translatePage(language) {
     localStorage.setItem('preferredLanguage', language);
 }
 
-// ... rest of your functions remain the same ...
+// Function to initialize language
 function initializeLanguage() {
+    // Check for saved language preference
     const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
     translatePage(savedLanguage);
 }
 
+// Function to toggle language
 function toggleLanguage() {
     const newLanguage = currentLanguage === 'en' ? 'ar' : 'en';
     translatePage(newLanguage);
 }
 
+// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeLanguage();
+    
+    // Add event listeners to language buttons
     const languageButtons = document.querySelectorAll('.language-btn, [data-translate="languageBtn"]');
     languageButtons.forEach(button => {
         button.addEventListener('click', toggleLanguage);
