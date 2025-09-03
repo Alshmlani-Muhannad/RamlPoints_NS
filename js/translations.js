@@ -216,7 +216,7 @@ const translations = {
         programsSubtitle: "Select your loyalty program below to see specific conversion rates, processing times, and start converting your unused points into real cash transfers.",
         
         // Terms & Privacy
-        termsPrivacyTitle: "Terms of Service & Privacy Policy",
+        Terms_header: "Terms of Service & Privacy Policy - RamlPoints",
         termsPrivacySubtitle: "Your privacy and trust are important to us. Please review our terms and privacy policy.",
         lastUpdated: "Last updated:",
         termsOfService: "Terms of Service",
@@ -435,7 +435,7 @@ const translations = {
         programsSubtitle: "اختر برنامج الولاء الخاص بك أدناه لرؤية معدلات التحويل المحددة وأوقات المعالجة وابدأ في تحويل نقاطك غير المستخدمة إلى تحويلات نقدية حقيقية.",
         
         // Terms & Privacy
-        termsPrivacyTitle: "شروط الخدمة وسياسة الخصوصية",
+        Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
         termsPrivacySubtitle: "خصوصيتك وثقتك مهمة بالنسبة لنا. يرجى مراجعة شروطنا وسياسة الخصوصية.",
         lastUpdated: "آخر تحديث:",
         termsOfService: "شروط الخدمة",
