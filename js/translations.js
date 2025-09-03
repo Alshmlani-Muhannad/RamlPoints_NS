@@ -127,6 +127,16 @@ const translations = {
         activeService: "Active Service",
         ramlPointsTitle: "RamlPoints",
         ramlPointsDesc: "Convert your unused loyalty points into real cash transfers. Trusted by thousands of Saudi customers",
+        RamlmarketingTitle: "Raml Marketing",
+        RamlmarketingDesc: "Simple and innovative marketing solutions that seamlessly connect you with social media platforms and advertising professionals.",
+        ramlJobTitle: "RamlJob",
+        ramlJobDesc: "A SaaS platform that enables you to upload your CV, after which our system will recognize you and we will be able to link your LinkedIn and apply for jobs automatically instead of you.",
+        ramltecTitle:"RamlTech",
+        ramltecDesc:"Comprehensive technology solutions for both individuals and businesses. We support organizations in enhancing their products and services through tailored or ready-made solutions.",
+        inDevelopment:"In Development",
+        ctaTitle:"Ready to Transform Your Points?",
+        ctaSubtitle:"Join thousands of satisfied customers who trust RamlGroup to maximize their financial potential",
+        contactTeam:"Contact Our Team",
         
         // Contact page
         contactHeroTitle: "Get in Touch with RamlPoints",
@@ -296,6 +306,16 @@ const translations = {
         activeService: "خدمة نشطة",
         ramlPointsTitle: "رامل بوينتس",
         ramlPointsDesc: "حول نقاط الولاء غير المستخدمة إلى تحويلات نقدية حقيقية. موثوق من قبل آلاف العملاء السعوديين",
+        RamlmarketingTitle: "رمل للتسويق",
+        RamlmarketingDesc: "حلول تسويقية بسيطة ومبتكرة تربطك بسلاسة بمنصات التواصل الاجتماعي ومحترفي الإعلان.",
+        ramlJobTitle: "وظيفة الرمل",
+        ramlJobDesc: "منصة SaaS تمكنك من رفع سيرتك الذاتية، وبعدها سيتعرف عليك نظامنا وسنكون قادرين على ربط حسابك على LinkedIn والتقدم للوظائف تلقائيًا بدلاً منك.",
+        ramltecTitle:"رمل تكنولوجي",
+        ramltecDesc:"حلول تقنية شاملة للأفراد والشركات. ندعم المؤسسات في تحسين منتجاتها وخدماتها من خلال حلول مصممة خصيصًا أو جاهزة.",
+        inDevelopment:"قيد التطوير",
+        ctaTitle:" هل أنت مستعد لتحويل نقاطك؟",
+        ctaSubtitle:"انضم إلى آلاف العملاء الراضين الذين يثقون في RamlGroup لتحقيق أقصى قدر من إمكاناتهم المالية",
+        contactTeam:" التواصل مع فريقنا",
         
         // Contact page
         contactHeroTitle: "تواصل مع رامل بوينتس",
