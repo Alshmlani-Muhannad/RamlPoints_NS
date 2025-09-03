@@ -223,11 +223,7 @@ body.rtl {
     margin-left: 0;
 }
 
-/* Force LTR layout on specific sections, even inside an RTL body */
-.ltr-section {
-    direction: ltr !important;
-    text-align: left !important;
-}
+
 
 .rtl .space-x-6 > :not([hidden]) ~ :not([hidden]) {
     margin-right: 1.5rem;
