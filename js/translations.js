@@ -278,8 +278,7 @@ const translations = {
         contact_privacy_content_JJ: "If you have any questions about this Privacy Policy or our data practices, please contact us:",
         email_label_JJ: "Email:",
         whatsapp_label_JJ: "WhatsApp:",
-        address_label_JJ: "Address:"
-
+        address_label_JJ: "Address:",
     },
     ar: {
         // Navigation
@@ -553,7 +552,8 @@ const translations = {
        contact_privacy_content_JJ: "If you have any questions about this Privacy Policy or our data practices, please contact us:",
        email_label_JJ: "البريد الإلكتروني:",
        whatsapp_label_JJ: "واتساب:",
-       address_label_JJ: "العنوان:"
+       address_label_JJ: "العنوان:",
+    }
 };
 
 // Current language state
