@@ -558,10 +558,10 @@ const translations = {
 
        // How It Works page
         howItWorksBadge: "دليل العملية خطوة بخطوة",
-        howItWorksTitle: "كيف رمل بوينتس<br /><span class=\"text-accent\">'يقوم بالتحويل'</span>",
+        howItWorksTitle: "كيف رمل بوينتس<br /><span class=\"text-accent\">يقوم بالتحويل'</span>",
         howItWorksSubtitle: "عمليتنا الشفافة والآمنة تُحوّل نقاط ولائك غير المُستخدمة إلى تحويلات نقدية حقيقية. اتبع دليلنا المُفصّل لكل برنامج مُعتمد، مع نتائج مضمونة.",
-        startConversion: "Start Your Conversion",
-        viewProcessOverview: "View Process Overview",
+        startConversion: "ابدأ التحويل الخاص بك",
+        viewProcessOverview: "عرض نظرة عامة على العملية",
     }
 };
 
