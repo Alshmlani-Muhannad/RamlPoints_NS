@@ -211,6 +211,7 @@ const translations = {
         viewProcessOverview: "View Process Overview",
         Receive_MM: "Receive Your Cash",
         Get_your_cash_MM:"Get your cash transfer within 3-5 business days or discount code from our services. Track your conversion status via WhatsApp updates.",
+        Submit_Your_MM:"Submit Your Details",
 
 
         // Program Landing Pages
@@ -567,7 +568,8 @@ const translations = {
         viewProcessOverview: "عرض نظرة عامة على العملية",
         Receive_MM: "استلم الكاش او كود خصم",
         Get_your_cash_MM:"احصل على تحويلك النقدي خلال 3-5 أيام عمل أو رمز خصم من خدماتنا. تابع حالة تحويلك عبر تحديثات واتساب. نظرة عامة",
-        Duration_MM:"المدة: 3-5 أيام عمل"
+        Duration_MM:"المدة: 3-5 أيام عمل",
+        Submit_Your_MM:"أرسل تفاصيلك"
     }
 };
 
