@@ -559,7 +559,7 @@ const translations = {
        // How It Works page
         howItWorksBadge: "دليل العملية خطوة بخطوة",
         howItWorksTitle: "كيف رمل بوينتس<br /><span class=\"text-accent\">'يقوم بالتحويل'</span>",
-        howItWorksSubtitle: "Our transparent, secure process transforms your unused loyalty points into real cash transfers. Follow our detailed guide for each supported program with guaranteed results.",
+        howItWorksSubtitle: "عمليتنا الشفافة والآمنة تُحوّل نقاط ولائك غير المُستخدمة إلى تحويلات نقدية حقيقية. اتبع دليلنا المُفصّل لكل برنامج مُعتمد، مع نتائج مضمونة.",
         startConversion: "Start Your Conversion",
         viewProcessOverview: "View Process Overview",
     }
