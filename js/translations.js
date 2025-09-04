@@ -553,6 +553,15 @@ const translations = {
        email_label_JJ: "البريد الإلكتروني:",
        whatsapp_label_JJ: "واتساب:",
        address_label_JJ: "العنوان:",
+
+
+
+       // How It Works page
+        howItWorksBadge: "دليل العملية خطوة بخطوة",
+        howItWorksTitle: "How RamlPoints<br /><span class=\"text-accent\">Conversion Works</span>",
+        howItWorksSubtitle: "Our transparent, secure process transforms your unused loyalty points into real cash transfers. Follow our detailed guide for each supported program with guaranteed results.",
+        startConversion: "Start Your Conversion",
+        viewProcessOverview: "View Process Overview",
     }
 };
 
