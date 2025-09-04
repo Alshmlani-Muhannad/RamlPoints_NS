@@ -549,7 +549,7 @@ const translations = {
        right_restrict_JJ: "Restrict processing of your personal information",
        right_withdraw_JJ: "Withdraw consent for data processing",
        contact_privacy_JJ: "7. اتصل بنا",
-       contact_privacy_content_JJ: "If you have any questions about this Privacy Policy or our data practices, please contact us:",
+       contact_privacy_content_JJ: "إذا كانت لديك أي أسئلة حول سياسة الخصوصية هذه أو ممارسات البيانات الخاصة بنا، فيرجى الاتصال بنا:",
        email_label_JJ: "البريد الإلكتروني:",
        whatsapp_label_JJ: "واتساب:",
        address_label_JJ: "العنوان:",
