@@ -209,7 +209,10 @@ const translations = {
         howItWorksSubtitle: "Our transparent, secure process transforms your unused loyalty points into real cash transfers. Follow our detailed guide for each supported program with guaranteed results.",
         startConversion: "Start Your Conversion",
         viewProcessOverview: "View Process Overview",
-        
+        Receive_MM: "Receive Your Cash",
+        Get_your_cash_MM:"Get your cash transfer within 3-5 business days or discount code from our services. Track your conversion status via WhatsApp updates.",
+
+
         // Program Landing Pages
         programsBadge: "6 Supported Programs",
         programsTitle: "Choose Your<br /><span class=\"text-accent\">Loyalty Program</span>",
@@ -562,6 +565,9 @@ const translations = {
         howItWorksSubtitle: "عمليتنا الشفافة والآمنة تُحوّل نقاط ولائك غير المُستخدمة إلى تحويلات نقدية حقيقية. اتبع دليلنا المُفصّل لكل برنامج مُعتمد، مع نتائج مضمونة.",
         startConversion: "ابدأ التحويل الخاص بك",
         viewProcessOverview: "عرض نظرة عامة على العملية",
+        Receive_MM: "استلم الكاش او كود خصم",
+        Get_your_cash_MM:"احصل على تحويلك النقدي خلال 3-5 أيام عمل أو رمز خصم من خدماتنا. تابع حالة تحويلك عبر تحديثات واتساب. نظرة عامة",
+        Duration_MM:"المدة: 3-5 أيام عمل"
     }
 };
 
