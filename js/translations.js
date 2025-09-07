@@ -225,6 +225,7 @@ const translations = {
         Duration_JKD:"Duration: 2-3 minutes",
         Points_Conversion_HML:"Points Conversion (1 hour)",
         Secure_conversion_KLM:"Secure conversion of your loyalty points to cash value",
+        Cash_Treansfer_JKLM:"Cash Transfer (from one hour to 48 hours)",
 
 
         // Program Landing Pages
@@ -595,7 +596,8 @@ const translations = {
         Duration_JKD:"المدة: 2-3 دقائق",
         Our_team_verifies_your_GHM:"يقوم فريقنا بالتحقق من تفاصيل حسابك ورصيد النقاط",
         Points_Conversion_HML:"تحويل النقاط (ساعة واحدة)",
-        Secure_conversion_KLM:"تحويل نقاط الولاء الخاصة بك إلى قيمة نقدية بشكل آمن"
+        Secure_conversion_KLM:"تحويل نقاط الولاء الخاصة بك إلى قيمة نقدية بشكل آمن",
+        Cash_Treansfer_JKLM:"تحويل نقدي (من ساعة إلى 48 ساعة)"
 
     }
 };
