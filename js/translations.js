@@ -240,6 +240,8 @@ const translations = {
         Conversion_BSF_MMM:"Conversion Rate: 0.004 SAR per point | Minimum: 1200 points | Processing: 3-5 hours",
         BSF_Jana_tansfer_Nkk:"BSF Jana Transfer",
         
+        
+        
 
 
         // Program Landing Pages
@@ -615,7 +617,7 @@ const translations = {
         Direct_bank_JHM:"التحويل البنكي المباشر إلى تفاصيل الحساب المقدمة",
         Program_spe_GFM:"تعليمات خاصة بالبرنامج",
         Detailed_GHM:"أدلة تفصيلية خطوة بخطوة لكل برنامج ولاء مدعوم مع عمليات تحويل محددة.",
-        Bsf_MMM:"تحويل نقاط جنى للبنك الفرنسي السعودي",
+        Bsf_MMM:" تحويل نقاط جنى للبنك السعودي الفرنسي",
         Submit_MMM:"إرسال نموذج الطلب",
         Provide_MMM:"قم بتوفير معلومات حساب BSF Jana الخاص بك ورصيد النقاط الحالي",
         Phone_MMM:"تنسيق المكالمة الهاتفية",
@@ -624,7 +626,7 @@ const translations = {
         Cash_equ_MMM:"يتم تحويل المبلغ النقدي المعادل إلى حسابك بعد إتمام عملية تحويل النقاط",
         Program_MMM:"تفاصيل البرنامج",
         Conversion_BSF_MMM:"معدل التحويل: ٠٫٠٠٤ ريال سعودي لكل نقطة | الحد الأدنى: ١٢٠٠ نقطة | المعالجة: ٣-٥ ساعات",
-        BSF_Jana_tansfer_Nkk:"تحويل نقاط جنى للبنك الفرنسي"
+        BSF_Jana_tansfer_Nkk:"تحويل نقاط جنى للبنك السعودي الفرنسي",
 
     }
 };
