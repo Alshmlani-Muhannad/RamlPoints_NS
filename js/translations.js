@@ -229,6 +229,7 @@ const translations = {
         Direct_bank_JHM:"Direct bank transfer to your provided account details",
         Program_spe_GFM:"Program-Specific Instructions",
         Detailed_GHM:"Detailed step-by-step guides for each supported loyalty program with specific conversion processes.",
+        Bsf_MMM:"BSF Jana Points Conversion",
 
 
         // Program Landing Pages
@@ -603,7 +604,8 @@ const translations = {
         Cash_Treansfer_JKLM:"تحويل نقدي (من ساعة إلى 48 ساعة)",
         Direct_bank_JHM:"التحويل البنكي المباشر إلى تفاصيل الحساب المقدمة",
         Program_spe_GFM:"تعليمات خاصة بالبرنامج",
-        Detailed_GHM:"أدلة تفصيلية خطوة بخطوة لكل برنامج ولاء مدعوم مع عمليات تحويل محددة."
+        Detailed_GHM:"أدلة تفصيلية خطوة بخطوة لكل برنامج ولاء مدعوم مع عمليات تحويل محددة.",
+        Bsf_MMM:"تحويل نقاط جنى للبنك الفرنسي السعودي"
 
     }
 };
