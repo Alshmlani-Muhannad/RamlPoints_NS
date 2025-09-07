@@ -224,7 +224,7 @@ const translations = {
         Our_team_verifies_your_GHM:"Our team verifies your account details and points balance",
         Duration_JKD:"Duration: 2-3 minutes",
         Points_Conversion_HML:"Points Conversion (1 hour)",
-        Secure_conversion_KLM:"Secure conversion of your loyalty points to cash value"
+        Secure_conversion_KLM:"Secure conversion of your loyalty points to cash value",
 
 
         // Program Landing Pages
