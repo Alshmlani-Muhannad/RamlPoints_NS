@@ -214,6 +214,8 @@ const translations = {
         Submit_Your_MM:"Submit Your Details",
         Deatils_MM: "Detailed Processing Timeline",
         Provide_info_MM:"Provide your account information and banking details through our secure, encrypted submission form.",
+        duration_KM:"Duration: 5-7 minutes",
+        Duration_MM:"Duration: 5-48 hours",
 
 
         // Program Landing Pages
@@ -573,7 +575,10 @@ const translations = {
         Duration_MM:"المدة: 3-5 أيام عمل",
         Submit_Your_MM:"أرسل تفاصيلك",
         Deatils_MM: "الجدول الزمني التفصيلي للمعالجة",
-        Provide_info_MM:"قم بتقديم معلومات حسابك وتفاصيلك المصرفية من خلال نموذج الإرسال الآمن والمشفر الخاص بنا."    }
+        Provide_info_MM:"قم بتقديم معلومات حسابك وتفاصيلك المصرفية من خلال نموذج الإرسال الآمن والمشفر الخاص بنا.",
+        duration_KM:"المدة: 5-7 دقائق"
+
+    }
 };
 
 // Current language state
