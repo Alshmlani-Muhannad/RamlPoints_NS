@@ -221,7 +221,7 @@ const translations = {
         Immediate_LKM:"Immediate Confirmation",
         Receive_whats_GOM:"Receive WhatsApp confirmation or call within 24 hour of form submission",
         Verifcation_JLM:"Verification Process (3 hour)",
-        Our_team_verifies_your_KML:"Our team verifies your account details and points balance"
+        Our_team_verifies_your_OOO:"Our team verifies your account details and points balance",
 
 
         // Program Landing Pages
