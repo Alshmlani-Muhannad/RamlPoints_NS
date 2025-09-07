@@ -230,6 +230,8 @@ const translations = {
         Program_spe_GFM:"Program-Specific Instructions",
         Detailed_GHM:"Detailed step-by-step guides for each supported loyalty program with specific conversion processes.",
         Bsf_MMM:"BSF Jana Points Conversion",
+        Submit_MMM:"Submit Request Form",
+        Provide_MMM:"Provide your BSF Jana account information and current point balance",
 
 
         // Program Landing Pages
@@ -605,7 +607,9 @@ const translations = {
         Direct_bank_JHM:"التحويل البنكي المباشر إلى تفاصيل الحساب المقدمة",
         Program_spe_GFM:"تعليمات خاصة بالبرنامج",
         Detailed_GHM:"أدلة تفصيلية خطوة بخطوة لكل برنامج ولاء مدعوم مع عمليات تحويل محددة.",
-        Bsf_MMM:"تحويل نقاط جنى للبنك الفرنسي السعودي"
+        Bsf_MMM:"تحويل نقاط جنى للبنك الفرنسي السعودي",
+        Submit_MMM:"إرسال نموذج الطلب",
+        Provide_MMM:"قم بتوفير معلومات حساب BSF Jana الخاص بك ورصيد النقاط الحالي",
 
     }
 };
