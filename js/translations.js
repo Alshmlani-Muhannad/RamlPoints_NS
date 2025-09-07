@@ -220,10 +220,6 @@ const translations = {
         Choose_Your_MM:"Choose your loyalty program from our supported list and check your points balance using our calculator.",
         Immediate_LKM:"Immediate Confirmation",
         Receive_whats_GOM:"Receive WhatsApp confirmation or call within 24 hour of form submission",
-        Verifcation_JLM:"Verification Process (3 hour)",
-        Our_team_verifies_your_KML:"Our team verifies your account details and points balance",
-        Secure_conversion_KLM:"Secure conversion of your loyalty points to cash value",
-        Cash_Treansfer_JKLM:"Cash Transfer (from one hour to 48 hours)"
 
 
         // Program Landing Pages
@@ -589,11 +585,6 @@ const translations = {
         Choose_Your_MM:"اختر برنامج الولاء الخاص بك من القائمة المدعومة لدينا وتحقق من رصيد نقاطك باستخدام الآلة الحاسبة الخاصة بنا.",
         Immediate_LKM:"التأكيد الفوري",
         Receive_whats_GOM:"احصل على تأكيد عبر WhatsApp أو اتصل خلال 24 ساعة من تقديم النموذج",
-        Verifcation_JLM:"عملية التحقق (3 ساعات)",
-        Our_team_verifies_your_KML:"يقوم فريقنا بالتحقق من تفاصيل حسابك ورصيد النقاط",
-        Secure_conversion_KLM:"تحويل نقاط الولاء الخاصة بك إلى قيمة نقدية بشكل آمن",
-        Cash_Treansfer_JKLM:"تحويل نقدي (من ساعة إلى 48 ساعة)",
-        Direct_bank_JHM:"كلوك",
 
     }
 };
