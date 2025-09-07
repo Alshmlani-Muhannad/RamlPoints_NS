@@ -237,6 +237,7 @@ const translations = {
         Payment_MMM:"Payment Transfer",
         Cash_equ_MMM:"Cash equivalent transferred to your account after point transfer completion",
         Program_MMM:"Program Details",
+        Conversion_BSF_MMM:"Conversion Rate: 0.004 SAR per point | Minimum: 1200 points | Processing: 3-5 hours",
         
 
 
@@ -620,7 +621,8 @@ const translations = {
         Our_team_MMM:"سيتصل بك فريقنا لتنسيق عملية نقل النقاط",
         Payment_MMM:"تحويل الدفع",
         Cash_equ_MMM:"يتم تحويل المبلغ النقدي المعادل إلى حسابك بعد إتمام عملية تحويل النقاط",
-        Program_MMM:"تفاصيل البرنامج"
+        Program_MMM:"تفاصيل البرنامج",
+        Conversion_BSF_MMM:"معدل التحويل: ٠٫٠٠٤ ريال سعودي لكل نقطة | الحد الأدنى: ١٢٠٠ نقطة | المعالجة: ٣-٥ ساعات"
 
     }
 };
