@@ -223,10 +223,7 @@ const translations = {
         Verifcation_JLM:"Verification Process (3 hour)",
         Our_team_verifies_your_KML:"Our team verifies your account details and points balance",
         Secure_conversion_KLM:"Secure conversion of your loyalty points to cash value",
-        Cash_Treansfer_JKLM:"Cash Transfer (from one hour to 48 hours)",
-        Direct_bank_JHM:"Direct bank transfer to your provided account details",
-        Program_spe_GFM:"Program-Specific Instructions",
-        Detailed_GHM:"Detailed step-by-step guides for each supported loyalty program with specific conversion processes.",
+        Cash_Treansfer_JKLM:"Cash Transfer (from one hour to 48 hours)"
 
 
         // Program Landing Pages
@@ -596,9 +593,7 @@ const translations = {
         Our_team_verifies_your_KML:"يقوم فريقنا بالتحقق من تفاصيل حسابك ورصيد النقاط",
         Secure_conversion_KLM:"تحويل نقاط الولاء الخاصة بك إلى قيمة نقدية بشكل آمن",
         Cash_Treansfer_JKLM:"تحويل نقدي (من ساعة إلى 48 ساعة)",
-        Direct_bank_JHM:"التحويل البنكي المباشر إلى تفاصيل الحساب المقدمة",
-        Program_spe_GFM:"تعليمات خاصة بكل برنامج",
-        Detailed_GHM:"دليل تفصيلي خطوة بخطوة لكل برنامج ولاء مدعوم مع عمليات تحويل محددة.",
+        Direct_bank_JHM:"كلوك",
 
     }
 };
