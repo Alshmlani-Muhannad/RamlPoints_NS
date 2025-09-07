@@ -232,6 +232,8 @@ const translations = {
         Bsf_MMM:"BSF Jana Points Conversion",
         Submit_MMM:"Submit Request Form",
         Provide_MMM:"Provide your BSF Jana account information and current point balance",
+        Phone_MMM:"Phone Call Coordination",
+        Our_team_MMM:"Our team will call you to coordinate the point transfer process",
 
 
         // Program Landing Pages
@@ -610,6 +612,8 @@ const translations = {
         Bsf_MMM:"تحويل نقاط جنى للبنك الفرنسي السعودي",
         Submit_MMM:"إرسال نموذج الطلب",
         Provide_MMM:"قم بتوفير معلومات حساب BSF Jana الخاص بك ورصيد النقاط الحالي",
+        Phone_MMM:"تنسيق المكالمة الهاتفية",
+        Our_team_MMM:"سيتصل بك فريقنا لتنسيق عملية نقل النقاط"
 
     }
 };
