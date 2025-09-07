@@ -220,6 +220,7 @@ const translations = {
         Choose_Your_MM:"Choose your loyalty program from our supported list and check your points balance using our calculator.",
         Immediate_LKM:"Immediate Confirmation",
         Receive_whats_GOM:"Receive WhatsApp confirmation or call within 24 hour of form submission",
+        Verifcation_JLM:"Verification Process (3 hour)",
 
 
         // Program Landing Pages
@@ -585,6 +586,7 @@ const translations = {
         Choose_Your_MM:"اختر برنامج الولاء الخاص بك من القائمة المدعومة لدينا وتحقق من رصيد نقاطك باستخدام الآلة الحاسبة الخاصة بنا.",
         Immediate_LKM:"التأكيد الفوري",
         Receive_whats_GOM:"احصل على تأكيد عبر WhatsApp أو اتصل خلال 24 ساعة من تقديم النموذج",
+        Verifcation_JLM:"عملية التحقق (3 ساعات)",
 
     }
 };
