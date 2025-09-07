@@ -236,6 +236,7 @@ const translations = {
         Our_team_MMM:"Our team will call you to coordinate the point transfer process",
         Payment_MMM:"Payment Transfer",
         Cash_equ_MMM:"Cash equivalent transferred to your account after point transfer completion",
+        Program_MMM:"Program Details",
         
 
 
@@ -618,7 +619,8 @@ const translations = {
         Phone_MMM:"تنسيق المكالمة الهاتفية",
         Our_team_MMM:"سيتصل بك فريقنا لتنسيق عملية نقل النقاط",
         Payment_MMM:"تحويل الدفع",
-        Cash_equ_MMM:"يتم تحويل المبلغ النقدي المعادل إلى حسابك بعد إتمام عملية تحويل النقاط"
+        Cash_equ_MMM:"يتم تحويل المبلغ النقدي المعادل إلى حسابك بعد إتمام عملية تحويل النقاط",
+        Program_MMM:"تفاصيل البرنامج"
 
     }
 };
