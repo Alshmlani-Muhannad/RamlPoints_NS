@@ -223,6 +223,7 @@ const translations = {
         Verifcation_JLM:"Verification Process (3 hour)",
         Our_team_verifies_your_GHM:"Our team verifies your account details and points balance",
         Duration_JKD:"Duration: 2-3 minutes",
+        Points_Conversion_HML:"Points Conversion (1 hour)",
         
 
 
@@ -592,7 +593,8 @@ const translations = {
         Verifcation_JLM:"عملية التحقق (3 ساعات)",
         Our_team_verifies_your_KML:"يقوم فريقنا بالتحقق من تفاصيل حسابك ورصيد النقاط",
         Duration_JKD:"المدة: 2-3 دقائق",
-        Our_team_verifies_your_GHM:"يقوم فريقنا بالتحقق من تفاصيل حسابك ورصيد النقاط"
+        Our_team_verifies_your_GHM:"يقوم فريقنا بالتحقق من تفاصيل حسابك ورصيد النقاط",
+        Points_Conversion_HML:"تحويل النقاط (ساعة واحدة)",
 
     }
 };
