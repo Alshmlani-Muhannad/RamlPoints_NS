@@ -216,6 +216,8 @@ const translations = {
         Provide_info_MM:"Provide your account information and banking details through our secure, encrypted submission form.",
         duration_KM:"Duration: 5-7 minutes",
         Duration_MM:"Duration: 5-48 hours",
+        Select_OMM:"Select Your Program",
+        Choose_Your_MM:"Choose your loyalty program from our supported list and check your points balance using our calculator.",
 
 
         // Program Landing Pages
@@ -576,7 +578,9 @@ const translations = {
         Submit_Your_MM:"أرسل تفاصيلك",
         Deatils_MM: "الجدول الزمني التفصيلي للمعالجة",
         Provide_info_MM:"قم بتقديم معلومات حسابك وتفاصيلك المصرفية من خلال نموذج الإرسال الآمن والمشفر الخاص بنا.",
-        duration_KM:"المدة: 5-7 دقائق"
+        duration_KM:"المدة: 5-7 دقائق",
+        Select_OMM:"اختر برنامجك",
+        Choose_Your_MM:"اختر برنامج الولاء الخاص بك من القائمة المدعومة لدينا وتحقق من رصيد نقاطك باستخدام الآلة الحاسبة الخاصة بنا.",
 
     }
 };
