@@ -241,6 +241,7 @@ const translations = {
         BSF_Jana_tansfer_Nkk:"BSF Jana Transfer",
         We_Will_provide_MMM:"we will provide you with our jana ID to transfer the point to us.",
         Special_MMM:"⚠ Special Process:",
+        Phone_coordination_required:"• Phone coordination required",
         
         
         
@@ -630,7 +631,8 @@ const translations = {
         Conversion_BSF_MMM:"معدل التحويل: ٠٫٠٠٤ ريال سعودي لكل نقطة | الحد الأدنى: ١٢٠٠ نقطة | المعالجة: ٣-٥ ساعات",
         BSF_Jana_tansfer_Nkk:"تحويل نقاط جنى للبنك السعودي الفرنسي",
         We_Will_provide_MMM:"سنزودك بمعرف جنى الخاص بنا لنقل النقاط الينا",
-        Special_MMM:"⚠ عملية خاصة:"
+        Special_MMM:"⚠ عملية خاصة:",
+        Phone_coordination_required:""
 
     }
 };
