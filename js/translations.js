@@ -260,6 +260,7 @@ const translations = {
         rate_IZ_klm:"Conversion Rate: 0.0016 SAR per point | Minimum: 1000 points | Processing: 12 business hours",
         OTP_Process_JKML:"OTP Process",
         The_OTP_verfi_KLM:"The OTP verification ensures secure transfer of your points to our system.",
+        Personal_assistance_GHOL:"Personal assistance for IZ Wallet point transfers via phone support.",
         
         
 
@@ -667,7 +668,8 @@ const translations = {
         ANB_rate_klm:"معدل التحويل: ٠.٠١ ريال سعودي لكل نقطة | الحد الأدنى: ٥٠٠ نقطة | المعالجة: ٢-١٢ ساعة",
         rate_IZ_klm:"معدل التحويل: ٠٫٠٠١٦ ريال سعودي لكل نقطة | الحد الأدنى: ١٠٠٠ نقطة | مدة المعالجة: ١٢ ساعة عمل",
         OTP_Process_JKML:"عملية كود التحقق",
-        The_OTP_verfi_KLM:"تضمن عملية التحقق من OTP نقل نقاطك إلى نظامنا بشكل آمن."
+        The_OTP_verfi_KLM:"تضمن عملية التحقق من OTP نقل نقاطك إلى نظامنا بشكل آمن.",
+        Personal_assistance_GHOL:"مساعدة شخصية لتحويل نقاط عز  بدعم من خلال الاتصال ."
 
     }
 };
