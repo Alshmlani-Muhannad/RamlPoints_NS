@@ -245,6 +245,7 @@ const translations = {
         Manual_transfer_process:"• Manual transfer process",
         Personal_assistance_provided:"• Personal assistance provided",
         IZ_Wallet_MMM:"IZ Wallet Program Conversion",
+        Complete_iz_MM:"Complete our form with your IZ Wallet account details and point balance",
         
         
         
@@ -638,7 +639,8 @@ const translations = {
         Phone_coordination_required:"• مطلوب تنسيق الهاتف",
         Manual_transfer_process:"• عملية النقل اليدوي",
         Personal_assistance_provided:"• يتم توفير المساعدة الشخصية",
-        IZ_Wallet_MMM:"تحويل برنامج محفظة عز"
+        IZ_Wallet_MMM:"تحويل برنامج محفظة عز",
+        Complete_iz_MM:"اكمل نموذجنا بتفاصيل حساب محفظة عز ورصيد النقاط الخاص بك"
 
     }
 };
