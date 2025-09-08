@@ -248,6 +248,7 @@ const translations = {
         Complete_iz_MM:"Complete our form with your IZ Wallet account details and point balance",
         We_will_KMM:"We will call you and provide our account details for you to transfer the points",
         Receive_OTP_MM:"OTP Authorization process",
+        OTP_auth_LLL:"You will receive an OTP When We are call you to authorize the point transfer from your account to our wallet",
         
         
         
@@ -645,6 +646,7 @@ const translations = {
         Complete_iz_MM:"اكمل نموذجنا بتفاصيل حساب محفظة عز ورصيد النقاط الخاص بك",
         We_will_KMM:"سوف نتصل بك ونزودك بتفاصيل حسابنا حتى تتمكن من تحويل النقاط",
         Receive_OTP_MM:"تفويض كود التحقق",
+        OTP_auth_LLL:"سوف تتلقى رمز OTP عندما نتصل بك لتفويض نقل النقاط من حسابك إلى محفظتنا"
 
     }
 };
