@@ -265,6 +265,9 @@ const translations = {
         Mnaual_point_IZ:"• Manual point transfer process",
         Extended_processing_IZ:"• Extended processing time",
         Required_Info_mmk:"✓ Required Information:",
+        Rajhi_BTS:"• Mobile number attached with the Program",
+        Rajhi_BTS1:"• Points balance amount",
+        Rajhi_BTS2:"• Bank account details",
         
         
 
@@ -677,7 +680,10 @@ const translations = {
         Phone_coordination_IZ:"• مطلوب تنسيق الهاتف",
         Mnaual_point_IZ:"• عملية نقل النقاط يدويًا",
         Extended_processing_IZ:"• وقت معالجة ممتد",
-        Required_Info_mmk:"✓ المعلومات المطلوبة:"
+        Required_Info_mmk:"✓ المعلومات المطلوبة:",
+        Rajhi_BTS:"• رقم الجوال المرفق مع البرنامج",
+        Rajhi_BTS1:"• مبلغ رصيد النقاط",
+        Rajhi_BTS2:"• تفاصيل الحساب البنكي"
 
     }
 };
