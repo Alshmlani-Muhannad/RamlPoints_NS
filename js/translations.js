@@ -259,7 +259,7 @@ const translations = {
         ANB_rate_klm:"Conversion Rate: 0.01 SAR per point | Minimum: 500 points | Processing: 2-12 hours",
         rate_IZ_klm:"Conversion Rate: 0.0016 SAR per point | Minimum: 1000 points | Processing: 12 business hours",
         OTP_Process_JKML:"OTP Process",
-        The_OTP_verfi_KLM:"The OTP verification ensures secure transfer of your points to our system."
+        The_OTP_verfi_KLM:"The OTP verification ensures secure transfer of your points to our system.",
         
         
 
