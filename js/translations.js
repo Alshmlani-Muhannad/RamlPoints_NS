@@ -242,6 +242,8 @@ const translations = {
         We_Will_provide_MMM:"we will provide you with our jana ID to transfer the point to us.",
         Special_MMM:"⚠ Special Process:",
         Phone_coordination_required:"• Phone coordination required",
+        Manual_transfer_process:"• Manual transfer process",
+        Personal_assistance_provided:"• Personal assistance provided",
         
         
         
@@ -632,7 +634,9 @@ const translations = {
         BSF_Jana_tansfer_Nkk:"تحويل نقاط جنى للبنك السعودي الفرنسي",
         We_Will_provide_MMM:"سنزودك بمعرف جنى الخاص بنا لنقل النقاط الينا",
         Special_MMM:"⚠ عملية خاصة:",
-        Phone_coordination_required:"• مطلوب تنسيق الهاتف"
+        Phone_coordination_required:"• مطلوب تنسيق الهاتف",
+        Manual_transfer_process:"• عملية النقل اليدوي",
+        Personal_assistance_provided:"• يتم توفير المساعدة الشخصية"
 
     }
 };
