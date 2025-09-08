@@ -632,7 +632,7 @@ const translations = {
         BSF_Jana_tansfer_Nkk:"تحويل نقاط جنى للبنك السعودي الفرنسي",
         We_Will_provide_MMM:"سنزودك بمعرف جنى الخاص بنا لنقل النقاط الينا",
         Special_MMM:"⚠ عملية خاصة:",
-        Phone_coordination_required:""
+        Phone_coordination_required:"• مطلوب تنسيق الهاتف"
 
     }
 };
