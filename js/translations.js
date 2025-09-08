@@ -255,6 +255,7 @@ const translations = {
         Alrajhi_Bank_JKLM:"Al Rajhi Bank Points Conversion",
         Rate_Rajhi_LKM:"Conversion Rate: 0.0039 SAR per point | Minimum: 1000 points | Processing: 2-5 hours",
         Rate_Qitaf_KLM:"Conversion Rate: 0.16 SAR per point | Minimum: 50 points | Processing: 3-5 hours",
+        Rate_Akther_JKL:"Conversion Rate: 0.0028 SAR per point | Minimum: 500 points | Processing: 5-10 hours",
         
         
         
@@ -658,7 +659,8 @@ const translations = {
         qitaf_Points_LKM:"تحويل نقاط قطاف",
         Alrajhi_Bank_JKLM:"تحويل النقاط من بنك الراجحي",
         Rate_Rajhi_LKM:"معدل التحويل: ٠٫٠٠٣٩ ريال سعودي لكل نقطة | الحد الأدنى: ١٠٠٠ نقطة | المعالجة: ٢-٥ ساعات",
-        Rate_Qitaf_KLM:"معدل التحويل: ٠٫١٦ ريال سعودي لكل نقطة | الحد الأدنى: ٥٠ نقطة | المعالجة: ٣-٥ ساعات"
+        Rate_Qitaf_KLM:"معدل التحويل: ٠٫١٦ ريال سعودي لكل نقطة | الحد الأدنى: ٥٠ نقطة | المعالجة: ٣-٥ ساعات",
+        Rate_Akther_JKL:"معدل التحويل: ٠٫٠٠٢٨ ريال سعودي لكل نقطة | الحد الأدنى: ٥٠٠ نقطة | المعالجة: ٥-١٠ ساعات"
 
     }
 };
