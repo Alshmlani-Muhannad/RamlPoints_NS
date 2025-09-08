@@ -264,6 +264,7 @@ const translations = {
         Phone_coordination_IZ:"• Phone coordination required",
         Mnaual_point_IZ:"• Manual point transfer process",
         Extended_processing_IZ:"• Extended processing time",
+        Required_Info_mmk:"✓ Required Information:",
         
         
 
@@ -675,7 +676,8 @@ const translations = {
         Personal_assistance_GHOL:"مساعدة شخصية لتحويل نقاط عز  بدعم من خلال الاتصال .",
         Phone_coordination_IZ:"• مطلوب تنسيق الهاتف",
         Mnaual_point_IZ:"• عملية نقل النقاط يدويًا",
-        Extended_processing_IZ:"• وقت معالجة ممتد"
+        Extended_processing_IZ:"• وقت معالجة ممتد",
+        Required_Info_mmk:"✓ المعلومات المطلوبة:"
 
     }
 };
