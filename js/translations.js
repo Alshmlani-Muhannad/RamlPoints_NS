@@ -268,6 +268,9 @@ const translations = {
         Rajhi_BTS:"• Mobile number attached with the Program",
         Rajhi_BTS1:"• Points balance amount",
         Rajhi_BTS2:"• Bank account details",
+        Qitaf_BTS:"• phone number and OTP number",
+        Qitaf_BTS1:"• Current point balance",
+        Qitaf_BTS2:"• Bank account for transfer",
         
         
 
@@ -683,7 +686,11 @@ const translations = {
         Required_Info_mmk:"✓ المعلومات المطلوبة:",
         Rajhi_BTS:"• رقم الجوال المرفق مع البرنامج",
         Rajhi_BTS1:"• مبلغ رصيد النقاط",
-        Rajhi_BTS2:"• تفاصيل الحساب البنكي"
+        Rajhi_BTS2:"• تفاصيل الحساب البنكي",
+        Qitaf_BTS:"• رقم الهاتف ورقم OTP",
+        Qitaf_BTS1:"• رصيد النقاط الحالي",
+        Qitaf_BTS2:"• حساب بنكي للتحويل"
+        
 
     }
 };
