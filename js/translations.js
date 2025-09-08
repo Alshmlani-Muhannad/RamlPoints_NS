@@ -252,6 +252,7 @@ const translations = {
         ANB_Rewards_ML:"ANB Rewards Points Conversion",
         Akther_Alinma_KLM:"Akther Alinma Points Conversion",
         qitaf_Points_LKM:"Qitaf Points Conversion",
+        Alrajhi_Bank_JKLM:"Al Rajhi Bank Points Conversion",
         
         
         
@@ -652,7 +653,8 @@ const translations = {
         OTP_auth_LLL:"سوف تتلقى رمز OTP عندما نتصل بك لتفويض نقل النقاط من حسابك إلى محفظتنا",
         ANB_Rewards_ML:"تحويل نقاط مكافآت البنك العربي الوطني",
         Akther_Alinma_KLM:"تحويل نقاط أكتر الإنماء",
-        qitaf_Points_LKM:"تحويل نقاط قطاف"
+        qitaf_Points_LKM:"تحويل نقاط قطاف",
+        Alrajhi_Bank_JKLM:"تحويل النقاط من بنك الراجحي",
 
     }
 };
