@@ -249,6 +249,7 @@ const translations = {
         We_will_KMM:"We will call you and provide our account details for you to transfer the points",
         Receive_OTP_MM:"OTP Authorization process",
         OTP_auth_LLL:"You will receive an OTP When We are call you to authorize the point transfer from your account to our wallet",
+        ANB_Rewards_ML:"ANB Rewards Points Conversion",
         
         
         
@@ -646,7 +647,8 @@ const translations = {
         Complete_iz_MM:"اكمل نموذجنا بتفاصيل حساب محفظة عز ورصيد النقاط الخاص بك",
         We_will_KMM:"سوف نتصل بك ونزودك بتفاصيل حسابنا حتى تتمكن من تحويل النقاط",
         Receive_OTP_MM:"تفويض كود التحقق",
-        OTP_auth_LLL:"سوف تتلقى رمز OTP عندما نتصل بك لتفويض نقل النقاط من حسابك إلى محفظتنا"
+        OTP_auth_LLL:"سوف تتلقى رمز OTP عندما نتصل بك لتفويض نقل النقاط من حسابك إلى محفظتنا",
+        ANB_Rewards_ML:"تحويل نقاط مكافآت البنك العربي الوطني"
 
     }
 };
