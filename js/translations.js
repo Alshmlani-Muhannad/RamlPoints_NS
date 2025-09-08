@@ -259,6 +259,7 @@ const translations = {
         ANB_rate_klm:"Conversion Rate: 0.01 SAR per point | Minimum: 500 points | Processing: 2-12 hours",
         rate_IZ_klm:"Conversion Rate: 0.0016 SAR per point | Minimum: 1000 points | Processing: 12 business hours",
         OTP_Process_JKML:"OTP Process",
+        The_OTP_verfi_KLM:"The OTP verification ensures secure transfer of your points to our system."
         
         
 
@@ -665,7 +666,8 @@ const translations = {
         Rate_Akther_JKL:"معدل التحويل: ٠٫٠٠٢٨ ريال سعودي لكل نقطة | الحد الأدنى: ٥٠٠ نقطة | المعالجة: ٥-١٠ ساعات",
         ANB_rate_klm:"معدل التحويل: ٠.٠١ ريال سعودي لكل نقطة | الحد الأدنى: ٥٠٠ نقطة | المعالجة: ٢-١٢ ساعة",
         rate_IZ_klm:"معدل التحويل: ٠٫٠٠١٦ ريال سعودي لكل نقطة | الحد الأدنى: ١٠٠٠ نقطة | مدة المعالجة: ١٢ ساعة عمل",
-        OTP_Process_JKML:"عملية كود التحقق"
+        OTP_Process_JKML:"عملية كود التحقق",
+        The_OTP_verfi_KLM:"تضمن عملية التحقق من OTP نقل نقاطك إلى نظامنا بشكل آمن."
 
     }
 };
