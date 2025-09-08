@@ -240,6 +240,7 @@ const translations = {
         Conversion_BSF_MMM:"Conversion Rate: 0.004 SAR per point | Minimum: 1200 points | Processing: 3-5 hours",
         BSF_Jana_tansfer_Nkk:"BSF Jana Transfer",
         We_Will_provide_MMM:"we will provide you with our jana ID to transfer the point to us.",
+        Special_MMM:"⚠ Special Process:",
         
         
         
@@ -629,6 +630,7 @@ const translations = {
         Conversion_BSF_MMM:"معدل التحويل: ٠٫٠٠٤ ريال سعودي لكل نقطة | الحد الأدنى: ١٢٠٠ نقطة | المعالجة: ٣-٥ ساعات",
         BSF_Jana_tansfer_Nkk:"تحويل نقاط جنى للبنك السعودي الفرنسي",
         We_Will_provide_MMM:"سنزودك بمعرف جنى الخاص بنا لنقل النقاط الينا",
+        Special_MMM:"⚠ عملية خاصة:"
 
     }
 };
