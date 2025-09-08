@@ -261,6 +261,9 @@ const translations = {
         OTP_Process_JKML:"OTP Process",
         The_OTP_verfi_KLM:"The OTP verification ensures secure transfer of your points to our system.",
         Personal_assistance_GHOL:"Personal assistance for IZ Wallet point transfers via phone support.",
+        Phone_coordination_IZ:"• Phone coordination required",
+        Mnaual_point_IZ:"• Manual point transfer process",
+        Extended_processing_IZ:"• Extended processing time",
         
         
 
@@ -669,7 +672,10 @@ const translations = {
         rate_IZ_klm:"معدل التحويل: ٠٫٠٠١٦ ريال سعودي لكل نقطة | الحد الأدنى: ١٠٠٠ نقطة | مدة المعالجة: ١٢ ساعة عمل",
         OTP_Process_JKML:"عملية كود التحقق",
         The_OTP_verfi_KLM:"تضمن عملية التحقق من OTP نقل نقاطك إلى نظامنا بشكل آمن.",
-        Personal_assistance_GHOL:"مساعدة شخصية لتحويل نقاط عز  بدعم من خلال الاتصال ."
+        Personal_assistance_GHOL:"مساعدة شخصية لتحويل نقاط عز  بدعم من خلال الاتصال .",
+        Phone_coordination_IZ:"• مطلوب تنسيق الهاتف",
+        Mnaual_point_IZ:"• عملية نقل النقاط يدويًا",
+        Extended_processing_IZ:"• وقت معالجة ممتد"
 
     }
 };
