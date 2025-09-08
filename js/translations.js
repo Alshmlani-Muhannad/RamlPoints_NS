@@ -272,6 +272,7 @@ const translations = {
         Qitaf_BTS1:"• Current point balance",
         Qitaf_BTS2:"• Bank account for transfer",
         Akther_BTS:"• Akther points balance attached with phone number",
+        ANB_BTS:"• Rewards points balance",
         
         
 
@@ -691,7 +692,8 @@ const translations = {
         Qitaf_BTS:"• رقم الهاتف ورقم OTP",
         Qitaf_BTS1:"• رصيد النقاط الحالي",
         Qitaf_BTS2:"• حساب بنكي للتحويل",
-        Akther_BTS:"• رصيد نقاط أكثر مرفق برقم الهاتف"
+        Akther_BTS:"• رصيد نقاط أكثر مرفق برقم الهاتف",
+        ANB_BTS:"• رصيدك من نقاط مكافات البنك العربي الوطني"
         
 
     }
