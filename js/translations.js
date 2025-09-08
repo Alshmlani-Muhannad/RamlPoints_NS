@@ -251,6 +251,7 @@ const translations = {
         OTP_auth_LLL:"You will receive an OTP When We are call you to authorize the point transfer from your account to our wallet",
         ANB_Rewards_ML:"ANB Rewards Points Conversion",
         Akther_Alinma_KLM:"Akther Alinma Points Conversion",
+        qitaf_Points_LKM:"Qitaf Points Conversion",
         
         
         
@@ -650,7 +651,8 @@ const translations = {
         Receive_OTP_MM:"تفويض كود التحقق",
         OTP_auth_LLL:"سوف تتلقى رمز OTP عندما نتصل بك لتفويض نقل النقاط من حسابك إلى محفظتنا",
         ANB_Rewards_ML:"تحويل نقاط مكافآت البنك العربي الوطني",
-        Akther_Alinma_KLM:"تحويل نقاط أكتر الإنماء"
+        Akther_Alinma_KLM:"تحويل نقاط أكتر الإنماء",
+        qitaf_Points_LKM:"تحويل نقاط قطاف"
 
     }
 };
