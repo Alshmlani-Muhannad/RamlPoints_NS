@@ -280,6 +280,7 @@ const translations = {
         Data_uuul:"Regulated Service",
         no_data_storage_mmm:"No Data Storage",
         ssl_certified_ll:"SSL Certified",
+        Secure_processing_kkl:"Secure Processing",
 
 
         // Program Landing Pages
@@ -705,7 +706,8 @@ const translations = {
         Backed_by_RamlGroup_BBB:"بدعم من الخدمات المالية الراسخة التي تقدمها RamlGroup مع الامتثال التنظيمي منذ عام 2018",
         Data_uuul:"الخدمة المنظمة",
         no_data_storage_mmm:"لا يوجد تخزين للبيانات",
-        ssl_certified_ll:"طبقة المقابس الآمنة"
+        ssl_certified_ll:"طبقة المقابس الآمنة",
+        Secure_processing_kkl:"المعالجة الآمنة"
         
 
     }
