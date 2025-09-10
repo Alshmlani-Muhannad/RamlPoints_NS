@@ -281,7 +281,8 @@ const translations = {
         no_data_storage_mmm:"No Data Storage",
         ssl_certified_ll:"SSL Certified",
         Secure_processing_kkl:"Secure Processing",
-        Your_account_cred_sdf:"Your account credentials are never stored. We use secure APIs for one-time verification only",
+        Your_account_cred_sdf:"Your information are never stored. We use secure APIs for one-time verification only",
+        Bank_grade_enc_jj:"Bank-Grade Encryption",
 
 
         // Program Landing Pages
@@ -709,7 +710,8 @@ const translations = {
         no_data_storage_mmm:"لا يوجد تخزين للبيانات",
         ssl_certified_ll:"طبقة المقابس الآمنة",
         Secure_processing_kkl:"المعالجة الآمنة",
-        Your_account_cred_sdf:"بيانات اعتماد حسابك لا تُخزَّن أبدًا. نستخدم واجهات برمجة تطبيقات آمنة للتحقق لمرة واحدة فقط.",
+        Your_account_cred_sdf:"لن يتم تخزين معلوماتك أبدًا. نستخدم واجهات برمجة تطبيقات آمنة للتحقق لمرة واحدة فقط.",
+        Bank_grade_enc_jj:"تشفير من الدرجة المصرفية"
         
 
     }
