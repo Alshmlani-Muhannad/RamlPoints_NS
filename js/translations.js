@@ -275,6 +275,7 @@ const translations = {
         ANB_BTS:"• Rewards points balance",
         Security_BTS:"Security & Trust Measures",
         our_sec_is_MMM:"Your security is our priority. Learn about our comprehensive protection measures and transparent processes",
+        RamlGroup_Backing_KK:"RamlGroup Backing",
 
 
         // Program Landing Pages
@@ -695,7 +696,8 @@ const translations = {
         Akther_BTS:"• رصيد نقاط أكثر مرفق برقم الهاتف",
         ANB_BTS:"• رصيدك من نقاط مكافات البنك العربي الوطني",
         Security_BTS:"تدابير الأمن والثقة",
-        our_sec_is_MMM:"سلامتكم هي أولويتنا. تعرّفوا على إجراءات الحماية الشاملة لدينا وعملياتنا الشفافة."
+        our_sec_is_MMM:"سلامتكم هي أولويتنا. تعرّفوا على إجراءات الحماية الشاملة لدينا وعملياتنا الشفافة.",
+        RamlGroup_Backing_KK:"دعم رمل بوينتس"
         
 
     }
