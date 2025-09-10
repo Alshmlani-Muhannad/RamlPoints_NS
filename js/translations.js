@@ -277,6 +277,7 @@ const translations = {
         our_sec_is_MMM:"Your security is our priority. Learn about our comprehensive protection measures and transparent processes",
         RamlGroup_Backing_KK:"RamlGroup Backing",
         Backed_by_RamlGroup_BBB:"Backed by RamlGroup's established financial services with regulatory compliance since 2018",
+        Data_uuul:"Regulated Service",
 
 
         // Program Landing Pages
@@ -699,7 +700,8 @@ const translations = {
         Security_BTS:"تدابير الأمن والثقة",
         our_sec_is_MMM:"سلامتكم هي أولويتنا. تعرّفوا على إجراءات الحماية الشاملة لدينا وعملياتنا الشفافة.",
         RamlGroup_Backing_KK:"دعم رمل بوينتس",
-        Backed_by_RamlGroup_BBB:"بدعم من الخدمات المالية الراسخة التي تقدمها RamlGroup مع الامتثال التنظيمي منذ عام 2018"
+        Backed_by_RamlGroup_BBB:"بدعم من الخدمات المالية الراسخة التي تقدمها RamlGroup مع الامتثال التنظيمي منذ عام 2018",
+        Data_uuul:"الخدمة المنظمة"
         
 
     }
