@@ -279,6 +279,7 @@ const translations = {
         Backed_by_RamlGroup_BBB:"Backed by RamlGroup's established financial services with regulatory compliance since 2018",
         Data_uuul:"Regulated Service",
         no_data_storage_mmm:"No Data Storage",
+        ssl_certified_ll:"SSL Certified",
 
 
         // Program Landing Pages
@@ -703,7 +704,8 @@ const translations = {
         RamlGroup_Backing_KK:"دعم رمل بوينتس",
         Backed_by_RamlGroup_BBB:"بدعم من الخدمات المالية الراسخة التي تقدمها RamlGroup مع الامتثال التنظيمي منذ عام 2018",
         Data_uuul:"الخدمة المنظمة",
-        no_data_storage_mmm:"لا يوجد تخزين للبيانات"
+        no_data_storage_mmm:"لا يوجد تخزين للبيانات",
+        ssl_certified_ll:"طبقة المقابس الآمنة"
         
 
     }
