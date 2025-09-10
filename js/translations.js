@@ -281,6 +281,7 @@ const translations = {
         no_data_storage_mmm:"No Data Storage",
         ssl_certified_ll:"SSL Certified",
         Secure_processing_kkl:"Secure Processing",
+        Your_account_cred_sdf:"Your account credentials are never stored. We use secure APIs for one-time verification only"
 
 
         // Program Landing Pages
@@ -707,7 +708,8 @@ const translations = {
         Data_uuul:"الخدمة المنظمة",
         no_data_storage_mmm:"لا يوجد تخزين للبيانات",
         ssl_certified_ll:"طبقة المقابس الآمنة",
-        Secure_processing_kkl:"المعالجة الآمنة"
+        Secure_processing_kkl:"المعالجة الآمنة",
+        Your_account_cred_sdf:"بيانات اعتماد حسابك لا تُخزَّن أبدًا. نستخدم واجهات برمجة تطبيقات آمنة للتحقق لمرة واحدة فقط."
         
 
     }
