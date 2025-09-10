@@ -274,7 +274,7 @@ const translations = {
         Akther_BTS:"• Akther points balance attached with phone number",
         ANB_BTS:"• Rewards points balance",
         Security_BTS:"Security & Trust Measures",
-        
+        our_sec_is_MMM:"Your security is our priority. Learn about our comprehensive protection measures and transparent processes",
 
 
         // Program Landing Pages
@@ -694,7 +694,8 @@ const translations = {
         Qitaf_BTS2:"• حساب بنكي للتحويل",
         Akther_BTS:"• رصيد نقاط أكثر مرفق برقم الهاتف",
         ANB_BTS:"• رصيدك من نقاط مكافات البنك العربي الوطني",
-        Security_BTS:"تدابير الأمن والثقة"
+        Security_BTS:"تدابير الأمن والثقة",
+        our_sec_is_MMM:"سلامتكم هي أولويتنا. تعرّفوا على إجراءات الحماية الشاملة لدينا وعملياتنا الشفافة."
         
 
     }
