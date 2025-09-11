@@ -293,6 +293,10 @@ const translations = {
         provide_real_time_updates:"Provide real-time updates via WhatsApp or call phone",
         Store_your_login_cred:"Store your Information without your permission",
         Using_your_Points_SS:"using your points without your permission",
+        Share_your_info_jhg:"Share your information with third parties",
+        Charge_hidden_fees_kj:"Charge hidden fees or unexpected costs",
+        Frequently_Asked_Ques_fds:"Frequently Asked Questions",
+        
 
 
 
@@ -733,6 +737,9 @@ const translations = {
         provide_real_time_updates:"توفير التحديثات في الوقت الحقيقي عبر واتساب أو الاتصال بالهاتف",
         Store_your_login_cred:"لانقوم بتخزين معلوماتك دون اذنك",
         Using_your_Points_SS:"استخدام نقاطك دون إذنك",
+        Share_your_info_jhg:"مشاركة معلوماتك مع أطراف ثالثة",
+        Charge_hidden_fees_kj:"فرض رسوم خفية أو تكاليف غير متوقعة",
+        Frequently_Asked_Ques_fds:"الأسئلة الشائعة"
         
         
 
