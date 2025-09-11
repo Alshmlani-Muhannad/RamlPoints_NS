@@ -290,6 +290,7 @@ const translations = {
         Withdraw_points_kgf:"Withdraw points after you confirm this to us",
         Process_conversion_fds:"Process conversion using secure partner APIs",
         Transfer_cash_dir_fgd:"Transfer cash directly to your bank account",
+        provide_real_time_updates:"Provide real-time updates via WhatsApp or call phone",
 
 
 
@@ -726,7 +727,8 @@ const translations = {
         What_We_Dont_lll:"ما لا نفعله",
         Withdraw_points_kgf:"سحب النقاط بعد تأكيد ذلك لنا",
         Process_conversion_fds:"تحويل العملية باستخدام واجهات برمجة التطبيقات الشريكة الآمنة",
-        Transfer_cash_dir_fgd:"تحويل النقود مباشرة إلى حسابك البنكي"
+        Transfer_cash_dir_fgd:"تحويل النقود مباشرة إلى حسابك البنكي",
+        provide_real_time_updates:"توفير التحديثات في الوقت الحقيقي عبر واتساب أو الاتصال بالهاتف",
         
 
     }
