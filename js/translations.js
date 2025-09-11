@@ -284,6 +284,9 @@ const translations = {
         Your_account_cred_sdf:"Your information are never stored. We use secure APIs for one-time verification only",
         Bank_grade_enc_jj:"Bank-Grade Encryption",
         All_data_jhfn:"All data transmission uses 256-bit SSL encryption, the same standard used by major banks.",
+        Process_Transpaency_KJH:"Process Transparency Guarantee",
+        What_We_Do_ll:"What We Do",
+        What_We_Dont_lll:"What We Don't Do",
 
 
         // Program Landing Pages
@@ -713,7 +716,10 @@ const translations = {
         Secure_processing_kkl:"المعالجة الآمنة",
         Your_account_cred_sdf:"لن يتم تخزين معلوماتك أبدًا. نستخدم واجهات برمجة تطبيقات آمنة للتحقق لمرة واحدة فقط.",
         Bank_grade_enc_jj:"تشفير من الدرجة المصرفية",
-        All_data_jhfn:"تستخدم جميع عمليات نقل البيانات تشفير SSL 256 بت، وهو نفس المعيار الذي تستخدمه البنوك الكبرى"
+        All_data_jhfn:"تستخدم جميع عمليات نقل البيانات تشفير SSL 256 بت، وهو نفس المعيار الذي تستخدمه البنوك الكبرى",
+        Process_Transpaency_KJH:"ضمان شفافية العملية",
+        What_We_Do_ll:"ما نفعله",
+        What_We_Dont_lll:"ما لا نفعله"
         
 
     }
