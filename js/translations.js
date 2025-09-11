@@ -291,6 +291,7 @@ const translations = {
         Process_conversion_fds:"Process conversion using secure partner APIs",
         Transfer_cash_dir_fgd:"Transfer cash directly to your bank account",
         provide_real_time_updates:"Provide real-time updates via WhatsApp or call phone",
+        Store_your_login_cred:"Store your login credentials or passwords",
 
 
 
@@ -729,6 +730,7 @@ const translations = {
         Process_conversion_fds:"تحويل العملية باستخدام واجهات برمجة التطبيقات الشريكة الآمنة",
         Transfer_cash_dir_fgd:"تحويل النقود مباشرة إلى حسابك البنكي",
         provide_real_time_updates:"توفير التحديثات في الوقت الحقيقي عبر واتساب أو الاتصال بالهاتف",
+        Store_your_login_cred:"قم بتخزين بيانات تسجيل الدخول أو كلمات المرور الخاصة بك"
         
 
     }
