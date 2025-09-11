@@ -287,6 +287,8 @@ const translations = {
         Process_Transpaency_KJH:"Process Transparency Guarantee",
         What_We_Do_ll:"What We Do",
         What_We_Dont_lll:"What We Don't Do",
+        Withdraw_points_kgf:"Withdraw points after you confirm this to us",
+        Process_conversion_fds:"Process conversion using secure partner APIs",
 
 
         // Program Landing Pages
@@ -719,7 +721,9 @@ const translations = {
         All_data_jhfn:"تستخدم جميع عمليات نقل البيانات تشفير SSL 256 بت، وهو نفس المعيار الذي تستخدمه البنوك الكبرى",
         Process_Transpaency_KJH:"ضمان شفافية العملية",
         What_We_Do_ll:"ما نفعله",
-        What_We_Dont_lll:"ما لا نفعله"
+        What_We_Dont_lll:"ما لا نفعله",
+        Withdraw_points_kgf:"سحب النقاط بعد تأكيد ذلك لنا",
+        Process_conversion_fds:"تحويل العملية باستخدام واجهات برمجة التطبيقات الشريكة الآمنة"
         
 
     }
