@@ -315,6 +315,17 @@ const translations = {
         Learn_how_ytr2:"Step-by-step tutorial for converting rajhi, Qitaf, Akther alinma, ANB including app screenshots and troubleshooting tips.",
         dur_1:"Duration: 3:45",
         Arabic_English:"Arabic/English",
+        Video_2:"Convert BSF Jana and IZ wallet points",
+        explain_2c:"Complete walkthrough of converting BSF Jana points and IZ wallet to cash or discount code, including app navigation and form submission.",
+        dur_2:"Duration: 4:20",
+        Arabic_English_2:"Arabic/English",
+        Need_more_help:"Need more help?",
+        Contact_our_supp:"Need help with a specific program? Contact our support team for personalized assistance.",
+        start_conversion_now:"Start Your Conversion Now",
+        Ready_to_Convert_Your:"Ready to Convert Your Points?",
+        
+
+        
 
 
         // Program Landing Pages
@@ -776,6 +787,17 @@ const translations = {
         Learn_how_ytr2:"دليل خطوة بخطوة لتحويل الراجحي، قطاف، أختر الإنماء، ANB بما في ذلك لقطات شاشة التطبيق ونصائح استكشاف الأخطاء وإصلاحها.",
         dur_1:"المدة: 3:45",
         Arabic_English:"العربية/الإنجليزية",
+        Video_2:"تحويل نقاط جنى من BSF ومحفظة عز من الانماء ",
+        explain_2c:"شرح كامل لتحويل نقاط BSF Jana ومحفظة IZ إلى نقد أو رمز خصم، بما في ذلك التنقل في التطبيق وإرسال النموذج.",
+        dur_2:"المدة: 4:20",
+        Arabic_English_2:"العربية/الإنجليزية",
+        Need_more_help:"هل تحتاج إلى مزيد من المساعدة؟",
+        Contact_our_expert:"هل تحتاج مساعدة في برنامج معين؟ تواصل مع فريق الدعم لدينا للحصول على مساعدة شخصية.",
+        WhatsApp_support_1: "دعم واتساب",
+        Ready_to_Convert_Your:"هل أنت مستعد لتحويل نقاطك؟",
+        
+        
+        
 
 
         
