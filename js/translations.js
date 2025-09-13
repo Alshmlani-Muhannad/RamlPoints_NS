@@ -313,6 +313,8 @@ const translations = {
         Watch_guides_ss:"Watch step-by-step video guides to transfer points or to contact us.",
         Learn_how_ytr:"Learn how to tramsfer the points.",
         Learn_how_ytr2:"Step-by-step tutorial for converting rajhi, Qitaf, Akther alinma, ANB including app screenshots and troubleshooting tips.",
+        dur_1:"Duration: 3:45",
+        Arabic_English:"Arabic/English",
 
 
         // Program Landing Pages
@@ -772,6 +774,8 @@ const translations = {
         Watch_guides_ss:"شاهد أدلة الفيديو خطوة بخطوة لتحويل النقاط او للتواصل معنا .",
         Learn_how_ytr:"تعرف على كيفية تحويل النقاط.",
         Learn_how_ytr2:"دليل خطوة بخطوة لتحويل الراجحي، قطاف، أختر الإنماء، ANB بما في ذلك لقطات شاشة التطبيق ونصائح استكشاف الأخطاء وإصلاحها.",
+        dur_1:"المدة: 3:45",
+        Arabic_English:"العربية/الإنجليزية",
 
 
         
