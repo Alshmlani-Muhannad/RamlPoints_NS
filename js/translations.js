@@ -310,7 +310,9 @@ const translations = {
         what_happens_qus:"What happens if there's an issue with my conversion?",
         our_customer_ans:"Our customer service team is available 24/7 via WhatsApp to resolve any issues. If the transfer is unable to complete, we will notify you immediately and refund full amount with any fees. We will try our best. If we delay the transfer for more than 3 days, we will provide you with a discount code for our services (of your choice) as an apology.",
         Video_hgf:"Video Tutorials",
-        Watch_guides_ss:"Watch step-by-step video guides for each loyalty program to ensure smooth conversion process.",
+        Watch_guides_ss:"Watch step-by-step video guides to transfer points or to contact us.",
+        Learn_how_ytr:"Learn how to tramsfer the points.",
+        Learn_how_ytr2:"Step-by-step tutorial for converting rajhi, Qitaf, Akther alinma, ANB including app screenshots and troubleshooting tips.",
 
 
         // Program Landing Pages
@@ -767,7 +769,9 @@ const translations = {
         what_happens_qus:"ماذا يحدث إذا كانت هناك مشكلة في التحويل الخاص بي؟",
         our_customer_ans:"فريق خدمة العملاء لدينا متاح على مدار الساعة طوال أيام الأسبوع عبر واتساب لحل أي مشكلة. في حال تعذر إتمام عملية التحويل، سنُبلغك فورًا ونرد لك المبلغ كاملًا مع أي رسوم. سنبذل قصارى جهدنا. في حال تأخرنا في التحويل لأكثر من 3 أيام، سنزودك برمز خصم لخدماتنا (من اختيارك) كنوع من الاعتذار.",
         Video_hgf:"دروس الفيديو",
-        Watch_guides_ss:"شاهد أدلة الفيديو خطوة بخطوة لكل برنامج ولاء لضمان عملية تحويل سلسة."
+        Watch_guides_ss:"شاهد أدلة الفيديو خطوة بخطوة لتحويل النقاط او للتواصل معنا .",
+        Learn_how_ytr:"تعرف على كيفية تحويل النقاط.",
+        Learn_how_ytr2:"دليل خطوة بخطوة لتحويل الراجحي، قطاف، أختر الإنماء، ANB بما في ذلك لقطات شاشة التطبيق ونصائح استكشاف الأخطاء وإصلاحها.",
 
 
         
