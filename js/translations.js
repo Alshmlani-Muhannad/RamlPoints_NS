@@ -309,6 +309,8 @@ const translations = {
         yes_you_real_updates_ans:"Yes! You'll receive real-time updates via WhatsApp at every stage: submission confirmation, verification completion, conversion processing, and cash transfer completion. You can also contact our support team anytime for status updates.",
         what_happens_qus:"What happens if there's an issue with my conversion?",
         our_customer_ans:"Our customer service team is available 24/7 via WhatsApp to resolve any issues. If the transfer is unable to complete, we will notify you immediately and refund full amount with any fees. We will try our best. If we delay the transfer for more than 3 days, we will provide you with a discount code for our services (of your choice) as an apology.",
+        Video_hgf:"Video Tutorials",
+        Watch_guides_ss:"Watch step-by-step video guides for each loyalty program to ensure smooth conversion process.",
 
 
         // Program Landing Pages
@@ -764,6 +766,8 @@ const translations = {
         yes_you_real_updates_ans:"نعم! ستصلك تحديثات فورية عبر واتساب في كل مرحلة: تأكيد الإرسال، إتمام التحقق، معالجة التحويل، وإتمام التحويل النقدي. يمكنك أيضًا التواصل مع فريق الدعم لدينا في أي وقت للاطلاع على آخر المستجدات.",
         what_happens_qus:"ماذا يحدث إذا كانت هناك مشكلة في التحويل الخاص بي؟",
         our_customer_ans:"فريق خدمة العملاء لدينا متاح على مدار الساعة طوال أيام الأسبوع عبر واتساب لحل أي مشكلة. في حال تعذر إتمام عملية التحويل، سنُبلغك فورًا ونرد لك المبلغ كاملًا مع أي رسوم. سنبذل قصارى جهدنا. في حال تأخرنا في التحويل لأكثر من 3 أيام، سنزودك برمز خصم لخدماتنا (من اختيارك) كنوع من الاعتذار.",
+        Video_hgf:"دروس الفيديو",
+        Watch_guides_ss:"شاهد أدلة الفيديو خطوة بخطوة لكل برنامج ولاء لضمان عملية تحويل سلسة."
 
 
         
