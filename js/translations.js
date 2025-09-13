@@ -324,6 +324,12 @@ const translations = {
         start_conversion_now:"Start Your Conversion Now",
         Ready_to_Convert_Your:"Ready to Convert Your Points?",
         Get_WhatsApp_Support:"Get WhatsApp Support",
+        Follow_our_secure_1:"Follow our secure conversion process and start transforming your loyalty points into real cash today.",
+        startConverting_1: "Start Converting Now",
+        haveQuestions_1: "Ask Questions First",
+        secureEncrypted_1: "Secure & Encrypted",
+        regulatedService_1: "Regulated Service",
+        languageBtn: "العربية",
 
 
         
@@ -798,6 +804,12 @@ const translations = {
         Ready_to_Convert_Your:"هل أنت مستعد لتحويل نقاطك؟",
         Contact_our_supp:"هل تحتاج مساعدة في برنامج معين؟ تواصل مع فريق الدعم لدينا للحصول على مساعدة شخصية.",
         Get_WhatsApp_Support:"احصل على دعم WhatsApp",
+        Follow_our_secure_1:"اتبع عملية التحويل الآمنة الخاصة بنا وابدأ في تحويل نقاط الولاء الخاصة بك إلى نقد حقيقي اليوم.",
+        haveQuestions_1: "اطرح الأسئلة أولاً",
+        learnHow_1: "تعلم كيف يعمل",
+        secureEncrypted_1: "آمن ومشفر",
+        regulatedService_1: "خدمة منظمة",
+        start_conversion_now:"ابدأ تحويلك الآن",
         
         
         
