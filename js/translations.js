@@ -330,6 +330,8 @@ const translations = {
         secureEncrypted_1: "Secure & Encrypted",
         regulatedService_1: "Regulated Service",
         bank_grade_security:"Bank-Grade Security",
+        success_rate:"99.8% Success Rate",
+        support_24_7:"24/7 Support",
 
 
         
@@ -809,6 +811,8 @@ const translations = {
         learnHow_1: "تعلم كيف يعمل",
         bank_grade_security:"أمان من الدرجة المصرفية",
         startConverting_1: "ابدأ التحويل الآن",
+        success_rate:"معدل النجاح 99.8%",
+        support_24_7:"دعم 24/7 عبر واتساب",
         
         
         
