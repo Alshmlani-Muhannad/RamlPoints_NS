@@ -296,6 +296,7 @@ const translations = {
         Share_your_info_jhg:"Share your information with third parties",
         Charge_hidden_fees_kj:"Charge hidden fees or unexpected costs",
         Frequently_Asked_Ques_fds:"Frequently Asked Questions",
+        get_answers_llj:"Get answers to common questions about our conversion process and security measures.",
         
 
 
@@ -739,7 +740,8 @@ const translations = {
         Using_your_Points_SS:"استخدام نقاطك دون إذنك",
         Share_your_info_jhg:"مشاركة معلوماتك مع أطراف ثالثة",
         Charge_hidden_fees_kj:"فرض رسوم خفية أو تكاليف غير متوقعة",
-        Frequently_Asked_Ques_fds:"الأسئلة الشائعة"
+        Frequently_Asked_Ques_fds:"الأسئلة الشائعة",
+        get_answers_llj:"احصل على إجابات للأسئلة الشائعة حول عملية التحويل وتدابير الأمان لدينا.",
         
         
 
