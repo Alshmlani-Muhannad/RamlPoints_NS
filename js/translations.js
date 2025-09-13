@@ -303,6 +303,12 @@ const translations = {
         its_my_ans:"Absolutely. We use bank-grade 256-bit SSL encryption for all data transmission. Your credentials we never see it, and we only access your points balance when you give us the otp for verification. All data is processed securely and deleted after conversion completion",
         What_are_Qus:"What are the conversion rates and fees?",
         conver_vary_ans:"Conversion rates vary by program: Al Rajhi Bank Rewards, Akther Alinma Points, Qitaf Rewards, ANB Rewards, and IZ Wallet Rewards, BSF Jana Rewards — the standard fee is 50%, except for IZ Wallet (20%) and BSF Jana (15%).",
+        Whats_if_quss:"What if my points have expired or are about to expire?",
+        We_can_only_ans:"We can only convert active, non-expired points. If your points are expiring soon, submit your request immediately. We prioritize urgent conversions and can often complete them within 2-3 hours. Contact us via WhatsApp with evidence for expedited processing",
+        Can_i_track_qus:"Can I track my conversion status?",
+        yes_you_real_updates_ans:"Yes! You'll receive real-time updates via WhatsApp at every stage: submission confirmation, verification completion, conversion processing, and cash transfer completion. You can also contact our support team anytime for status updates.",
+        what_happens_qus:"What happens if there's an issue with my conversion?",
+        our_customer_ans:"Our customer service team is available 24/7 via WhatsApp to resolve any issues. If the transfer is unable to complete, we will notify you immediately and refund full amount with any fees. We will try our best. If we delay the transfer for more than 3 days, we will provide you with a discount code for our services (of your choice) as an apology.",
 
 
         // Program Landing Pages
@@ -752,6 +758,13 @@ const translations = {
         its_my_ans:"بالتأكيد. نستخدم تشفير SSL 256 بت عالي الجودة لجميع عمليات نقل البيانات. لن نطلع على بيانات اعتمادك، ولن نصل إلى رصيد نقاطك إلا بعد تزويدنا بكلمة المرور المؤقتة للتحقق. تتم معالجة جميع البيانات بأمان وحذفها بعد إتمام عملية التحويل.",
         What_are_Qus:"ما هي أسعار التحويل والرسوم؟",
         conver_vary_ans:"تختلف أسعار التحويل حسب البرنامج: مكافآت بنك الراجحي، نقاط اكثر الإنماء، مكافآت قطاف، مكافآت ANB، ومكافآت IZ Wallet، مكافآت BSF Jana - الرسوم القياسية هي 50%، باستثناء IZ Wallet (20%) وBSF Jana (15%).",
+        Whats_if_quss:"ماذا لو انتهت صلاحية نقاطي أو على وشك الانتهاء؟",
+        We_can_only_ans:"يمكننا فقط تحويل النقاط النشطة وغير منتهية الصلاحية. إذا كانت نقاطك على وشك الانتهاء، يُرجى تقديم طلبك فورًا. نُعطي الأولوية للتحويلات العاجلة، ويمكننا إتمامها غالبًا خلال ساعتين إلى ثلاث ساعات. تواصل معنا عبر واتساب مع إرفاق إثبات لسرعة المعالجة.",
+        Can_i_track_qus:"هل يمكنني تتبع حالة التحويل الخاصة بي؟",
+        yes_you_real_updates_ans:"نعم! ستصلك تحديثات فورية عبر واتساب في كل مرحلة: تأكيد الإرسال، إتمام التحقق، معالجة التحويل، وإتمام التحويل النقدي. يمكنك أيضًا التواصل مع فريق الدعم لدينا في أي وقت للاطلاع على آخر المستجدات.",
+        what_happens_qus:"ماذا يحدث إذا كانت هناك مشكلة في التحويل الخاص بي؟",
+        our_customer_ans:"فريق خدمة العملاء لدينا متاح على مدار الساعة طوال أيام الأسبوع عبر واتساب لحل أي مشكلة. في حال تعذر إتمام عملية التحويل، سنُبلغك فورًا ونرد لك المبلغ كاملًا مع أي رسوم. سنبذل قصارى جهدنا. في حال تأخرنا في التحويل لأكثر من 3 أيام، سنزودك برمز خصم لخدماتنا (من اختيارك) كنوع من الاعتذار.",
+
 
         
         
