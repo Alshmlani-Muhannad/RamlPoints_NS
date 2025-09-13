@@ -299,6 +299,8 @@ const translations = {
         get_answers_llj:"Get answers to common questions about our conversion process and security measures.",
         how_long_qus:"How long does the conversion process take?",
         Conversion_rate_ans:"Conversion rates vary by program: Al Rajhi Bank Rewards, Akther Alinma Points, Qitaf Rewards, ANB Rewards, and IZ Wallet Rewards, BSF Jana Rewards — the standard fee is 50%, except for IZ Wallet (20%) and BSF Jana (15%).",
+        its_my_qus:"Is my personal information secure?",
+        its_my_ans:"Absolutely. We use bank-grade 256-bit SSL encryption for all data transmission. Your credentials we never see it, and we only access your points balance when you give us the otp for verification. All data is processed securely and deleted after conversion completion",
 
 
 
@@ -744,7 +746,10 @@ const translations = {
         Frequently_Asked_Ques_fds:"الأسئلة الشائعة",
         get_answers_llj:"احصل على إجابات للأسئلة الشائعة حول عملية التحويل وتدابير الأمان لدينا.",
         how_long_qus:"كم من الوقت تستغرق عملية التحويل؟",
-        Conversion_rate_ans:"تختلف أسعار التحويل حسب البرنامج: مكافآت بنك الراجحي، نقاط أختر الإنماء، مكافآت قطاف، مكافآت ANB، ومكافآت IZ Wallet، مكافآت BSF Jana - الرسوم القياسية هي 50%، باستثناء IZ Wallet (20%) وBSF Jana (15%)."
+        Conversion_rate_ans:"تختلف أسعار التحويل حسب البرنامج: مكافآت بنك الراجحي، نقاط اكثر الإنماء، مكافآت قطاف، مكافآت ANB، ومكافآت IZ Wallet، مكافآت BSF Jana - الرسوم القياسية هي 50%، باستثناء IZ Wallet (20%) وBSF Jana (15%).",
+        its_my_qus:"هل معلوماتي الشخصية آمنة؟",
+        its_my_ans:"بالتأكيد. نستخدم تشفير SSL 256 بت عالي الجودة لجميع عمليات نقل البيانات. لن نطلع على بيانات اعتمادك، ولن نصل إلى رصيد نقاطك إلا بعد تزويدنا بكلمة المرور المؤقتة للتحقق. تتم معالجة جميع البيانات بأمان وحذفها بعد إتمام عملية التحويل."
+
         
         
 
