@@ -323,7 +323,8 @@ const translations = {
         Contact_our_supp:"Need help with a specific program? Contact our support team for personalized assistance.",
         start_conversion_now:"Start Your Conversion Now",
         Ready_to_Convert_Your:"Ready to Convert Your Points?",
-        
+        Get_WhatsApp_Support:"Get WhatsApp Support",
+
 
         
 
@@ -795,6 +796,8 @@ const translations = {
         Contact_our_expert:"هل تحتاج مساعدة في برنامج معين؟ تواصل مع فريق الدعم لدينا للحصول على مساعدة شخصية.",
         WhatsApp_support_1: "دعم واتساب",
         Ready_to_Convert_Your:"هل أنت مستعد لتحويل نقاطك؟",
+        Contact_our_supp:"هل تحتاج مساعدة في برنامج معين؟ تواصل مع فريق الدعم لدينا للحصول على مساعدة شخصية.",
+        Get_WhatsApp_Support:"احصل على دعم WhatsApp",
         
         
         
