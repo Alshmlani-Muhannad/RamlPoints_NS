@@ -889,5 +889,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const languageButtons = document.querySelectorAll('.language-btn, [data-translate="languageBtn"]');
     languageButtons.forEach(button => {
         button.addEventListener('click', toggleLanguage);
+        window.translations = translations;
     });
 });
