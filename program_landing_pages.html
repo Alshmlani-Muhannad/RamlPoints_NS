@@ -1295,66 +1295,28 @@
                             </ol>
                         </div>
                     </div>
-                `
-            },
-            zain: {
-                title: 'BSF Jana',
-                content: `
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-4">
-                            <img src="images/BSF.png" alt="Zain" class="w-16 h-16 rounded-lg object-cover">
-                            <div>
-                                <h4 class="text-xl font-cairo font-bold text-secondary">BSF Jana Rewards</h4>
-                                <p class="text-text-secondary">BSF Jana Saudi Arabia loyalty program from Banque Saudi French</p>
-                            </div>
-                        </div>
-                        
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="space-y-4">
-                                <h5 class="font-cairo font-semibold text-secondary">Conversion Details</h5>
-                                <div class="space-y-2 text-sm">
-                                    <div class="flex justify-between">
-                                        <span>Conversion Rate:</span>
-                                        <span class="font-medium">0.004 SAR per point</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span>Minimum Points:</span>
-                                        <span class="font-medium">1,200 points</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span>Processing Time:</span>
-                                        <span class="font-medium">3-5 business hours</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span>Processing Fee:</span>
-                                        <span class="font-medium">15%</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="space-y-4">
-                                <h5 class="font-cairo font-semibold text-secondary">Requirements</h5>
-                                <ul class="text-sm space-y-1 text-text-secondary">
-                                    <li>• Active BSF account</li>
-                                    <li>• Valid Saudi ID</li>
-                                    <li>• Account login credentials</li>
-                                    <li>• Minimum 1,200 points balance</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-primary/30 rounded-lg p-4">
-                            <h5 class="font-cairo font-semibold text-secondary mb-2">How to Check Your Points</h5>
-                            <ol class="text-sm space-y-1 text-text-secondary">
-                                <li>1. Login to BSF jana app</li>
-                                <li>2. Navigate to "My Rewards"</li>
-                                <li>3. View your points balance</li>
-                                <li>4. Screenshot for submission</li>
-                            </ol>
-                        </div>
-                    </div>
-                `
-          <!-- ===== LANGUAGE SWITCHER ===== -->
+            `
+        }
+    };
+
+    // Program details modal logic
+    detailsBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const program = btn.dataset.program;
+            if (programDetails[program]) {
+                modalTitle.textContent = programDetails[program].title;
+                modalContent.innerHTML = programDetails[program].content;
+                modal.classList.remove('hidden');
+            }
+        });
+    });
+    closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+    modal.addEventListener('click', e => {
+        if (e.target === modal) modal.classList.add('hidden');
+    });
+</script>
+
+<!-- ===== LANGUAGE SWITCHER ===== -->
 <div id="lang-switcher" class="fixed top-4 right-4 z-50 space-x-2">
   <div>
     <button data-lang="en" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">EN</button>
@@ -1367,79 +1329,80 @@
 
 <!-- ===== UNIFIED APP LOGIC ===== -->
 <script>
+// The following script is plain JavaScript and should be placed in a .html file or a .js file included via <script src="..."></script>
 (() => {
-  /* ----------  TRANSLATION ENGINE  ---------- */
-  function applyTranslations(lang) {
-    document.querySelectorAll('[data-translate]').forEach(el => {
-      const key = el.dataset.translate;
-      if (translations[lang]?.[key]) el.textContent = translations[lang][key];
-    });
-    document.documentElement.lang = lang;
-    localStorage.setItem('preferred-lang', lang);
-  }
+    /* ----------  TRANSLATION ENGINE  ---------- */
+    function applyTranslations(lang) {
+      document.querySelectorAll('[data-translate]').forEach(el => {
+        const key = el.dataset.translate;
+        if (translations[lang]?.[key]) el.textContent = translations[lang][key];
+      });
+      document.documentElement.lang = lang;
+      localStorage.setItem('preferred-lang', lang);
+    }
 
-  /* ----------  DOM READY  ---------- */
-  document.addEventListener('DOMContentLoaded', () => {
-    /* language switcher */
-    const saved = localStorage.getItem('preferred-lang') || 'en';
-    applyTranslations(saved);
-    document.querySelectorAll('.lang-btn').forEach(btn =>
-      btn.addEventListener('click', () => applyTranslations(btn.dataset.lang))
-    );
-
-    /* mobile menu */
-    const btn  = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    if (btn && menu) {
-      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
-      menu.querySelectorAll('a').forEach(a =>
-        a.addEventListener('click', () => menu.classList.add('hidden'))
+    /* ----------  DOM READY  ---------- */
+    document.addEventListener('DOMContentLoaded', () => {
+      /* language switcher */
+      const saved = localStorage.getItem('preferred-lang') || 'en';
+      applyTranslations(saved);
+      document.querySelectorAll('.lang-btn').forEach(btn =>
+        btn.addEventListener('click', () => applyTranslations(btn.dataset.lang))
       );
-    }
 
-    /* program tabs */
-    const tabBtns = document.querySelectorAll('.program-tab-btn');
-    const contents = document.querySelectorAll('.program-content');
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const prog = btn.dataset.program;
-        tabBtns.forEach(b => b.classList.remove('active','bg-accent','text-white'));
-        btn.classList.add('active','bg-accent','text-white');
-        contents.forEach(c => c.classList.add('hidden'));
-        document.getElementById(prog + '-content')?.classList.remove('hidden');
+      /* mobile menu */
+      const btn  = document.getElementById('mobile-menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+        menu.querySelectorAll('a').forEach(a =>
+          a.addEventListener('click', () => menu.classList.add('hidden'))
+        );
+      }
+
+      /* program tabs */
+      const tabBtns = document.querySelectorAll('.program-tab-btn');
+      const contents = document.querySelectorAll('.program-content');
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const prog = btn.dataset.program;
+          tabBtns.forEach(b => b.classList.remove('active','bg-accent','text-white'));
+          btn.classList.add('active','bg-accent','text-white');
+          contents.forEach(c => c.classList.add('hidden'));
+          document.getElementById(prog + '-content')?.classList.remove('hidden');
+        });
       });
+
+      /* FAQ accordion */
+      document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+          const ans  = document.getElementById(q.dataset.target);
+          const icon = q.querySelector('svg');
+          if (!ans || !icon) return;
+          ans.classList.toggle('hidden');
+          icon.style.transform = ans.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+      });
+
+      /* ----------  MONTHLY-VOLUME GENERATOR  ---------- */
+      function seededRandom(seed) { const x = Math.sin(seed) * 10000; return x - Math.floor(x); }
+      function generateMonthlyVolume(name, base) {
+        const now = new Date();
+        const seed = name.charCodeAt(0) + (now.getMonth() + 1) * 100 + now.getFullYear();
+        const pct  = 0.8 + seededRandom(seed) * 0.4;
+        return Math.floor(base * pct).toLocaleString();
+      }
+      function updateVolumes() {
+        const bases = { alrajhi:2800, alinma:1900, qitaf:3200, anb:2100, iz:1600, bsf:1400 };
+        document.querySelectorAll('[data-monthly-volume]').forEach(el => {
+          const name = el.dataset.monthlyVolume;
+          el.textContent = `${generateMonthlyVolume(name, bases[name] || 2000)} conversions`;
+        });
+      }
+      updateVolumes();
     });
+  })();
+  </script>
 
-    /* FAQ accordion */
-    document.querySelectorAll('.faq-question').forEach(q => {
-      q.addEventListener('click', () => {
-        const ans  = document.getElementById(q.dataset.target);
-        const icon = q.querySelector('svg');
-        if (!ans || !icon) return;
-        ans.classList.toggle('hidden');
-        icon.style.transform = ans.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
-      });
-    });
-
-    /* ----------  MONTHLY-VOLUME GENERATOR  ---------- */
-    function seededRandom(seed) { const x = Math.sin(seed) * 10000; return x - Math.floor(x); }
-    function generateMonthlyVolume(name, base) {
-      const now = new Date();
-      const seed = name.charCodeAt(0) + (now.getMonth() + 1) * 100 + now.getFullYear();
-      const pct  = 0.8 + seededRandom(seed) * 0.4;
-      return Math.floor(base * pct).toLocaleString();
-    }
-    function updateVolumes() {
-      const bases = { alrajhi:2800, alinma:1900, qitaf:3200, anb:2100, iz:1600, bsf:1400 };
-      document.querySelectorAll('[data-monthly-volume]').forEach(el => {
-        const name = el.dataset.monthlyVolume;
-        el.textContent = `${generateMonthlyVolume(name, bases[name] || 2000)} conversions`;
-      });
-    }
-    updateVolumes();
-  });
-})();
-</script>
-
-<!-- ===== INJECTOR (keep last) ===== -->
-<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
+  <!-- ===== INJECTOR (keep last) ===== -->
+  <script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
