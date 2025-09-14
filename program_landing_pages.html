@@ -160,7 +160,7 @@
                         </div>
                     </div>
                     
-                    <h3 class="text-xl font-cairo font-bold text-secondary mb-2">Al Rajhi Bank Rewards</h3>
+                    <h3 class="text-xl font-cairo font-bold text-secondary mb-2" data-translate="ramlPointsTitle">Al Rajhi Bank Rewards</h3>
                     <p class="text-text-secondary text-sm mb-4">Convert your Al Rajhi Bank reward points into instant cash transfers with our banking program.</p>
                     
                     <div class="space-y-3 mb-6">
@@ -1426,21 +1426,94 @@
         // Initialize monthly volumes on page load
         updateMonthlyVolumes();
     <!-- JavaScript Files -->
-    <script src="js/translations.js"></script>
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
+   <!-- ===== LANGUAGE SWITCHER (optional button group) ===== -->
+<div id="lang-switcher" class="fixed top-4 right-4 z-50 space-x-2">
+  <button data-lang="en" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">EN</button>
+  <button data-lang="ar" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">AR</button>
+  <!-- add more languages if needed -->
+</div>
 
-        // Close mobile menu when clicking on menu items
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', function() {
-                const mobileMenu = document.getElementById('mobile-menu');
-                mobileMenu.classList.add('hidden');
-            });
+<!-- ===== TRANSLATION DATA ===== -->
+<script src="js/translations.js"></script>
+
+<!-- ===== CORE LOGIC ===== -->
+<script>
+  /* ----------  HELPERS  ---------- */
+  function applyTranslations(lang) {
+    document.querySelectorAll('[data-translate]').forEach(el => {
+      const key = el.dataset.translate;
+      if (translations[lang] && translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+    document.documentElement.setAttribute('lang', lang);        // useful for RTL
+    localStorage.setItem('preferred-lang', lang);               // remember choice
+  }
+
+  /* ----------  LANGUAGE SWITCH  ---------- */
+  document.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem('preferred-lang') || 'en';
+    applyTranslations(saved);
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        applyTranslations(btn.dataset.lang);
+      });
+    });
+  });
+
+  /* ----------  MOBILE MENU  ---------- */
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    if (!btn || !menu) return;
+
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    menu.querySelectorAll('a').forEach(link =>
+      link.addEventListener('click', () => menu.classList.add('hidden'))
+    );
+  });
+
+  /* ----------  PROGRAM TABS  ---------- */
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabBtns = document.querySelectorAll('.program-tab-btn');
+    const contents = document.querySelectorAll('.program-content');
+    if (!tabBtns.length || !contents.length) return;
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const prog = btn.dataset.program;
+
+        tabBtns.forEach(b => {
+          b.classList.remove('active', 'bg-accent', 'text-white');
+          b.classList.add('bg-border', 'text-text-secondary');
         });
+        btn.classList.add('active', 'bg-accent', 'text-white');
+        btn.classList.remove('bg-border', 'text-text-secondary');
+
+        contents.forEach(c => c.classList.add('hidden'));
+        const target = document.getElementById(prog + '-content');
+        if (target) target.classList.remove('hidden');
+      });
+    });
+  });
+
+  /* ----------  FAQ ACCORDION  ---------- */
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = document.getElementById(q.dataset.target);
+        const icon = q.querySelector('svg');
+        if (!answer || !icon) return;
+
+        answer.classList.toggle('hidden');
+        icon.style.transform = answer.classList.contains('hidden')
+          ? 'rotate(0deg)'
+          : 'rotate(180deg)';
+      });
+    });
+  });
 </script>
-</body>
-</html>
+
+<!-- ===== INJECTOR (keep last) ===== -->
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
