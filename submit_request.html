@@ -558,279 +558,287 @@
   <button data-lang="ar" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">AR</button>
 </div>
 
+<!-- =====  LANGUAGE SWITCHER  ===== -->
+<div id="lang-switcher" class="fixed top-4 right-4 z-50 space-x-2">
+  <button data-lang="en" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">EN</button>
+  <button data-lang="ar" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">AR</button>
+</div>
+
 <!-- =====  TRANSLATION DATA  ===== -->
 <script src="js/translations.js"></script>
+
 <script>
-// -----------  TRANSLATION HANDLER  -----------
-document.addEventListener('DOMContentLoaded', function() {
-    const langButtons = document.querySelectorAll('.lang-btn');
-    
-    langButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const lang = this.getAttribute('data-lang');
-            document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-            applyTranslations(lang);
-        });
-    });
-
-    function applyTranslations(lang) {
-        document.querySelectorAll('[data-translate]').forEach(element => {
-            const key = element.getAttribute('data-translate');
-            if (translations[lang] && translations[lang][key]) {
-                element.textContent = translations[lang][key];
-            }
-        });
-    }
-});
-
-// -----------  MOBILE MENU  -----------
-document.getElementById('mobile-menu-btn').addEventListener('click', function () {
-  const mobileMenu = document.getElementById('mobile-menu');
-  mobileMenu.classList.toggle('hidden');
-});
-document.querySelectorAll('#mobile-menu a').forEach(link => {
-  link.addEventListener('click', function () {
-    document.getElementById('mobile-menu').classList.add('hidden');
-  });
-});
-
-// -----------  FORM STATE  -----------
-let formData = { selectedProgram: null, programRate: 0, minPoints: 0, programFee: 0, programName: '' };
-
-// -----------  STEP NAVIGATION  -----------
-const steps = {
-  1: document.getElementById('program-selection'),
-  2: document.getElementById('account-details'),
-  3: document.getElementById('confirmation')
-};
-const stepIndicators = {
-  1: document.getElementById('step-1'),
-  2: document.getElementById('step-2'),
-  3: document.getElementById('step-3')
-};
-function updateStepIndicator(activeStep) {
-  Object.keys(stepIndicators).forEach(step => {
-    const indicator = stepIndicators[step];
-    const circle = indicator.querySelector('div');
-    const text = indicator.querySelector('span');
-    if (parseInt(step) <= activeStep) {
-      circle.classList.remove('bg-border', 'text-text-secondary');
-      circle.classList.add('bg-accent', 'text-white');
-      text.classList.remove('text-text-secondary');
-      text.classList.add('text-secondary', 'font-medium');
-    } else {
-      circle.classList.remove('bg-accent', 'text-white');
-      circle.classList.add('bg-border', 'text-text-secondary');
-      text.classList.remove('text-secondary', 'font-medium');
-      text.classList.add('text-text-secondary');
+/* =========================================================
+   =  WORKING TRANSLATION ENGINE (from 2nd file)  =
+   ========================================================= */
+function applyTranslations(lang) {
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      element.textContent = translations[lang][key];
     }
   });
-}
-function showStep(stepNumber) {
-  Object.values(steps).forEach(step => step.classList.add('hidden'));
-  steps[stepNumber].classList.remove('hidden');
-  updateStepIndicator(stepNumber);
+  document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  localStorage.setItem('preferred-lang', lang);
 }
 
-// -----------  PROGRAM SELECTION  -----------
-const programOptions = document.querySelectorAll('.program-option');
-const continueToDetails = document.getElementById('continue-to-details');
-programOptions.forEach(option => {
-  option.addEventListener('click', function () {
-    programOptions.forEach(opt => {
-      opt.classList.remove('border-accent', 'bg-accent/5');
-      opt.classList.add('border-border');
+document.addEventListener('DOMContentLoaded', function () {
+  /* ---- language switcher ---- */
+  const langButtons = document.querySelectorAll('.lang-btn');
+  langButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const lang = this.getAttribute('data-lang');
+      applyTranslations(lang);
     });
-    this.classList.remove('border-border');
-    this.classList.add('border-accent', 'bg-accent/5');
-    formData.selectedProgram = this.dataset.program;
-    formData.programRate = parseFloat(this.dataset.rate);
-    formData.minPoints = parseInt(this.dataset.min);
-    formData.programFee = parseInt(this.dataset.fee);
-    formData.programName = this.querySelector('h3').textContent;
-    document.getElementById('program-name').value = formData.programName;
-    continueToDetails.disabled = false;
-    updateAccountHelp();
   });
-});
-function updateAccountHelp() {
-  const accountHelp = document.getElementById('account-help');
-  const pointsHelp = document.getElementById('points-help');
-  const helpTexts = {
-    alrajhi: 'Enter your Al Rajhi Bank account number or Tadawul ID',
-    mobily: 'Enter your Mobily mobile number (05XXXXXXXX)',
-    qitaf: 'Enter your Qitaf membership number',
-    stc: 'Enter your STC mobile number (05XXXXXXXX)',
-    sabb: 'Enter your SABB account number',
-    zain: 'Enter your Zain mobile number (05XXXXXXXX)'
+
+  /* ---- load saved language ---- */
+  const saved = localStorage.getItem('preferred-lang') || 'en';
+  applyTranslations(saved);
+
+  /* ---- mobile menu (kept as original) ---- */
+  document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenu.classList.toggle('hidden');
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', function () {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+  });
+
+  /* =========================================================
+     =  YOUR ORIGINAL CODE STARTS HERE  =
+     ========================================================= */
+  // Form state management
+  let formData = {
+    selectedProgram: null,
+    programRate: 0,
+    minPoints: 0,
+    programFee: 0,
+    programName: ''
   };
-  accountHelp.textContent = helpTexts[formData.selectedProgram] || 'Enter your account number or member ID';
-  pointsHelp.textContent = `Minimum ${formData.minPoints.toLocaleString()} points required for ${formData.programName}`;
-}
 
-// -----------  NAVIGATION BUTTONS  -----------
-continueToDetails.addEventListener('click', () => showStep(2));
-document.getElementById('back-to-program').addEventListener('click', () => showStep(1));
-document.getElementById('continue-to-confirmation').addEventListener('click', () => {
-  updateSummary();
-  showStep(3);
-});
-document.getElementById('back-to-details').addEventListener('click', () => showStep(2));
+  // Step navigation
+  const steps = {
+    1: document.getElementById('program-selection'),
+    2: document.getElementById('account-details'),
+    3: document.getElementById('confirmation')
+  };
+  const stepIndicators = {
+    1: document.getElementById('step-1'),
+    2: document.getElementById('step-2'),
+    3: document.getElementById('step-3')
+  };
 
-// -----------  VALIDATION  -----------
-const form = document.getElementById('conversion-form');
-const requiredFields = ['phone', 'program-name', 'points-balance', 'bank-name', 'iban'];
-const continueToConfirmation = document.getElementById('continue-to-confirmation');
-function validateField(fieldId) {
-  const field = document.getElementById(fieldId);
-  const errorDiv = field.parentNode.querySelector('.error-message');
-  let isValid = true, errorMessage = '';
-  errorDiv.classList.add('hidden');
-  field.classList.remove('border-error');
-  if (!field.value.trim()) {
-    isValid = false;
-    errorMessage = 'This field is required';
-  } else {
-    switch (fieldId) {
-      case 'phone':
-        if (!/^(\+966|966|0)?5[0-9]{8}$/.test(field.value.replace(/\s/g, ''))) {
-          isValid = false;
-          errorMessage = 'Please enter a valid Saudi mobile number';
-        }
-        break;
-      case 'points-balance':
-        if (parseInt(field.value) < formData.minPoints) {
-          isValid = false;
-          errorMessage = `Minimum ${formData.minPoints.toLocaleString()} points required`;
-        }
-        break;
-      case 'iban':
-        if (!/^SA[0-9]{22}$/.test(field.value.replace(/\s/g, ''))) {
-          isValid = false;
-          errorMessage = 'Please enter a valid Saudi IBAN (24 digits starting with SA)';
-        }
-        break;
+  function updateStepIndicator(activeStep) {
+    Object.keys(stepIndicators).forEach(step => {
+      const indicator = stepIndicators[step];
+      const circle = indicator.querySelector('div');
+      const text = indicator.querySelector('span');
+      if (parseInt(step) <= activeStep) {
+        circle.classList.remove('bg-border', 'text-text-secondary');
+        circle.classList.add('bg-accent', 'text-white');
+        text.classList.remove('text-text-secondary');
+        text.classList.add('text-secondary', 'font-medium');
+      } else {
+        circle.classList.remove('bg-accent', 'text-white');
+        circle.classList.add('bg-border', 'text-text-secondary');
+        text.classList.remove('text-secondary', 'font-medium');
+        text.classList.add('text-text-secondary');
+      }
+    });
+  }
+
+  function showStep(stepNumber) {
+    Object.values(steps).forEach(step => step.classList.add('hidden'));
+    steps[stepNumber].classList.remove('hidden');
+    updateStepIndicator(stepNumber);
+  }
+
+  // Program selection
+  const programOptions = document.querySelectorAll('.program-option');
+  const continueToDetails = document.getElementById('continue-to-details');
+
+  programOptions.forEach(option => {
+    option.addEventListener('click', function () {
+      programOptions.forEach(opt => {
+        opt.classList.remove('border-accent', 'bg-accent/5');
+        opt.classList.add('border-border');
+      });
+      this.classList.remove('border-border');
+      this.classList.add('border-accent', 'bg-accent/5');
+      formData.selectedProgram = this.dataset.program;
+      formData.programRate = parseFloat(this.dataset.rate);
+      formData.minPoints = parseInt(this.dataset.min);
+      formData.programFee = parseInt(this.dataset.fee);
+      formData.programName = this.querySelector('h3').textContent;
+      document.getElementById('program-name').value = formData.programName;
+      continueToDetails.disabled = false;
+      updateAccountHelp();
+    });
+  });
+
+  function updateAccountHelp() {
+    const accountHelp = document.getElementById('account-help');
+    const pointsHelp = document.getElementById('points-help');
+    const helpTexts = {
+      alrajhi: 'Enter your Al Rajhi Bank account number or Tadawul ID',
+      mobily: 'Enter your Mobily mobile number (05XXXXXXXX)',
+      qitaf: 'Enter your Qitaf membership number',
+      stc: 'Enter your STC mobile number (05XXXXXXXX)',
+      sabb: 'Enter your SABB account number',
+      zain: 'Enter your Zain mobile number (05XXXXXXXX)'
+    };
+    accountHelp.textContent = helpTexts[formData.selectedProgram] || 'Enter your account number or member ID';
+    pointsHelp.textContent = `Minimum ${formData.minPoints.toLocaleString()} points required for ${formData.programName}`;
+  }
+
+  // Navigation buttons
+  continueToDetails.addEventListener('click', () => showStep(2));
+  document.getElementById('back-to-program').addEventListener('click', () => showStep(1));
+  document.getElementById('continue-to-confirmation').addEventListener('click', () => {
+    updateSummary();
+    showStep(3);
+  });
+  document.getElementById('back-to-details').addEventListener('click', () => showStep(2));
+
+  // Validation
+  const form = document.getElementById('conversion-form');
+  const requiredFields = ['phone', 'program-name', 'points-balance', 'bank-name', 'iban'];
+  const continueToConfirmation = document.getElementById('continue-to-confirmation');
+
+  function validateField(fieldId) {
+    const field = document.getElementById(fieldId);
+    const errorDiv = field.parentNode.querySelector('.error-message');
+    let isValid = true, errorMessage = '';
+    errorDiv.classList.add('hidden');
+    field.classList.remove('border-error');
+    if (!field.value.trim()) {
+      isValid = false;
+      errorMessage = 'This field is required';
+    } else {
+      switch (fieldId) {
+        case 'phone':
+          if (!/^(\+966|966|0)?5[0-9]{8}$/.test(field.value.replace(/\s/g, ''))) {
+            isValid = false;
+            errorMessage = 'Please enter a valid Saudi mobile number';
+          }
+          break;
+        case 'points-balance':
+          if (parseInt(field.value) < formData.minPoints) {
+            isValid = false;
+            errorMessage = `Minimum ${formData.minPoints.toLocaleString()} points required`;
+          }
+          break;
+        case 'iban':
+          if (!/^SA[0-9]{22}$/.test(field.value.replace(/\s/g, ''))) {
+            isValid = false;
+            errorMessage = 'Please enter a valid Saudi IBAN (24 digits starting with SA)';
+          }
+          break;
+      }
+    }
+    if (!isValid) {
+      errorDiv.textContent = errorMessage;
+      errorDiv.classList.remove('hidden');
+      field.classList.add('border-error');
+    }
+    return isValid;
+  }
+
+  function validateAllFields() {
+    let allValid = true;
+    requiredFields.forEach(id => { if (!validateField(id)) allValid = false; });
+    continueToConfirmation.disabled = !allValid;
+    return allValid;
+  }
+
+  requiredFields.forEach(fieldId => {
+    const field = document.getElementById(fieldId);
+    field.addEventListener('blur', () => validateField(fieldId));
+    field.addEventListener('input', () => { validateAllFields(); updateCalculator(); });
+  });
+
+  // Calculator
+  function updateCalculator() {
+    const points = parseInt(document.getElementById('points-balance').value) || 0;
+    if (points > 0 && formData.programRate > 0) {
+      const gross = points * formData.programRate;
+      const fee = gross * (formData.programFee / 100);
+      const net = gross - fee;
+      document.getElementById('calc-points').textContent = points.toLocaleString();
+      document.getElementById('calc-rate').textContent = `${formData.programRate} SAR/point`;
+      document.getElementById('calc-gross').textContent = `${gross.toFixed(2)} SAR`;
+      document.getElementById('calc-fee-label').textContent = `Processing Fee (${formData.programFee}%):`;
+      document.getElementById('calc-fee').textContent = `${fee.toFixed(2)} SAR`;
+      document.getElementById('calc-net').textContent = `${net.toFixed(2)} SAR`;
+    } else {
+      ['calc-points', 'calc-rate', 'calc-gross', 'calc-fee', 'calc-net']
+        .forEach(id => document.getElementById(id).textContent = id.includes('rate') ? '0 SAR/point' : '0 SAR');
     }
   }
-  if (!isValid) {
-    errorDiv.textContent = errorMessage;
-    errorDiv.classList.remove('hidden');
-    field.classList.add('border-error');
-  }
-  return isValid;
-}
-function validateAllFields() {
-  let allValid = true;
-  requiredFields.forEach(id => { if (!validateField(id)) allValid = false; });
-  continueToConfirmation.disabled = !allValid;
-  return allValid;
-}
-requiredFields.forEach(fieldId => {
-  const field = document.getElementById(fieldId);
-  field.addEventListener('blur', () => validateField(fieldId));
-  field.addEventListener('input', () => { validateAllFields(); updateCalculator(); });
-});
 
-// -----------  CALCULATOR  -----------
-function updateCalculator() {
-  const points = parseInt(document.getElementById('points-balance').value) || 0;
-  if (points > 0 && formData.programRate > 0) {
+  // Summary
+  function updateSummary() {
+    const points = parseInt(document.getElementById('points-balance').value) || 0;
     const gross = points * formData.programRate;
     const fee = gross * (formData.programFee / 100);
     const net = gross - fee;
-    document.getElementById('calc-points').textContent = points.toLocaleString();
-    document.getElementById('calc-rate').textContent = `${formData.programRate} SAR/point`;
-    document.getElementById('calc-gross').textContent = `${gross.toFixed(2)} SAR`;
-    document.getElementById('calc-fee-label').textContent = `Processing Fee (${formData.programFee}%):`;
-    document.getElementById('calc-fee').textContent = `${fee.toFixed(2)} SAR`;
-    document.getElementById('calc-net').textContent = `${net.toFixed(2)} SAR`;
-  } else {
-    ['calc-points', 'calc-rate', 'calc-gross', 'calc-fee', 'calc-net']
-      .forEach(id => document.getElementById(id).textContent = id.includes('rate') ? '0 SAR/point' : '0 SAR');
+    document.getElementById('summary-program').textContent = formData.programName;
+    document.getElementById('summary-points').textContent = points.toLocaleString();
+    document.getElementById('summary-rate').textContent = `${formData.programRate} SAR/point`;
+    document.getElementById('summary-amount').textContent = `${net.toFixed(2)} SAR`;
+    document.getElementById('summary-phone').textContent = document.getElementById('phone').value;
+    document.getElementById('summary-iban').textContent = document.getElementById('iban').value;
   }
-}
 
-// -----------  SUMMARY  -----------
-function updateSummary() {
-  const points = parseInt(document.getElementById('points-balance').value) || 0;
-  const gross = points * formData.programRate;
-  const fee = gross * (formData.programFee / 100);
-  const net = gross - fee;
-  document.getElementById('summary-program').textContent = formData.programName;
-  document.getElementById('summary-points').textContent = points.toLocaleString();
-  document.getElementById('summary-rate').textContent = `${formData.programRate} SAR/point`;
-  document.getElementById('summary-amount').textContent = `${net.toFixed(2)} SAR`;
-  document.getElementById('summary-phone').textContent = document.getElementById('phone').value;
-  document.getElementById('summary-iban').textContent = document.getElementById('iban').value;
-}
+  // Terms + Submit
+  const termsAgree = document.getElementById('terms-agree');
+  const privacyAgree = document.getElementById('privacy-agree');
+  const submitButton = document.getElementById('submit-request');
+  function validateTerms() {
+    submitButton.disabled = !(termsAgree.checked && privacyAgree.checked);
+  }
+  termsAgree.addEventListener('change', validateTerms);
+  privacyAgree.addEventListener('change', validateTerms);
 
-// -----------  TERMS + SUBMIT  -----------
-const termsAgree = document.getElementById('terms-agree');
-const privacyAgree = document.getElementById('privacy-agree');
-const submitButton = document.getElementById('submit-request');
-function validateTerms() {
-  submitButton.disabled = !(termsAgree.checked && privacyAgree.checked);
-}
-termsAgree.addEventListener('change', validateTerms);
-privacyAgree.addEventListener('change', validateTerms);
-
-form.addEventListener('submit', function (e) {
-  e.preventDefault();
-  if (!validateAllFields() || !termsAgree.checked || !privacyAgree.checked) return;
-  submitButton.disabled = true;
-  submitButton.innerHTML = `
-    <svg class="w-5 h-5 mr-2 inline animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
-    </svg>Submitting...`;
-  setTimeout(() => {
-    const ref = `RP-2025-${Math.floor(Math.random() * 900000) + 100000}`;
-    document.getElementById('reference-number').textContent = ref;
-    Object.values(steps).forEach(s => s.classList.add('hidden'));
-    document.getElementById('success-message').classList.remove('hidden');
-    form.reset();
-    formData = { selectedProgram: null, programRate: 0, minPoints: 0, programFee: 0, programName: '' };
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!validateAllFields() || !termsAgree.checked || !privacyAgree.checked) return;
+    submitButton.disabled = true;
     submitButton.innerHTML = `
-      <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-      </svg>Submit Request`;
-    submitButton.disabled = false;
-  }, 2000);
-});
-
-// -----------  FORMATTING  -----------
-document.getElementById('iban').addEventListener('input', e => {
-  let v = e.target.value.replace(/\s/g, '').toUpperCase();
-  if (v.length > 2) v = v.match(/.{1,4}/g).join(' ');
-  e.target.value = v;
-});
-document.getElementById('phone').addEventListener('input', e => {
-  let v = e.target.value.replace(/\D/g, '');
-  if (v.startsWith('966')) v = '+' + v;
-  else if (v.startsWith('5')) v = '+966 ' + v;
-  e.target.value = v;
-});
-</script>
-
-<!-- =====  TRANSLATION ADD-ON  (does NOT touch your code)  ===== -->
-<script>
-/* ----------  tiny translation engine  ---------- */
-(() => {
-  function applyTranslations(lang) {
-    document.querySelectorAll('[data-translate]').forEach(el => {
-      const key = el.dataset.translate;
-      if (translations[lang]?.[key]) el.textContent = translations[lang][key];
-    });
-    document.documentElement.lang = lang;
-    localStorage.setItem('preferred-lang', lang);
-  }
-  document.addEventListener('DOMContentLoaded', () => {
-    const saved = localStorage.getItem('preferred-lang') || 'en';
-    applyTranslations(saved);
-    document.querySelectorAll('.lang-btn').forEach(btn =>
-      btn.addEventListener('click', () => applyTranslations(btn.dataset.lang))
-    );
+      <svg class="w-5 h-5 mr-2 inline animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+      </svg>Submitting...`;
+    setTimeout(() => {
+      const ref = `RP-2025-${Math.floor(Math.random() * 900000) + 100000}`;
+      document.getElementById('reference-number').textContent = ref;
+      Object.values(steps).forEach(s => s.classList.add('hidden'));
+      document.getElementById('success-message').classList.remove('hidden');
+      form.reset();
+      formData = { selectedProgram: null, programRate: 0, minPoints: 0, programFee: 0, programName: '' };
+      submitButton.innerHTML = `
+        <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+        </svg>Submit Request`;
+      submitButton.disabled = false;
+    }, 2000);
   });
-})();
+
+  // Formatting
+  document.getElementById('iban').addEventListener('input', e => {
+    let v = e.target.value.replace(/\s/g, '').toUpperCase();
+    if (v.length > 2) v = v.match(/.{1,4}/g).join(' ');
+    e.target.value = v;
+  });
+  document.getElementById('phone').addEventListener('input', e => {
+    let v = e.target.value.replace(/\D/g, '');
+    if (v.startsWith('966')) v = '+' + v;
+    else if (v.startsWith('5')) v = '+966 ' + v;
+    e.target.value = v;
+  });
+});
 </script>
 
 <!-- =====  KEEP YOUR INJECTOR  ===== -->
