@@ -552,22 +552,551 @@
     </footer>
 
 
-<!-- JavaScript Files -->
-    <script src="js/translations.js"></script>
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
+<!-- =====  LANGUAGE SWITCHER  (visually only)  ===== -->
+<div id="lang-switcher" class="fixed top-4 right-4 z-50 space-x-2">
+  <button data-lang="en" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">EN</button>
+  <button data-lang="ar" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">AR</button>
+</div>
 
-        // Close mobile menu when clicking on menu items
-        document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', function() {
-                const mobileMenu = document.getElementById('mobile-menu');
-                mobileMenu.classList.add('hidden');
-            });
+<!-- =====  LANGUAGE SWITCHER  ===== -->
+<div id="lang-switcher" class="fixed top-4 right-4 z-50 space-x-2">
+  <button data-lang="en" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">EN</button>
+  <button data-lang="ar" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">AR</button>
+</div>
+<!-- =====  LANGUAGE SWITCHER  ===== -->
+<div id="lang-switcher" class="fixed top-4 right-4 z-50 space-x-2">
+  <button data-lang="en" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">EN</button>
+  <button data-lang="ar" class="lang-btn px-3 py-1 rounded bg-white/20 text-white hover:bg-white/30">AR</button>
+</div>
+
+<!-- =====  TRANSLATION DATA  ===== -->
+<script src="js/translations.js"></script>
+
+<script>
+/* =========================================================
+   =  TRANSLATION SYSTEM  =
+   ========================================================= */
+
+// Store current language in memory instead of localStorage
+let currentLanguage = 'en';
+
+function applyTranslations(lang) {
+  // Update current language
+  currentLanguage = lang;
+  
+  // Apply translations to all elements with data-translate attribute
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    if (window.translations && window.translations[lang] && window.translations[lang][key]) {
+      // Handle different element types
+      if (element.tagName === 'INPUT' && (element.type === 'text' || element.type === 'tel')) {
+        element.placeholder = window.translations[lang][key];
+      } else if (element.tagName === 'INPUT' && element.type === 'submit') {
+        element.value = window.translations[lang][key];
+      } else {
+        element.textContent = window.translations[lang][key];
+      }
+    }
+  });
+  
+  // Set document direction for RTL/LTR
+  document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+  document.documentElement.setAttribute('lang', lang);
+  
+  // Update active language button
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.remove('bg-white/30');
+    if (btn.getAttribute('data-lang') === lang) {
+      btn.classList.add('bg-white/30');
+    }
+  });
+}
+
+// Initialize translation system
+function initializeTranslations() {
+  // Set up language switcher buttons
+  const langButtons = document.querySelectorAll('.lang-btn');
+  langButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const lang = this.getAttribute('data-lang');
+      applyTranslations(lang);
+      
+      // Update dynamic content that might have been generated
+      if (typeof updateAccountHelp === 'function') {
+        updateAccountHelp();
+      }
+    });
+  });
+  
+  // Apply default language
+  applyTranslations(currentLanguage);
+}
+
+/* =========================================================
+   =  MAIN APPLICATION LOGIC  =
+   ========================================================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+  
+  // Initialize translations first
+  initializeTranslations();
+
+  /* ---- Mobile menu functionality ---- */
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking on menu items
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  }
+
+  /* =========================================================
+     =  FORM FUNCTIONALITY  =
+     ========================================================= */
+
+  // Form state management
+  let formData = {
+    selectedProgram: null,
+    programRate: 0,
+    minPoints: 0,
+    programFee: 0,
+    programName: ''
+  };
+
+  // Step navigation elements
+  const steps = {
+    1: document.getElementById('program-selection'),
+    2: document.getElementById('account-details'),
+    3: document.getElementById('confirmation')
+  };
+  
+  const stepIndicators = {
+    1: document.getElementById('step-1'),
+    2: document.getElementById('step-2'),
+    3: document.getElementById('step-3')
+  };
+
+  // Update step indicator styling
+  function updateStepIndicator(activeStep) {
+    Object.keys(stepIndicators).forEach(step => {
+      const indicator = stepIndicators[step];
+      if (!indicator) return;
+      
+      const circle = indicator.querySelector('div');
+      const text = indicator.querySelector('span');
+      
+      if (parseInt(step) <= activeStep) {
+        if (circle) {
+          circle.classList.remove('bg-border', 'text-text-secondary');
+          circle.classList.add('bg-accent', 'text-white');
+        }
+        if (text) {
+          text.classList.remove('text-text-secondary');
+          text.classList.add('text-secondary', 'font-medium');
+        }
+      } else {
+        if (circle) {
+          circle.classList.remove('bg-accent', 'text-white');
+          circle.classList.add('bg-border', 'text-text-secondary');
+        }
+        if (text) {
+          text.classList.remove('text-secondary', 'font-medium');
+          text.classList.add('text-text-secondary');
+        }
+      }
+    });
+  }
+
+  // Show specific step
+  function showStep(stepNumber) {
+    Object.values(steps).forEach(step => {
+      if (step) step.classList.add('hidden');
+    });
+    if (steps[stepNumber]) {
+      steps[stepNumber].classList.remove('hidden');
+    }
+    updateStepIndicator(stepNumber);
+  }
+
+  // Program selection logic
+  const programOptions = document.querySelectorAll('.program-option');
+  const continueToDetails = document.getElementById('continue-to-details');
+
+  programOptions.forEach(option => {
+    option.addEventListener('click', function () {
+      // Remove selection from all options
+      programOptions.forEach(opt => {
+        opt.classList.remove('border-accent', 'bg-accent/5');
+        opt.classList.add('border-border');
+      });
+      
+      // Add selection to clicked option
+      this.classList.remove('border-border');
+      this.classList.add('border-accent', 'bg-accent/5');
+      
+      // Update form data
+      formData.selectedProgram = this.dataset.program;
+      formData.programRate = parseFloat(this.dataset.rate);
+      formData.minPoints = parseInt(this.dataset.min);
+      formData.programFee = parseInt(this.dataset.fee);
+      formData.programName = this.querySelector('h3').textContent;
+      
+      // Update hidden program name field
+      const programNameField = document.getElementById('program-name');
+      if (programNameField) {
+        programNameField.value = formData.programName;
+      }
+      
+      // Enable continue button
+      if (continueToDetails) {
+        continueToDetails.disabled = false;
+      }
+      
+      // Update account help text
+      updateAccountHelp();
+    });
+  });
+
+  // Update account help text based on selected program
+  function updateAccountHelp() {
+    const accountHelp = document.getElementById('account-help');
+    const pointsHelp = document.getElementById('points-help');
+    
+    if (!accountHelp || !pointsHelp) return;
+    
+    const helpTexts = {
+      alrajhi: currentLanguage === 'ar' ? 
+        'أدخل رقم حسابك في بنك الراجحي أو رقم تداولكم' : 
+        'Enter your Al Rajhi Bank account number or Tadawul ID',
+      mobily: currentLanguage === 'ar' ? 
+        'أدخل رقم هاتف موبايلي (05XXXXXXXX)' : 
+        'Enter your Mobily mobile number (05XXXXXXXX)',
+      qitaf: currentLanguage === 'ar' ? 
+        'أدخل رقم عضوية قطاف' : 
+        'Enter your Qitaf membership number',
+      stc: currentLanguage === 'ar' ? 
+        'أدخل رقم هاتف STC (05XXXXXXXX)' : 
+        'Enter your STC mobile number (05XXXXXXXX)',
+      sabb: currentLanguage === 'ar' ? 
+        'أدخل رقم حسابك في بنك ساب' : 
+        'Enter your SABB account number',
+      zain: currentLanguage === 'ar' ? 
+        'أدخل رقم هاتف زين (05XXXXXXXX)' : 
+        'Enter your Zain mobile number (05XXXXXXXX)'
+    };
+    
+    const defaultHelp = currentLanguage === 'ar' ? 
+      'أدخل رقم حسابك أو رقم العضوية' : 
+      'Enter your account number or member ID';
+    
+    accountHelp.textContent = helpTexts[formData.selectedProgram] || defaultHelp;
+    
+    const pointsText = currentLanguage === 'ar' ? 
+      `الحد الأدنى ${formData.minPoints.toLocaleString()} نقطة مطلوبة لـ ${formData.programName}` :
+      `Minimum ${formData.minPoints.toLocaleString()} points required for ${formData.programName}`;
+    
+    pointsHelp.textContent = pointsText;
+  }
+
+  // Navigation button event listeners
+  if (continueToDetails) {
+    continueToDetails.addEventListener('click', () => showStep(2));
+  }
+  
+  const backToProgram = document.getElementById('back-to-program');
+  if (backToProgram) {
+    backToProgram.addEventListener('click', () => showStep(1));
+  }
+  
+  const continueToConfirmation = document.getElementById('continue-to-confirmation');
+  if (continueToConfirmation) {
+    continueToConfirmation.addEventListener('click', () => {
+      updateSummary();
+      showStep(3);
+    });
+  }
+  
+  const backToDetails = document.getElementById('back-to-details');
+  if (backToDetails) {
+    backToDetails.addEventListener('click', () => showStep(2));
+  }
+
+  // Form validation
+  const form = document.getElementById('conversion-form');
+  const requiredFields = ['phone', 'program-name', 'points-balance', 'bank-name', 'iban'];
+
+  function validateField(fieldId) {
+    const field = document.getElementById(fieldId);
+    if (!field) return true;
+    
+    const errorDiv = field.parentNode.querySelector('.error-message');
+    let isValid = true;
+    let errorMessage = '';
+    
+    // Reset error state
+    if (errorDiv) {
+      errorDiv.classList.add('hidden');
+    }
+    field.classList.remove('border-error');
+    
+    // Check if field is empty
+    if (!field.value.trim()) {
+      isValid = false;
+      errorMessage = currentLanguage === 'ar' ? 'هذا الحقل مطلوب' : 'This field is required';
+    } else {
+      // Field-specific validation
+      switch (fieldId) {
+        case 'phone':
+          if (!/^(\+966|966|0)?5[0-9]{8}$/.test(field.value.replace(/\s/g, ''))) {
+            isValid = false;
+            errorMessage = currentLanguage === 'ar' ? 
+              'يرجى إدخال رقم هاتف سعودي صالح' : 
+              'Please enter a valid Saudi mobile number';
+          }
+          break;
+        case 'points-balance':
+          if (parseInt(field.value) < formData.minPoints) {
+            isValid = false;
+            errorMessage = currentLanguage === 'ar' ? 
+              `الحد الأدنى ${formData.minPoints.toLocaleString()} نقطة مطلوبة` :
+              `Minimum ${formData.minPoints.toLocaleString()} points required`;
+          }
+          break;
+        case 'iban':
+          if (!/^SA[0-9]{22}$/.test(field.value.replace(/\s/g, ''))) {
+            isValid = false;
+            errorMessage = currentLanguage === 'ar' ? 
+              'يرجى إدخال رقم آيبان سعودي صالح (24 رقم يبدأ بـ SA)' :
+              'Please enter a valid Saudi IBAN (24 digits starting with SA)';
+          }
+          break;
+      }
+    }
+    
+    // Show error if validation failed
+    if (!isValid && errorDiv) {
+      errorDiv.textContent = errorMessage;
+      errorDiv.classList.remove('hidden');
+      field.classList.add('border-error');
+    }
+    
+    return isValid;
+  }
+
+  function validateAllFields() {
+    let allValid = true;
+    requiredFields.forEach(id => {
+      if (!validateField(id)) allValid = false;
+    });
+    
+    if (continueToConfirmation) {
+      continueToConfirmation.disabled = !allValid;
+    }
+    
+    return allValid;
+  }
+
+  // Add event listeners for validation
+  requiredFields.forEach(fieldId => {
+    const field = document.getElementById(fieldId);
+    if (field) {
+      field.addEventListener('blur', () => validateField(fieldId));
+      field.addEventListener('input', () => {
+        validateAllFields();
+        updateCalculator();
+      });
+    }
+  });
+
+  // Calculator functionality
+  function updateCalculator() {
+    const pointsField = document.getElementById('points-balance');
+    const points = pointsField ? parseInt(pointsField.value) || 0 : 0;
+    
+    if (points > 0 && formData.programRate > 0) {
+      const gross = points * formData.programRate;
+      const fee = gross * (formData.programFee / 100);
+      const net = gross - fee;
+      
+      // Update calculator display
+      const calcElements = {
+        'calc-points': points.toLocaleString(),
+        'calc-rate': `${formData.programRate} ${currentLanguage === 'ar' ? 'ريال/نقطة' : 'SAR/point'}`,
+        'calc-gross': `${gross.toFixed(2)} ${currentLanguage === 'ar' ? 'ريال' : 'SAR'}`,
+        'calc-fee': `${fee.toFixed(2)} ${currentLanguage === 'ar' ? 'ريال' : 'SAR'}`,
+        'calc-net': `${net.toFixed(2)} ${currentLanguage === 'ar' ? 'ريال' : 'SAR'}`
+      };
+      
+      Object.entries(calcElements).forEach(([id, value]) => {
+        const element = document.getElementById(id);
+        if (element) element.textContent = value;
+      });
+      
+      // Update fee label
+      const feeLabel = document.getElementById('calc-fee-label');
+      if (feeLabel) {
+        feeLabel.textContent = currentLanguage === 'ar' ? 
+          `رسوم المعالجة (${formData.programFee}%):` :
+          `Processing Fee (${formData.programFee}%):`;
+      }
+    } else {
+      // Reset calculator display
+      const resetElements = ['calc-points', 'calc-rate', 'calc-gross', 'calc-fee', 'calc-net'];
+      resetElements.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.textContent = id.includes('rate') ? 
+            (currentLanguage === 'ar' ? '0 ريال/نقطة' : '0 SAR/point') :
+            (currentLanguage === 'ar' ? '0 ريال' : '0 SAR');
+        }
+      });
+    }
+  }
+
+  // Summary update function
+  function updateSummary() {
+    const pointsField = document.getElementById('points-balance');
+    const phoneField = document.getElementById('phone');
+    const ibanField = document.getElementById('iban');
+    
+    const points = pointsField ? parseInt(pointsField.value) || 0 : 0;
+    const gross = points * formData.programRate;
+    const fee = gross * (formData.programFee / 100);
+    const net = gross - fee;
+    
+    // Update summary elements
+    const summaryElements = {
+      'summary-program': formData.programName,
+      'summary-points': points.toLocaleString(),
+      'summary-rate': `${formData.programRate} ${currentLanguage === 'ar' ? 'ريال/نقطة' : 'SAR/point'}`,
+      'summary-amount': `${net.toFixed(2)} ${currentLanguage === 'ar' ? 'ريال' : 'SAR'}`,
+      'summary-phone': phoneField ? phoneField.value : '',
+      'summary-iban': ibanField ? ibanField.value : ''
+    };
+    
+    Object.entries(summaryElements).forEach(([id, value]) => {
+      const element = document.getElementById(id);
+      if (element) element.textContent = value;
+    });
+  }
+
+  // Terms and conditions validation
+  const termsAgree = document.getElementById('terms-agree');
+  const privacyAgree = document.getElementById('privacy-agree');
+  const submitButton = document.getElementById('submit-request');
+
+  function validateTerms() {
+    if (submitButton && termsAgree && privacyAgree) {
+      submitButton.disabled = !(termsAgree.checked && privacyAgree.checked);
+    }
+  }
+
+  if (termsAgree) {
+    termsAgree.addEventListener('change', validateTerms);
+  }
+  if (privacyAgree) {
+    privacyAgree.addEventListener('change', validateTerms);
+  }
+
+  // Form submission
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      
+      if (!validateAllFields() || !termsAgree?.checked || !privacyAgree?.checked) {
+        return;
+      }
+      
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.innerHTML = `
+          <svg class="w-5 h-5 mr-2 inline animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+          </svg>${currentLanguage === 'ar' ? 'جاري الإرسال...' : 'Submitting...'}`;
+      }
+      
+      // Simulate form submission
+      setTimeout(() => {
+        const ref = `RP-2025-${Math.floor(Math.random() * 900000) + 100000}`;
+        const refElement = document.getElementById('reference-number');
+        if (refElement) {
+          refElement.textContent = ref;
+        }
+        
+        // Hide all steps and show success message
+        Object.values(steps).forEach(step => {
+          if (step) step.classList.add('hidden');
         });
-    </script>
+        const successMessage = document.getElementById('success-message');
+        if (successMessage) {
+          successMessage.classList.remove('hidden');
+        }
+        
+        // Reset form
+        form.reset();
+        formData = {
+          selectedProgram: null,
+          programRate: 0,
+          minPoints: 0,
+          programFee: 0,
+          programName: ''
+        };
+        
+        // Reset submit button
+        if (submitButton) {
+          submitButton.innerHTML = `
+            <svg class="w-5 h-5 mr-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            </svg>${currentLanguage === 'ar' ? 'إرسال الطلب' : 'Submit Request'}`;
+          submitButton.disabled = false;
+        }
+      }, 2000);
+    });
+  }
+
+  // Input formatting
+  const ibanField = document.getElementById('iban');
+  if (ibanField) {
+    ibanField.addEventListener('input', function(e) {
+      let value = e.target.value.replace(/\s/g, '').toUpperCase();
+      if (value.length > 2) {
+        value = value.match(/.{1,4}/g).join(' ');
+      }
+      if (value.length > 29) { // SA + 22 digits + spaces
+        value = value.substring(0, 29);
+      }
+      e.target.value = value;
+    });
+  }
+  
+  const phoneField = document.getElementById('phone');
+  if (phoneField) {
+    phoneField.addEventListener('input', function(e) {
+      let value = e.target.value.replace(/\D/g, '');
+      if (value.startsWith('966')) {
+        value = '+' + value;
+      } else if (value.startsWith('5')) {
+        value = '+966 ' + value;
+      }
+      e.target.value = value;
+    });
+  }
+  
+  // Initialize the form in step 1
+  showStep(1);
+});
+</script>
+
+<!-- =====  KEEP YOUR EXTERNAL SCRIPTS  ===== -->
+<script src="js/google-sheets.js"></script>
+<script id="dhws-dataInjector" src="/public/dhws-data-injector.js"></script>
 </body>
 </html>
