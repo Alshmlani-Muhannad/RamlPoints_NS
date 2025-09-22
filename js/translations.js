@@ -360,6 +360,17 @@ const translations = {
         Processing_Time:"Processing Time:",
         Processing_Fee:"Processing Fee:",
         Monthly_Volume:"Monthly Volume:",
+        akther_Alinma_Points:"Akther Alinma Points",
+        Akther_Script:"Transform your Akther Alinma loyalty points into cash with fast processing and reliable service.",
+        Qitaf_Rewards:"Qitaf Rewards",
+        Qitaf_Script:"Get the best value for your Qitaf points with our telecom program conversion rate and fast processing.",
+        BSF_Jana_Rewards:"BSF Jana Rewards",
+        Jana_Script:"Easily convert your BSF Jana points into cash transfers with our simple process.",
+        IZ_Wallet_Rewards:"IZ Wallet Rewards",
+        IZ_Script:"Maximize your IZ reward points with excellent conversion rates and secure processing.",
+        ANB_Rewards_d:"ANB Rewards",
+        ANB_Script:"Convert your ANB Rewards points into cash quickly and securely with our trusted service.",
+        
         
 
         
@@ -655,6 +666,16 @@ const translations = {
         Processing_Time:":وقت المعالجة",
         Processing_Fee:":رسوم المعالجة",
         Monthly_Volume:":الحجم الشهري",
+        akther_Alinma_Points:"نقاط أكثر الإنماء",
+        Akther_Script:"حول نقاط الولاء أكثر الإنماء إلى كاش مع معالجة سريعة وخدمة موثوقة.",
+        Qitaf_Rewards:"مكافآت قطاف",
+        Qitaf_Script:"احصل على أفضل قيمة لنقاط قطاف مع معدل التحويل الخاص بنا ومعالجة سريعة.",
+        BSF_Jana_Rewards:"مكافآت جنى من البنك الفرنسي السعودي",
+        Jana_Script:"حوّل نقاط جنى من البنك الفرنسي السعودي إلى تحويلات نقدية من خلال عمليتنا البسيطة.",
+        IZ_Wallet_Rewards:"مكافآت محفظة عز",
+        IZ_Script:"حقق أقصى استفادة من نقاط مكافآت محفظة عز مع معدلات تحويل ممتازة ومعالجة آمنة.",
+        ANB_Rewards_d:"مكافآت العربي الوطني",
+        ANB_Script:"حوّل نقاط مكافآت العربي الوطني إلى نقد بسرعة وأمان مع خدمتنا الموثوقة.",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
