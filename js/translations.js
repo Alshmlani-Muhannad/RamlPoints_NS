@@ -346,6 +346,9 @@ const translations = {
         Business_Days_ii:"Business Days",
         Success_Rate:"Success Rate",
         All_prog_dd:"All Programs",
+        Banking_df:"Banking Programs",
+        Telecom_df:"Telecom",
+        Wallets_df:"Digital",
 
         
         // Terms & Privacy
@@ -626,6 +629,9 @@ const translations = {
         Business_Days_ii:"ايام التحويل",
         Success_Rate:"معدل النجاح",
         All_prog_dd:"جميع البرامج",
+        Banking_df:"برامج البنوك",
+        Telecom_df:"برامج الاتصالات",
+        Wallets_df:"المحافظ الرقمية",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
