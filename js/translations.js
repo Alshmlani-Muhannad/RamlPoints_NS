@@ -354,6 +354,7 @@ const translations = {
         Program_Name:"Program Name",
         Processing_Time:"Processing Time",
         Per_Point:"per point",
+        Rajhi_Bank_Rewards:"Al Rajhi Bank Rewards",
         
 
         
@@ -643,6 +644,7 @@ const translations = {
         Program_Name:"اسم البرنامج",
         Processing_Time:"وقت المعالجة",
         Per_Point:"لكل نقطة",
+        Rajhi_Bank_Rewards:"مكافآت البنك الراجحي",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
