@@ -349,6 +349,7 @@ const translations = {
         Banking_df:"Banking Programs",
         Telecom_df:"Telecom",
         Wallets_df:"Digital",
+        Highest_Rate:"Highest Rate",
 
         
         // Terms & Privacy
@@ -632,6 +633,7 @@ const translations = {
         Banking_df:"برامج البنوك",
         Telecom_df:"برامج الاتصالات",
         Wallets_df:"المحافظ الرقمية",
+        Highest_Rate:"أعلى معدل",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
