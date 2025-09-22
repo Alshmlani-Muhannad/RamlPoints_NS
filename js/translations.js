@@ -357,6 +357,7 @@ const translations = {
         Rajhi_Bank_Rewards:"Al Rajhi Bank Rewards",
         Convert_your_Al_Rajhi:"Convert your Al Rajhi Bank Rewards points into cash transfers directly to your bank account. Trusted by thousands of Saudi customers.",
         Minimum_Points:"Minimum Points:",
+        Processing_Time:"Processing Time:",
         
 
         
@@ -649,6 +650,7 @@ const translations = {
         Rajhi_Bank_Rewards:"مكافآت البنك الراجحي",
         Convert_your_Al_Rajhi:"حول نقاط مكافآت البنك الراجحي إلى تحويلات نقدية مباشرة إلى حسابك المصرفي. موثوق من قبل آلاف العملاء السعوديين.",
         Minimum_Points:":الحد الأدنى",
+        Processing_Time:":وقت المعالجة",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
