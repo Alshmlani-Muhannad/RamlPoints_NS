@@ -353,6 +353,7 @@ const translations = {
         Lowest_Rate:"Lowest Rate",
         Program_Name:"Program Name",
         Processing_Time:"Processing Time",
+        Per_Point:"per point",
         
 
         
@@ -641,6 +642,7 @@ const translations = {
         Lowest_Rate:"أقل معدل",
         Program_Name:"اسم البرنامج",
         Processing_Time:"وقت المعالجة",
+        Per_Point:"لكل نقطة",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
