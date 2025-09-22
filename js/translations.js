@@ -342,6 +342,11 @@ const translations = {
         programsTitle: "Choose Your<br /><span class=\"text-accent\">Loyalty Program</span>",
         programsSubtitle: "Select your loyalty program below to see specific conversion rates, processing times, and start converting your unused points into real cash transfers.",
         SAR_Per_Point:" SAR Per Point",
+        Programs_ff:"Programs",
+        Business_Days_ii:"Business Days",
+        Success_Rate:"Success Rate",
+        All_prog_dd:"All Programs",
+
         
         // Terms & Privacy
         Terms_header: "Terms of Service & Privacy Policy - RamlPoints",
@@ -617,6 +622,10 @@ const translations = {
         programsTitle: "اختر<br /><span class=\"text-accent\">برنامج الولاء الخاص بك</span>",
         programsSubtitle: "اختر برنامج الولاء الخاص بك أدناه لرؤية معدلات التحويل المحددة وأوقات المعالجة وابدأ في تحويل نقاطك غير المستخدمة إلى تحويلات نقدية حقيقية.",
         SAR_Per_Point:" ريال سعودي لكل نقطة",
+        Programs_ff:"البرامج",
+        Business_Days_ii:"ايام التحويل",
+        Success_Rate:"معدل النجاح",
+        All_prog_dd:"جميع البرامج",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
