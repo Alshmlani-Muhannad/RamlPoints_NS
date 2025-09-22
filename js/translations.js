@@ -350,6 +350,10 @@ const translations = {
         Telecom_df:"Telecom",
         Wallets_df:"Digital",
         Highest_Rate:"Highest Rate",
+        Lowest_Rate:"Lowest Rate",
+        Program_Name:"Program Name",
+        Processing_Time:"Processing Time",
+        
 
         
         // Terms & Privacy
@@ -634,6 +638,9 @@ const translations = {
         Telecom_df:"برامج الاتصالات",
         Wallets_df:"المحافظ الرقمية",
         Highest_Rate:"أعلى معدل",
+        Lowest_Rate:"أقل معدل",
+        Program_Name:"اسم البرنامج",
+        Processing_Time:"وقت المعالجة",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
