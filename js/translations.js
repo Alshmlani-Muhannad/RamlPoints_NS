@@ -359,6 +359,7 @@ const translations = {
         Minimum_Points:"Minimum Points:",
         Processing_Time:"Processing Time:",
         Processing_Fee:"Processing Fee:",
+        Monthly_Volume:"Monthly Volume:",
         
 
         
@@ -653,6 +654,7 @@ const translations = {
         Minimum_Points:":الحد الأدنى",
         Processing_Time:":وقت المعالجة",
         Processing_Fee:":رسوم المعالجة",
+        Monthly_Volume:":الحجم الشهري",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
