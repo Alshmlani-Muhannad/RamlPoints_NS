@@ -386,6 +386,7 @@ const translations = {
         converted_label:"Converted",
         Convert_1:"90,000 points → 175.5 SAR",
         Fatima_nn:"Fatima Al-Zahra",
+        Qitaf_Member: "Qitaf Member",
         
         
 
@@ -708,6 +709,7 @@ const translations = {
         converted_label:"حوّل",
         Convert_1:"9000 نقطة ← 175.5 ريال",
         Fatima_nn:"فاطمة الزهراء",
+        Qitaf_Member: "عضو قطاف",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
