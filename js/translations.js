@@ -370,6 +370,14 @@ const translations = {
         IZ_Script:"Maximize your IZ reward points with excellent conversion rates and secure processing.",
         ANB_Rewards_d:"ANB Rewards",
         ANB_Script:"Convert your ANB Rewards points into cash quickly and securely with our trusted service.",
+        Compare_oo_all:"Compare all programs",
+        Side_by_side_pp:"Side-by-side comparison of conversion rates, processing times, and requirements for all supported loyalty programs.",
+        Program_nn:"Program",
+        Rate_nn:"Rate (SAR)",
+        Min_Points_nn:"Min Points",
+        Processing_nn:"Processing",
+        Monthly_Volume_nn:"Monthly Volume",
+        Action_nn:"Action",
         
         
 
@@ -676,6 +684,14 @@ const translations = {
         IZ_Script:"حقق أقصى استفادة من نقاط مكافآت محفظة عز مع معدلات تحويل ممتازة ومعالجة آمنة.",
         ANB_Rewards_d:"مكافآت العربي الوطني",
         ANB_Script:"حوّل نقاط مكافآت العربي الوطني إلى نقد بسرعة وأمان مع خدمتنا الموثوقة.",
+        Compare_oo_all:"قارن بين جميع البرامج",
+        Side_by_side_pp:"مقارنة جنبًا إلى جنب لمعدلات التحويل وأوقات المعالجة والمتطلبات لجميع برامج الولاء المدعومة.",
+        Program_nn:"البرنامج",
+        Rate_nn:"المعدل (ريال سعودي)",
+        Min_Points_nn:"الحد الأدنى للنقاط",
+        Processing_nn:"وقت المعالجة",
+        Monthly_Volume_nn:"الحجم الشهري",
+        Action_nn:"الإجراء",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
