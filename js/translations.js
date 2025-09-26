@@ -379,6 +379,11 @@ const translations = {
         Monthly_Volume_nn:"Monthly Volume",
         Action_nn:"Action",
         Success_Stories:"Success Stories",
+        Real_Customers:"Real customers sharing their experiences converting loyalty points with RamlPoints",
+        Ahmd_Alrashid: "Ahmed Al-Rashid",
+        Alrajhi_bank_Customer_nn: "Al Rajhi Bank Customer",
+        Ahmed_Review:"Converted 90,000 Al Rajhi points and received 175.5 SAR in just 5 hours. The process was transparent and the WhatsApp support was excellent.",
+        Converted_nn:"Converted",
         
         
 
@@ -694,6 +699,11 @@ const translations = {
         Monthly_Volume_nn:"الحجم الشهري",
         Action_nn:"الإجراء",
         Success_Stories:"قصص نجاح",
+        Real_Customers:"عملاء حقيقيون يشاركون تجاربهم في تحويل نقاط الولاء مع رمل بوينتس",
+        Ahmd_Alrashid: "أحمد الراشد",
+        Alrajhi_bank_Customer_nn: "عميل بنك الراجحي",
+        Ahmed_Review:"حوّل 90,000 نقطة من نقاط الراجحي وتلقى 175.5 ريال سعودي في غضون 5 ساعات فقط. كانت العملية شفافة وكان دعم واتساب ممتازًا.",
+        Converted_nn:"حوّل",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
