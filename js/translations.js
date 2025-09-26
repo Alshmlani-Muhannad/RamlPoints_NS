@@ -378,6 +378,7 @@ const translations = {
         Processing_nn:"Processing",
         Monthly_Volume_nn:"Monthly Volume",
         Action_nn:"Action",
+        Success_Stories:"Success Stories",
         
         
 
@@ -692,6 +693,7 @@ const translations = {
         Processing_nn:"وقت المعالجة",
         Monthly_Volume_nn:"الحجم الشهري",
         Action_nn:"الإجراء",
+        Success_Stories:"قصص نجاح",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
