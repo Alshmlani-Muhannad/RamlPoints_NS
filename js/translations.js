@@ -384,7 +384,7 @@ const translations = {
         Alrajhi_bank_Customer_nn: "Al Rajhi Bank Customer",
         Ahmed_Review:"Converted 90,000 Al Rajhi points and received 175.5 SAR in just 5 hours. The process was transparent and the WhatsApp support was excellent.",
         converted_label:"Converted",
-        Convert_1:"9000 نقطة ← 175.5 ريال",
+        Convert_1:"90,000 points → 175.5 SAR",
         
         
 
@@ -705,7 +705,7 @@ const translations = {
         Alrajhi_bank_Customer_nn: "عميل بنك الراجحي",
         Ahmed_Review:"حوّلت 90,000 نقطة من نقاط الراجحي واخذت مقابلها 175.5 ريال والعملية كانت في غضون 5 ساعات. اشكرهم على الشفافية ودعم الواتساب خرافي.",
         converted_label:"حوّل",
-        Convert_1:"90,000 points → 175.5 SAR",
+        Convert_1:"9000 نقطة ← 175.5 ريال",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
