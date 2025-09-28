@@ -422,7 +422,7 @@ const translations = {
         Fatima_Review:"Amazing service! My Qitaf points were sitting unused. RamlPoints helped me convert 300 points to 24 SAR quickly and securely.",
 
         // submit_request.html
-        convert_points_title:" Convert Your Loyalty Points to Real Cash",
+        convert_points_title: "Convert Your Points to Cash",
         
 
         
@@ -493,6 +493,7 @@ const translations = {
     },
     ar: {
         // Submit Request Page
+        convert_points_title: "حول نقاطك إلى نقد",
         submit_title: "تقديم طلب تحويل",
         submit_description: "أكمل طلب التحويل الخاص بك في خطوات قليلة. نموذجنا الآمن يضمن حماية بياناتك طوال العملية.",
         step_1: "اختيار البرنامج",
@@ -979,7 +980,7 @@ const translations = {
 
 
         // submit_request.html
-        convert_points_title: " حول نقاط الولاء الخاصة بك إلى نقد حقيقي",
+        convert_points_title: "حول نقاطك إلى نقد",
         
         
         
