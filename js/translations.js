@@ -420,10 +420,11 @@ const translations = {
         Fatima_nn:"Fatima Al-Zahra",
         Qitaf_Member: "Qitaf Member",
         Fatima_Review:"Amazing service! My Qitaf points were sitting unused. RamlPoints helped me convert 300 points to 24 SAR quickly and securely.",
-        Convert_2:"40,000 points → 200 SAR",
+        Convert_2:"300 points → 24 SAR",
         Abo_khaled1:"Abo Khaled",
         ANB_rewards_nn:"ANB Rewards Member",
         Abo_Khaled_Review:"Excellent experience with ANB Rewards conversion! Converted 40,000 points to 200 SAR. The team was professional and kept me updated throughout.",
+        Convert_3:"40,000 points → 200 SAR",
 
 
         // submit_request.html
@@ -784,10 +785,11 @@ const translations = {
         Fatima_nn:"فاطمة الزهراء",
         Qitaf_Member: "عضو قطاف",
         Fatima_Review:" خدمة ممتازة! نقاط قطاف عندي ماستخدمها. شفت الموقع بالصدفه وقررت ابدل نقاطي واجرب، ساعدني رمل بوينتس في تحويل 300 نقطة إلى 24 ريال سعودي بسرعة وأمان (تقريبا 3 ساعات).",
-        Convert_2:"40000 نقطة ← 200 ريال",
+        Convert_2:"300 نقطة ← 24 ريال",
         Abo_khaled1:"أبو خالد",
         ANB_rewards_nn:"عضو مكافآت البنك العربي الوطني",
         Abo_Khaled_Review:" تجربة ممتازة جدا مع تحويل مكافآت العربي الوطني! حولت 40000 نقطة إلى 200 ريال. كانوا فريق محترف وخلوني على اطلاع طوال الوقت.",
+        Convert_3:"40000 نقطة ← 200 ريال"
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
