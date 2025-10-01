@@ -427,6 +427,8 @@ const translations = {
         Convert_3:"40,000 points → 200 SAR",
         Ready_to_Convert:"Ready to Convert Your Points?",
         Join_Thousands:"Join thousands of satisfied customers who've transformed their unused loyalty points into real cash with RamlPoints.",
+        Start_Converting_Now:"Start Converting Now",
+        Contact_WhatsApp_Support1:"Contact WhatsApp Support",
 
 
         // submit_request.html
@@ -794,6 +796,8 @@ const translations = {
         Convert_3:"40000 نقطة ← 200 ريال",
         Ready_to_Convert:"هل أنت مستعد لتحويل نقاطك؟",
         Join_Thousands:"انضم إلى آلاف العملاء الراضين الذين حولوا نقاط الولاء غير المستخدمة إلى نقد حقيقي مع رمل بوينتس.",
+        Start_Converting_Now:"ابدأ التحويل الآن",
+        Contact_WhatsApp_Support1:"تواصل مع دعم واتساب",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
