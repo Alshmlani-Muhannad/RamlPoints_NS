@@ -429,7 +429,7 @@ const translations = {
         Join_Thousands:"Join thousands of satisfied customers who've transformed their unused loyalty points into real cash with RamlPoints.",
         Start_Converting_Now:"Start Converting Now",
         Contact_WhatsApp_Support1:"Contact WhatsApp Support",
-        hours_until_days:"3 hours to 2 days processing",
+        hours_until_days:"Avg.3-5 hours",
 
 
         // submit_request.html
@@ -799,7 +799,7 @@ const translations = {
         Join_Thousands:"انضم إلى آلاف العملاء الراضين الذين حولوا نقاط الولاء غير المستخدمة إلى نقد حقيقي مع رمل بوينتس.",
         Start_Converting_Now:"ابدأ التحويل الآن",
         Contact_WhatsApp_Support1:"تواصل مع دعم واتساب",
-        hours_until_days:"3 ساعات إلى يومين وقت المعالجة",
+        hours_until_days:"متوسط 3-5 ساعات",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
