@@ -431,6 +431,7 @@ const translations = {
         Contact_WhatsApp_Support1:"Contact WhatsApp Support",
         hours_until_days:"Avg.3-5 hours",
         twelve_hours:"Avg.12 hours",
+        Two_days:"Avg.1 days",
 
 
         // submit_request.html
@@ -802,7 +803,9 @@ const translations = {
         Contact_WhatsApp_Support1:"تواصل مع دعم واتساب",
         hours_until_days:"متوسط 3-5 ساعات",
         twelve_hours:"متوسط 12 ساعة",
-        
+        Two_days:"متوسط يوم",
+
+
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
         termsPrivacySubtitle: "خصوصيتك وثقتك مهمة بالنسبة لنا. يرجى مراجعة شروطنا وسياسة الخصوصية.",
