@@ -425,6 +425,8 @@ const translations = {
         ANB_rewards_nn:"ANB Rewards Member",
         Abo_Khaled_Review:"Excellent experience with ANB Rewards conversion! Converted 40,000 points to 200 SAR. The team was professional and kept me updated throughout.",
         Convert_3:"40,000 points → 200 SAR",
+        Ready_to_Convert:"Ready to Convert Your Points?",
+        Join_Thousands:"Join thousands of satisfied customers who've transformed their unused loyalty points into real cash with RamlPoints.",
 
 
         // submit_request.html
@@ -790,6 +792,8 @@ const translations = {
         ANB_rewards_nn:"عضو مكافآت البنك العربي الوطني",
         Abo_Khaled_Review:" تجربة ممتازة جدا مع تحويل مكافآت العربي الوطني! حولت 40000 نقطة إلى 200 ريال. كانوا فريق محترف وخلوني على اطلاع طوال الوقت.",
         Convert_3:"40000 نقطة ← 200 ريال",
+        Ready_to_Convert:"هل أنت مستعد لتحويل نقاطك؟",
+        Join_Thousands:"انضم إلى آلاف العملاء الراضين الذين حولوا نقاط الولاء غير المستخدمة إلى نقد حقيقي مع رمل بوينتس.",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
