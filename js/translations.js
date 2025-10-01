@@ -430,6 +430,7 @@ const translations = {
         Start_Converting_Now:"Start Converting Now",
         Contact_WhatsApp_Support1:"Contact WhatsApp Support",
         hours_until_days:"Avg.3-5 hours",
+        twelve_hours:"Avg.12 hours",
 
 
         // submit_request.html
@@ -800,6 +801,7 @@ const translations = {
         Start_Converting_Now:"ابدأ التحويل الآن",
         Contact_WhatsApp_Support1:"تواصل مع دعم واتساب",
         hours_until_days:"متوسط 3-5 ساعات",
+        twelve_hours:"متوسط 12 ساعة",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
