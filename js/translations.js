@@ -421,6 +421,7 @@ const translations = {
         Qitaf_Member: "Qitaf Member",
         Fatima_Review:"Amazing service! My Qitaf points were sitting unused. RamlPoints helped me convert 300 points to 24 SAR quickly and securely.",
 
+
         // submit_request.html
         convert_points_title: "Convert Your Points to Cash",
         
@@ -778,7 +779,7 @@ const translations = {
         Convert_1:"9000 نقطة ← 175.5 ريال",
         Fatima_nn:"فاطمة الزهراء",
         Qitaf_Member: "عضو قطاف",
-        Fatima_Review:"Amazing service! My Qitaf points were sitting unused. RamlPoints helped me convert 300 points to 24 SAR quickly and securely.",
+        Fatima_Review:" (تقريبا 3 ساعات)خدمة ممتازة! نقاط قطاف عندي ماستخدمها. شفت الموقع بالصدفه وقررت ابدل نقاطي واجرب، ساعدني رمل بوينتس في تحويل 300 نقطة إلى 24 ريال سعودي بسرعة وأمان.",
         
         // Terms & Privacy
         Terms_header: "شروط الخدمة وسياسة الخصوصية - رمل بوينتس",
