@@ -729,7 +729,7 @@ const translations = {
         We_will_respond:"سوف نقوم بالرد خلال 24 ساعة",
         We_r_here:"نحن هنا للمساعدة",
         Contact_Us_on_X: "تواصل معنا على اكس",
-        WhatsApp_support:"دعم ممتلكات عبر واتساب",
+        WhatsApp_support:"دعم عبر واتساب",
         Financial_tips_ll:"نصائح مالية ودروس تعليمية سريعة",
         Follow_us_stay:"تابعنا وابق على تواصل",
         Stay_updated_with_ll:"احصل على آخر الأخبار والنصائح والإعلانات من خلال قنوات التواصل الاجتماعي الخاصة بنا.",
