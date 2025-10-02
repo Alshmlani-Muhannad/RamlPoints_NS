@@ -432,6 +432,7 @@ const translations = {
         hours_until_days:"Avg.3-5 hours",
         twelve_hours:"Avg.12 hours",
         Two_days:"Avg.1 days",
+        Convert_kjh:"Convert Now",
 
 
         // submit_request.html
@@ -804,6 +805,7 @@ const translations = {
         hours_until_days:"متوسط 3-5 ساعات",
         twelve_hours:"متوسط 12 ساعة",
         Two_days:"متوسط يوم",
+        Convert_kjh:"حول الآن",
 
 
         // Terms & Privacy
