@@ -77,6 +77,7 @@ const translations = {
         Quick_Contact:"Quick Contact",
         Send_Messages:"Send Message",
         Follow_us_X:"Contact us directly on X (Twitter)",
+        Response_time:"Quick response time via direct message",
 
         
         // Calculator Section
@@ -586,6 +587,7 @@ const translations = {
         Quick_Contact:"تواصل سريع",
         Send_Messages:"ارسل لنا",
         Follow_us_X:" حياك عندنا على X وقولنا كيف نخدمك",
+        Response_time:"رد سريع من خلال الرسائل الخاصة",
 
         
         // Calculator Section
