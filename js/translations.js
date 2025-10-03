@@ -76,6 +76,7 @@ const translations = {
         Average_Days_Comple:"Average: 3.2 days completion",
         Quick_Contact:"Quick Contact",
         Send_Messages:"Send Message",
+        Follow_us_X:"Contact us directly on X (Twitter)",
 
         
         // Calculator Section
@@ -584,6 +585,7 @@ const translations = {
         Average_Days_Comple:"متوسط: 3.2 أيام الإنجاز",
         Quick_Contact:"تواصل سريع",
         Send_Messages:"ارسل لنا",
+        Follow_us_X:" حياك عندنا على X وقولنا كيف نخدمك",
 
         
         // Calculator Section
