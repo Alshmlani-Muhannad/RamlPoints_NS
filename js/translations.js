@@ -2,7 +2,7 @@ const translations = {
     en: {
         // Submit Request Page
         submit_title: "Submit Conversion Request",
-        submit_description: "Complete your conversion request in just a few steps. Our secure form ensures your data is protected throughout the process.",
+        conversion_description: "Complete your conversion request in just a few steps. Our secure form ensures your data is protected throughout the process.",
         step_1: "Program Selection",
         step_2: "Account Details",
         step_3: "Confirmation",
@@ -512,7 +512,7 @@ const translations = {
         // Submit Request Page
         convert_points_title: "حول نقاطك إلى نقد",
         submit_title: "تقديم طلب تحويل",
-        submit_description: "أكمل طلب التحويل الخاص بك في خطوات قليلة. نموذجنا الآمن يضمن حماية بياناتك طوال العملية.",
+        conversion_description: "أكمل طلب التحويل الخاص بك في خطوات قليلة. نموذجنا الآمن يضمن حماية بياناتك طوال العملية.",
         step_1: "اختيار البرنامج",
         step_2: "تفاصيل الحساب",
         step_3: "التأكيد",
