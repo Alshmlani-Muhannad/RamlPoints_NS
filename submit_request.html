@@ -257,7 +257,7 @@
                                 <div class="error-message hidden text-error text-sm mt-1"></div>
                             </div>
 
-                            <!-- Conversion Calculator -->
+                          <!-- Conversion Calculator -->
 <div id="conversion-calculator"
      class="bg-accent/10 border border-accent/20 rounded-lg p-4">
 
@@ -284,9 +284,10 @@
       <span id="calc-gross">0 SAR</span>
     </div>
 
-    <!-- Processing Fee -->
+    <!-- Processing Fee (label + %) -->
     <div class="flex justify-between text-text-secondary">
-      <span class="i18n" data-translate="processing_fee">Processing Fee:</span>
+      <span class="i18n" data-translate="processing_fee">Processing Fee</span>
+      <span id="calc-fee-label">(0%):</span>
       <span id="calc-fee">0 SAR</span>
     </div>
 
@@ -294,12 +295,6 @@
     <div class="border-t border-accent/20 pt-2 flex justify-between font-semibold text-accent">
       <span class="i18n" data-translate="net_amount">Net Amount:</span>
       <span id="calc-net">0 SAR</span>
-    </div>
-
-    <!-- Extra label (example) -->
-    <div class="flex justify-between text-xs text-text-secondary/70">
-      <span class="i18n" data-translate="net_after_fee">Net after fee:</span>
-      <span id="calc-net-after">0 SAR</span>
     </div>
   </div>
 </div>
@@ -785,29 +780,30 @@
         });
 
         // Calculator functionality
-        function updateCalculator() {
-            const pointsInput = document.getElementById('points-balance');
-            const points = parseInt(pointsInput.value) || 0;
-            
-            if (points > 0 && formData.programRate > 0) {
-                const grossValue = points * formData.programRate;
-                const processingFee = grossValue * (formData.programFee / 100);
-                const netValue = grossValue - processingFee;
-                
-                document.getElementById('calc-points').textContent = points.toLocaleString();
-                document.getElementById('calc-rate').textContent = `${formData.programRate} SAR/point`;
-                document.getElementById('calc-gross').textContent = `${grossValue.toFixed(2)} SAR`;
-                document.getElementById('calc-fee-label').textContent = `Processing Fee (${formData.programFee}%):`;
-                document.getElementById('calc-fee').textContent = `${processingFee.toFixed(2)} SAR`;
-                document.getElementById('calc-net').textContent = `${netValue.toFixed(2)} SAR`;
-            } else {
-                document.getElementById('calc-points').textContent = '0';
-                document.getElementById('calc-rate').textContent = '0 SAR/point';
-                document.getElementById('calc-gross').textContent = '0 SAR';
-                document.getElementById('calc-fee').textContent = '0 SAR';
-                document.getElementById('calc-net').textContent = '0 SAR';
-            }
-        }
+function updateCalculator() {
+    const pointsInput = document.getElementById('points-balance');
+    const points = parseInt(pointsInput.value) || 0;
+
+    if (points > 0 && formData.programRate > 0) {
+        const grossValue = points * formData.programRate;
+        const processingFee = grossValue * (formData.programFee / 100);
+        const netValue   = grossValue - processingFee;
+
+        document.getElementById('calc-points').textContent = points.toLocaleString();
+        document.getElementById('calc-rate').textContent   = `${formData.programRate} SAR/point`;
+        document.getElementById('calc-gross').textContent  = `${grossValue.toFixed(2)} SAR`;
+        document.getElementById('calc-fee-label').textContent = `(${formData.programFee}%):`;
+        document.getElementById('calc-fee').textContent    = `${processingFee.toFixed(2)} SAR`;
+        document.getElementById('calc-net').textContent    = `${netValue.toFixed(2)} SAR`;
+    } else {
+        document.getElementById('calc-points').textContent = '0';
+        document.getElementById('calc-rate').textContent   = '0 SAR/point';
+        document.getElementById('calc-gross').textContent  = '0 SAR';
+        document.getElementById('calc-fee-label').textContent = '(0%):';
+        document.getElementById('calc-fee').textContent    = '0 SAR';
+        document.getElementById('calc-net').textContent    = '0 SAR';
+    }
+}
 
         // Summary update
         function updateSummary() {
