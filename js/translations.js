@@ -52,7 +52,7 @@ const translations = {
         Banque_Saudi: "Banque Saudi Fransi",
         Saudi_investement: "Saudi Investment Bank",
         other: "Other Bank",
-        Minimum_points: "Minimum 1000 points required for all programs",
+        Minimum_points: "Minimum points required for the program",
         Conersion_estimate: "Conversion Estimate",
         Points_to_convert: "Points to Convert",
         conversion_estimate: "Conversion Estimate",
