@@ -258,31 +258,51 @@
                             </div>
 
                             <!-- Conversion Calculator -->
-                            <div id="conversion-calculator" class="bg-accent/10 border border-accent/20 rounded-lg p-4">
-                                <h4 class="font-cairo font-semibold text-secondary mb-3" data-translate="Conersion_estimate">Conversion Estimate</h4>
-                                <div class="space-y-2 text-sm">
-                                    <div class="flex justify-between">
-                                        <span>Points to Convert:</span>
-                                        <span id="calc-points">0</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span>Conversion Rate:</span>
-                                        <span id="calc-rate">0 SAR/point</span>
-                                    </div>
-                                    <div class="flex justify-between">
-                                        <span>Gross Value:</span>
-                                        <span id="calc-gross">0 SAR</span>
-                                    </div>
-                                    <div class="flex justify-between text-text-secondary">
-                                        <span id="calc-fee-label">Processing Fee:</span>
-                                        <span id="calc-fee">0 SAR</span>
-                                    </div>
-                                    <div class="border-t border-accent/20 pt-2 flex justify-between font-semibold text-accent">
-                                        <span>Net Amount:</span>
-                                        <span id="calc-net">0 SAR</span>
-                                    </div>
-                                </div>
-                            </div>
+<div id="conversion-calculator"
+     class="bg-accent/10 border border-accent/20 rounded-lg p-4">
+
+  <h4 class="font-cairo font-semibold text-secondary mb-3">
+    <span class="i18n" data-translate="conversion_estimate">Conversion Estimate</span>
+  </h4>
+
+  <div class="space-y-2 text-sm">
+    <!-- Points to Convert -->
+    <div class="flex justify-between">
+      <span class="i18n" data-translate="points_to_convert">Points to Convert:</span>
+      <span id="calc-points">0</span>
+    </div>
+
+    <!-- Conversion Rate -->
+    <div class="flex justify-between">
+      <span class="i18n" data-translate="conversion_rate">Conversion Rate:</span>
+      <span id="calc-rate">0 SAR/point</span>
+    </div>
+
+    <!-- Gross Value -->
+    <div class="flex justify-between">
+      <span class="i18n" data-translate="gross_value">Gross Value:</span>
+      <span id="calc-gross">0 SAR</span>
+    </div>
+
+    <!-- Processing Fee -->
+    <div class="flex justify-between text-text-secondary">
+      <span class="i18n" data-translate="processing_fee">Processing Fee:</span>
+      <span id="calc-fee">0 SAR</span>
+    </div>
+
+    <!-- Net Amount -->
+    <div class="border-t border-accent/20 pt-2 flex justify-between font-semibold text-accent">
+      <span class="i18n" data-translate="net_amount">Net Amount:</span>
+      <span id="calc-net">0 SAR</span>
+    </div>
+
+    <!-- Extra label (example) -->
+    <div class="flex justify-between text-xs text-text-secondary/70">
+      <span class="i18n" data-translate="net_after_fee">Net after fee:</span>
+      <span id="calc-net-after">0 SAR</span>
+    </div>
+  </div>
+</div>
                         </div>
                     </div>
 
